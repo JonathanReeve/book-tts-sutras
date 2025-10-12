@@ -4,38 +4,38 @@ Sutra Book
 
 # Four Infinite Vows (^)
 
-All beings beyond number, I vow to free. 
-Blind passions without cease, I vow to see through. 
-Dharma gates beyond measure, I vow to realize.
-Buddha ways without end, I vow to embody. 
+All beings beyond number, I vow to free.  
+Blind passions without cease, I vow to see through.  
+Dharma gates beyond measure, I vow to realize.  
+Buddha ways without end, I vow to embody.   
 
 # Early Morning Sutras
 
 ## The Five Remembrances
 
-1. I am of the nature to grow old. 
-There is no way to escape growing old. 
+1. I am of the nature to grow old.  
+There is no way to escape growing old.  
 
-2. I am of the nature to have ill health. 
-There is no way to escape having ill health. 
+2. I am of the nature to have ill health.  
+There is no way to escape having ill health.  
 
-3. I am of the nature to die. 
-There is no way to escape death.
+3. I am of the nature to die.  
+There is no way to escape death.  
 
-4. All that is dear to me and everyone I love 
-are of the nature to change. 
-There is no way to escape being separated from them. 
+4. All that is dear to me and everyone I love  
+are of the nature to change.  
+There is no way to escape being separated from them.  
 
-5. My actions are my only true belongings. 
-I cannot escape the consequences of my actions. 
-My actions are the ground on which I stand.
+5. My actions are my only true belongings.   
+I cannot escape the consequences of my actions.   
+My actions are the ground on which I stand.  
 
 ## Purification (^) 
 
-All the evil karma ever created by me since of old, 
-on account of my beginningless greed, hatred, and ignorance, 
-born of my conduct, speech and thought, 
-I now confess openly and fully. 
+All the evil karma ever created by me since of old,  
+on account of my beginningless greed, hatred, and ignorance,  
+born of my conduct, speech and thought,  
+I now confess openly and fully.  
 
 # Morning Sutra Service
 
@@ -43,17 +43,17 @@ I now confess openly and fully.
 
 <!-- Remove the punctuation? --> 
 
-Buddham saranam gacchami; 
-dhammam saranam gacchami; 
-sangham saranam gacchami. 
+Buddham saranam gacchami;   
+dhammam saranam gacchami;   
+sangham saranam gacchami.   
 
-I take refuge in the Buddha:
-I take refuge in the Dharma;
-I take refuge in the Sangha.
+I take refuge in the Buddha:  
+I take refuge in the Dharma;  
+I take refuge in the Sangha.  
 
-Buddham saranam gacchami; 
-dhammam saranam gacchami; 
-sangham saranam gacchami. 
+Buddham saranam gacchami;   
+dhammam saranam gacchami;   
+sangham saranam gacchami.   
 
 ## Vandana (^) 
 
@@ -63,48 +63,48 @@ Namo tassa bhagavato arahato sammasambuddhasa
 
 <!-- Idea: add in ñ in Prajña? --> 
 
-Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,
-clearly saw that all five skandhas are empty,
-transforming all suffering and distress. 
+Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,  
+clearly saw that all five skandhas are empty,  
+transforming all suffering and distress.   
 
-Shariputra, form is no other than emptiness, emptiness no other than form; 
-form is exactly emptiness, emptiness exactly form; 
-sensation, perception, mental reaction, consciousness,
-are also like this.
+Shariputra, form is no other than emptiness, emptiness no other than form;   
+form is exactly emptiness, emptiness exactly form;   
+sensation, perception, mental reaction, consciousness,  
+are also like this.  
 
-Shariputra, all things are essentially empty—not born, not destroyed; 
-no stained, not pure; without loss, without gain.
+Shariputra, all things are essentially empty—not born, not destroyed;   
+no stained, not pure; without loss, without gain.  
+  
+Therefore in emptiness there is no form, no sensation, perception,  
+mental reaction, consciousness;   
+  
+no eye, ear, nose, tongue, body, mind,  
+no color, sound, scent, taste, touch, thought;   
+no seeing and so on to no thinking;   
+  
+no ignorance and also no ending of ignorance,   
+and so on to no old age and death and also no ending of old age and death;   
+  
+no suffering, cause of suffering, cessation, path;   
+no wisdom and no attainment.   
+  
+Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,  
+with no hindrance in the mind; no hindrance and therefore no fear;   
+far beyond delusive thinking, right here is Nirvana.   
+  
+All Buddhas of past, present adn future live by Prajna Paramita,  
+attaining Anuttara-samyak-sambodhi.   
+  
+Therefore know that Prajna Paramita is the great mantra, the vivid mantra,   
+the unsurpassed mantra, the supreme mantra,   
+which completely removes all suffering.   
+  
+This is truth, not mere formality.   
 
-Therefore in emptiness there is no form, no sensation, perception,
-mental reaction, consciousness; 
+Therefore set for the Prajna Paramita mantra,   
+set forth this mantra and proclaim:   
 
-no eye, ear, nose, tongue, body, mind,
-no color, sound, scent, taste, touch, thought; 
-no seeing and so on to no thinking; 
-
-no ignorance and also no ending of ignorance, 
-and so on to no old age and death and also no ending of old age and death; 
-
-no suffering, cause of suffering, cessation, path; 
-no wisdom and no attainment. 
-
-Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,
-with no hindrance in the mind; no hindrance and therefore no fear; 
-far beyond delusive thinking, right here is Nirvana. 
-
-All Buddhas of past, present adn future live by Prajna Paramita,
-attaining Anuttara-samyak-sambodhi. 
-
-Therefore know that Prajna Paramita is the great mantra, the vivid mantra, 
-the unsurpassed mantra, the supreme mantra, 
-which completely removes all suffering. 
-
-This is truth, not mere formality. 
-
-Therefore set for the Prajna Paramita mantra, 
-set forth this mantra and proclaim: 
-
-Gate Gate Paragate Parasamgate Bodhi Swaha!
+Gate Gate Paragate Parasamgate Bodhi Swaha!  
 
 <!-- Regularize the capitalization here? --> 
 
@@ -506,118 +506,86 @@ sowa ja sowa ja sen chi gya shiri ei somo ko. -->
 まさに一切の災難は自ずから消滅し、大いなる幸いを速やかに成就すべし。
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sho Sai Myo Kichijo Dharani (Bilingual with Translation)</title>
-    <style>
-        ruby {
-            display: inline-block;
-            text-align: center;
-        }
-        rt {
-            display: block;
-            font-size: 0.7em;
-            color: #777;
-        }
-        .dharani-row {
-            margin-bottom: 1.5em;
-        }
-        .translation {
-            display: block;
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 0.3em;
-            font-style: italic;
-        }
-    </style>
-</head>
-<body>
+# Sho Sai Myo Kichijo Darani 
 
-    <h1>Sho Sai Myo Kichijo Darani</h1>
+<div class="dharani-row">
+    <ruby><rb>南無</rb><rt>No mo</rt></ruby>
+    <ruby><rb>三曼多</rb><rt>San man da</rt></ruby>
+    <ruby><rb>母駄喃</rb><rt>Moto nan</rt></ruby>
+    <div class="translation">Veneration to all enlightened ones!</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>南無</rb><rt>No mo</rt></ruby>
-        <ruby><rb>三曼多</rb><rt>San man da</rt></ruby>
-        <ruby><rb>母駄喃</rb><rt>Moto nan</rt></ruby>
-        <div class="translation">Veneration to all enlightened ones!</div>
-    </div>
+<div class="dharani-row">
+    <ruby><rb>阿</rb><rt>O</rt></ruby>
+    <ruby><rb>跋囉底</rb><rt>ha ra chi</rt></ruby>
+    <ruby><rb>賀多</rb><rt>koto sha</rt></ruby>
+    <ruby><rb>舍</rb><rt>sono</rt></ruby>
+    <ruby><rb>喃</rb><rt>nan</rt></ruby>
+    <div class="translation">The incomparable bodhi-power that banishes misfortune!</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>阿</rb><rt>O</rt></ruby>
-        <ruby><rb>跋囉底</rb><rt>ha ra chi</rt></ruby>
-        <ruby><rb>賀多</rb><rt>koto sha</rt></ruby>
-        <ruby><rb>舍</rb><rt>sono</rt></ruby>
-        <ruby><rb>喃</rb><rt>nan</rt></ruby>
-        <div class="translation">The incomparable bodhi-power that banishes misfortune!</div>
-    </div>
+<div class="dharani-row">
+    <ruby><rb>怛姪他</rb><rt>To ji to</rt></ruby>
+    <ruby><rb>唵</rb><rt>en</rt></ruby>
+    <ruby><rb>佉佉</rb><rt>gya gya</rt></ruby>
+    <ruby><rb>佉<ruby><rb>呬</rb><rt>gyia</rt></ruby><ruby><rb>佉<rb>呬</rb></ruby><rt>ki</rt></ruby></ruby>
+    <ruby><rb>吽吽</rb><rt>un nun</rt></ruby>
+    <div class="translation">Om! The Buddha of reality, wisdom, nirvana!</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>怛姪他</rb><rt>To ji to</rt></ruby>
-        <ruby><rb>唵</rb><rt>en</rt></ruby>
-        <ruby><rb>佉佉</rb><rt>gya gya</rt></ruby>
-        <ruby><rb>佉<ruby><rb>呬</rb><rt>gyia</rt></ruby><ruby><rb>佉<rb>呬</rb></ruby><rt>ki</rt></ruby></ruby>
-        <ruby><rb>吽吽</rb><rt>un nun</rt></ruby>
-        <div class="translation">Om! The Buddha of reality, wisdom, nirvana!</div>
-    </div>
+<div class="dharani-row">
+    <ruby><rb>入嚩囉</rb><rt>Shifu ra</rt></ruby>
+    <ruby><rb>入嚩囉</rb><rt>shifu ra</rt></ruby>
+    <ruby><rb>鉢囉</rb><rt>hara shifu ra</rt></ruby>
+    <ruby><rb>鉢囉</rb><rt>hara shifu ra</rt></ruby>
+    <div class="translation">Light, light! Great light, great light!</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>入嚩囉</rb><rt>Shifu ra</rt></ruby>
-        <ruby><rb>入嚩囉</rb><rt>shifu ra</rt></ruby>
-        <ruby><rb>鉢囉</rb><rt>hara shifu ra</rt></ruby>
-        <ruby><rb>鉢囉</rb><rt>hara shifu ra</rt></ruby>
-        <div class="translation">Light, light! Great light, great light!</div>
-    </div>
+<div class="dharani-row">
+    <ruby><rb>底哩</rb><rt>Chishu sa</rt></ruby>
+    <ruby><rb>底哩</rb><rt>chishu sa</rt></ruby>
+    <ruby><rb>娑婆訶</rb><rt>shushi ri</rt></ruby>
+    <ruby><rb>娑婆訶</rb><rt>shushi ri</rt></ruby>
+    <div class="translation">With no categories, this mysterious power saves all beings.</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>底哩</rb><rt>Chishu sa</rt></ruby>
-        <ruby><rb>底哩</rb><rt>chishu sa</rt></ruby>
-        <ruby><rb>娑婆訶</rb><rt>shushi ri</rt></ruby>
-        <ruby><rb>娑婆訶</rb><rt>shushi ri</rt></ruby>
-        <div class="translation">With no categories, this mysterious power saves all beings.</div>
-    </div>
+<div class="dharani-row">
+    <ruby><rb>莎婆訶</rb><rt>Soha ja</rt></ruby>
+    <ruby><rb>莎婆訶</rb><rt>soha ja</rt></ruby>
+    <ruby><rb>戰<ruby><rb>地</rb><rt>sen chi</rt></ruby></ruby>
+    <ruby><rb>伽<ruby><rb>隸</rb><rt>gya shiri</rt></ruby></ruby>
+    <ruby><rb>娑婆訶</rb><rt>ei</rt></ruby>
+    <div class="translation">Misfortune goes, happiness comes.</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>莎婆訶</rb><rt>Soha ja</rt></ruby>
-        <ruby><rb>莎婆訶</rb><rt>soha ja</rt></ruby>
-        <ruby><rb>戰<ruby><rb>地</rb><rt>sen chi</rt></ruby></ruby>
-        <ruby><rb>伽<ruby><rb>隸</rb><rt>gya shiri</rt></ruby></ruby>
-        <ruby><rb>娑婆訶</rb><rt>ei</rt></ruby>
-        <div class="translation">Misfortune goes, happiness comes.</div>
-    </div>
+<div class="dharani-row">
+    <ruby><rb>莎婆訶</rb><rt>Somo ko</rt></ruby>
+    <div class="translation">Swaha!</div>
+</div>
 
-    <div class="dharani-row">
-        <ruby><rb>莎婆訶</rb><rt>Somo ko</rt></ruby>
-        <div class="translation">Swaha!</div>
-    </div>
-
-</body>
-</html>
 
 # Zenkai Dedication
 
-_Leader_: 
-Our words ring out through space beyond the stars; 
-their virtue and compassion echo back from all the many beings;
-we recite the "The Great Prajna Paramita Heart Sutra" 
-and the "Sho Sai Myo Kichijo Darani"
-for renewal of the Buddha-mind in fields and forests, 
-homes and streets, throughout the world,
-in grateful thanks to all our many guides along the ancient way; 
+_Leader_:   
+Our words ring out through space beyond the stars;   
+their virtue and compassion echo back from all the many beings;  
+we recite the "The Great Prajna Paramita Heart Sutra"   
+and the "Sho Sai Myo Kichijo Darani"  
+for renewal of the Buddha-mind in fields and forests,   
+homes and streets, throughout the world,  
+in grateful thanks to all our many guides along the ancient way;   
 
-_Assembly_: 
-All Buddhas throughout space and time; 
-all Bodhisattvas, Mahasattvas; 
-the great Prajna Paramita. 
+_Assembly_:   
+All Buddhas throughout space and time;   
+all Bodhisattvas, Mahasattvas;   
+the great Prajna Paramita.   
 
 <!-- Note: regularize capitalization? Add ñ? --> 
 
 # Sesshin Dedication (^)
 
 _Leader_: 
-Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajna Paramita Heart Sutra" (Maka Hannya Haramita Shingyo) and the "Sho Sai Myo Kichijo Dharani," let us unite with: 
+Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajna Paramita Heart Sutra" (Maka Hannya Haramita Shingyo) and the "Sho Sai Myo Kichijo Dharani," let us unite with:   
 
 _Assembly_: 
 
