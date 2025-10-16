@@ -587,6 +587,86 @@ _Assembly_:
 The Ancient Seven Buddhas, Dai Busso 
 Shakyamuni Buddha, Dai Busso 
 Mahaprajapati Gautami, Dai Busso 
-<span class="pronunciation">maha prajApati gotami</span>
+<span class="pronunciation">maha prajApati go'tami</span>
+Vimalakirti, Dai Busso
+<span class="pronunciation">vi'mala kIrti</span>
+Patacara, Dai Busso 
+Bhadda Kapilani
+Bodhidarma
+Shitou Xiqian
+Mazu Daoji
+Dongshan Liangjie
+Pang Yun Jushi 
+Pand Lingzhao
+Liu Tiemo
+Jishou Daojen
+Dahui Zonggao
+Miao Dao 
+Miao Zong
+Dogen Kigen
+Keizan Jokin 
+Daiun Sogaku
+Hakuun Ryoko
+Koun Zenshin
+Single-Mind Aitken
+Dawn-Cloud Aitken
 
-<span class="pronunciation"></span>
+_Leader_: 
+
+All founding teachers, past, present, future, Dai Busso.
+Let true Dharma continue, Sangha relations become complete;
+
+_Assembly_: 
+
+All Buddhas throughout space and time; 
+All Bodhisattvas, Mahasattvas; 
+The great Prajna Paramita
+
+# Torei Zenji: Bodhisattva's Vow 
+
+_Leader_: 
+
+I am only a simple disciple, 
+but I offer these respectful words: 
+
+_Assembly_: 
+
+When I regard the true nature of the many dharmas, 
+I find them all to be sacred forms 
+of the Tathagata's never-failing essence. 
+Each particle of matter, each moment, 
+is no other than the Tathagata's inexpressible radiance. 
+With this realization, our virtuous ancestors,
+with compassionate minds and hearts,
+gave tender care to beasts and birds.
+
+Among us, in our own daily lives,
+who is not reverently grateful for the protections of life: 
+food, drink, and clothing!
+Though they are inanimate things, 
+they are nonetheless the warm flesh and blood, 
+the merciful incarnations of Buddha. 
+
+All the more, we can be especially sympathetic 
+and affectionate with foolish people,
+particularly with someone who becomes a sworn enemy 
+and persecutes us with abusive language. 
+That very abuse conveys the Buddha's boundless loving-kindness. 
+It is a compassionate device to liberate us entirely 
+from the mean-spirited delusions that we have built up 
+with our wrongful conduct from the beginningless past. 
+With our response to such abuse 
+we completely relinquish ourselves
+and the most profound and pure faith arises. 
+
+At the peak of each thought a lotus flower opens, 
+and on each flower there is revealed a Buddha. 
+Everywhere is the Pure Land in its beauty. 
+We see fully the Tathagata's radiant light 
+right where we are. 
+May we retain this mind
+and extend it throughout the world 
+so that we and all beings
+become mature in Buddha's wisdom. 
+
+
