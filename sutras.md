@@ -110,7 +110,6 @@ Gate Gate Paragate Parasamgate Bodhi Swaha!
 
 ## Maka Hannya Haramita Shin Gyo 
 
-
 Kan ji zai bo sa gyō jin han-nya ha ra mi ta ji
 
 Avalokiteshvara Bodhisattva, practicing deep Prajñā Pāramitā,
@@ -224,10 +223,6 @@ ho ji sowa ka han-nya shin gyō
 Bodhi svāhā!7
 
 From https://www.benricho.org/bukkyo/hannyashingyo_romaji/: 
-bus-setsu］摩ma訶ka般若han-nya波ha羅ra蜜mi多ta心経shin-gyo
-観kan自ji在zai菩bo薩sa[tsu]行gyo深jin般若han-nya波ha羅ra蜜mi多ta時ji照sho見ken五go蘊un皆kai空ku度do一切is-sai苦ku厄yaku舎sha利ri子shi色shiki不fu異i空ku空ku不fu異i色shiki色shiki即soku是ze空ku空ku即soku是ze色shiki受ju想so行gyo識shiki亦yaku復bu如nyo是ze舎sha利ri子shi是ze諸sho法ho空ku相so不fu生sho不fu滅metsu不fu垢ku不fu浄jo不fu増zo不fu減gen是ze故ko空ku中chu無mu色shiki無mu受ju想so行gyo識shiki無mu眼gen耳ni鼻bi舌ze[tsu]身shin意ni無mu色shiki声sho香ko味mi触soku法ho無mu眼gen界kai乃nai至shi無mu意i識shiki界kai無mu無mu明myo亦yaku無mu無mu明myo尽jin乃nai至shi無mu老ro死shi亦yaku無mu老ro死shi尽jin無mu苦ku集shu滅metsu道do無mu智chi亦yaku無mu得toku以i無mu所sho得to[ku]故ko菩bo提dai薩埵sat-ta依e般若han-nya波ha羅ra蜜mi多ta故ko心shin無mu罣ke[i]礙ge無mu罣ke[i]礙ge故ko無mu有u恐ku怖fu遠on離ri一切is-sai顚ten倒do夢mu想so究ku竟gyo涅ne槃han三san世ze諸sho仏butsu依e般若han-nya波ha羅ra蜜mi多ta故ko得toku阿a耨noku多ta羅ra三san藐myaku三san菩bo提dai故ko知chi般若han-nya波ha羅ra蜜mi多ta是ze大dai神jin呪shu是ze大dai明myo呪shu是ze無mu上jo呪shu是ze無mu等to等do呪shu能no除jo一切is-sai苦ku真shin実jitsu不fu虚ko故ko説setsu般若han-nya波ha羅ra蜜mi多ta呪shu即soku説setsu呪shu曰watsu掲gya諦te[i]掲gya諦te[i]波ha羅ra掲gya諦te[i]波ha羅ra僧so掲gya諦te[i]菩bo提ji薩so婆wa訶ka
-般若han-nya心経shin-gyo
-
 See also https://teishoin.net/sutra/ehannya.html
 
 <p>
