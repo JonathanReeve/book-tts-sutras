@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Yrsa', serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2em;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+a {
+    color: #8a2be2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Enable ligatures */
+body {
+    font-feature-settings: "liga" 1, "dlig" 1;
+}
