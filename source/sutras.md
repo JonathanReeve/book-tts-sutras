@@ -304,60 +304,40 @@ sowa ja sowa ja sen chi gya shiri ei somo ko. -->
 
 # Sho Sai Myo Kichijo Darani 
 
-<div class="dharani-row">
-    <ruby><rb>南無</rb><rt>No mo</rt></ruby>
-    <ruby><rb>三曼多</rb><rt>San man da</rt></ruby>
-    <ruby><rb>母駄喃</rb><rt>Moto nan</rt></ruby>
-    <div class="translation">Veneration to all enlightened ones!</div>
-</div>
+:::translation
+南無(No mo) 三曼多(San man da) 母駄喃(Moto nan)
+|Veneration to all enlightened ones!
+:::
 
-<div class="dharani-row">
-    <ruby><rb>阿</rb><rt>O</rt></ruby>
-    <ruby><rb>跋囉底</rb><rt>ha ra chi</rt></ruby>
-    <ruby><rb>賀多</rb><rt>koto sha</rt></ruby>
-    <ruby><rb>舍</rb><rt>sono</rt></ruby>
-    <ruby><rb>喃</rb><rt>nan</rt></ruby>
-    <div class="translation">The incomparable bodhi-power that banishes misfortune!</div>
-</div>
+:::translation
+阿(O) 跋囉底(ha ra chi) 賀多(koto sha) 舍(sono) 喃(nan)
+|The incomparable bodhi-power that banishes misfortune!
+:::
 
-<div class="dharani-row">
-    <ruby><rb>怛姪他</rb><rt>To ji to</rt></ruby>
-    <ruby><rb>唵</rb><rt>en</rt></ruby>
-    <ruby><rb>佉佉</rb><rt>gya gya</rt></ruby>
-    <ruby><rb>佉<ruby><rb>呬</rb><rt>gyia</rt></ruby><ruby><rb>佉<rb>呬</rb></ruby><rt>ki</rt></ruby></ruby>
-    <ruby><rb>吽吽</rb><rt>un nun</rt></ruby>
-    <div class="translation">Om! The Buddha of reality, wisdom, nirvana!</div>
-</div>
+:::translation
+怛姪他(To ji to) 唵(en) 佉佉(gya gya) 佉呬(gya ki) 佉呬(gya ki) 吽吽(un nun)
+|Om! The Buddha of reality, wisdom, nirvana!
+:::
 
-<div class="dharani-row">
-    <ruby><rb>入嚩囉</rb><rt>Shifu ra</rt></ruby>
-    <ruby><rb>入嚩囉</rb><rt>shifu ra</rt></ruby>
-    <ruby><rb>鉢囉</rb><rt>hara shifu ra</rt></ruby>
-    <ruby><rb>鉢囉</rb><rt>hara shifu ra</rt></ruby>
-    <div class="translation">Light, light! Great light, great light!</div>
-</div>
+:::translation
+入嚩囉(Shifu ra) 入嚩囉(shifu ra) 鉢囉(hara shifu ra) 鉢囉(hara shifu ra)
+|Light, light! Great light, great light!
+:::
 
-<div class="dharani-row">
-    <ruby><rb>底哩</rb><rt>Chishu sa</rt></ruby>
-    <ruby><rb>底哩</rb><rt>chishu sa</rt></ruby>
-    <ruby><rb>娑婆訶</rb><rt>shushi ri</rt></ruby>
-    <ruby><rb>娑婆訶</rb><rt>shushi ri</rt></ruby>
-    <div class="translation">With no categories, this mysterious power saves all beings.</div>
-</div>
+:::translation
+底哩(Chishu sa) 底哩(chishu sa) 娑婆訶(shushi ri) 娑婆訶(shushi ri)
+|With no categories, this mysterious power saves all beings.
+:::
 
-<div class="dharani-row">
-    <ruby><rb>莎婆訶</rb><rt>Soha ja</rt></ruby>
-    <ruby><rb>莎婆訶</rb><rt>soha ja</rt></ruby>
-    <ruby><rb>戰<ruby><rb>地</rb><rt>sen chi</rt></ruby></ruby>
-    <ruby><rb>伽<ruby><rb>隸</rb><rt>gya shiri</rt></ruby></ruby>
-    <ruby><rb>娑婆訶</rb><rt>ei</rt></ruby>
-    <div class="translation">Misfortune goes, happiness comes.</div>
-</div>
+:::translation
+莎婆訶(Soha ja) 莎婆訶(soha ja) 戰地(sen chi) 伽隸(gya shiri) 娑婆訶(ei)
+|Misfortune goes, happiness comes.
+:::
 
-<div class="dharani-row">
-    <ruby><rb>莎婆訶</rb><rt>Somo ko</rt></ruby>
-    <div class="translation">Swaha!</div>
-</div>
+:::translation
+莎婆訶(Somo ko)
+|Swaha!
+:::
 
 
 # Zenkai Dedication
