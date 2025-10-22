@@ -11,9 +11,9 @@ HTML_FILES = $(patsubst %,$(TARGET_DIR)/%.html,$(BASE_NAMES))
 all: $(HTML_FILES)
 
 # Rule to convert markdown to HTML
-$(TARGET_DIR)/%.html: $(SRC_DIR)/%.md
+$(TARGET_DIR)/%.html: $(SRC_DIR)/%.md translation-filter.py
 	@mkdir -p $(TARGET_DIR)
-	pandoc $< -o $@ --template=templates/template.html --standalone --embed-resources
+	pandoc $< -o $@ --template=templates/template.html --standalone --embed-resources --filter ./translation-filter.py
 
 # Clean up generated files
 clean:
