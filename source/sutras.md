@@ -69,318 +69,90 @@ Namo tassa bhagavato arahato sammasambuddhasa
 
 <div id="heart-sutra-container"></div>
 
-<script id="sutra-data" type="application/json">
-[
-    {
-      "characters": [
-        ["觀", "Kan"],
-        ["自在", "jizai"],
-        ["菩薩", "bosatsu"],
-        ["行", "gyō"],
-        ["深", "jin"],
-        ["般若", "hannya"],
-        ["波羅蜜多", "haramitta"],
-        ["時", "ji"]
-      ],
-      "english": "Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,"
-    },
-    {
-      "characters": [
-        ["照", "shō"],
-        ["見", "ken"],
-        ["五蘊", "go un"],
-        ["皆", "kai"],
-        ["空", "kū"],
-        ["度", "do"],
-        ["一切", "issai"],
-        ["苦厄", "ku yaku"]
-      ],
-      "english": "clearly saw that all five skandhas are empty, transforming all suffering and distress."
-    },
-    {
-      "characters": [
-        ["舎利子", "sharishi"],
-        ["色", "shiki"],
-        ["不異", "fu i"],
-        ["空", "kū"],
-        ["空", "kū"],
-        ["不異", "fu i"],
-        ["色", "shiki"]
-      ],
-      "english": "Shariputra, form is no other than emptiness, emptiness no other than form;"
-    },
-    {
-      "characters": [
-        ["色", "shiki"],
-        ["即是", "soku ze"],
-        ["空", "kū"],
-        ["空", "kū"],
-        ["即是", "soku ze"],
-        ["色", "shiki"]
-      ],
-      "english": "form is exactly emptiness, emptiness exactly form;"
-    },
-    {
-      "characters": [
-        ["受想行識", "ju sō gyō shiki"],
-        ["亦復如是", "yaku bu nyo ze"]
-      ],
-      "english": "sensation, perception, mental reaction, consciousness, are also like this."
-    },
-    {
-      "characters": [
-        ["舎利子", "sharishi"],
-        ["是諸法空相", "ze sho hō kū sō"],
-        ["不生不滅", "fu shō fu metsu"]
-      ],
-      "english": "Shariputra, all things are essentially empty—not born, not destroyed;"
-    },
-    {
-      "characters": [
-        ["不垢不浄", "fu kū fu jō"],
-        ["不増不減", "fu zō fu gen"]
-      ],
-      "english": "not stained, not pure; without loss, without gain."
-    },
-    {
-      "characters": [
-        ["是故空中無色", "ze ko kū chū mu shiki"],
-        ["無受想行識", "mu ju sō gyō shiki"]
-      ],
-      "english": "Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;"
-    },
-    {
-      "characters": [
-        ["無眼耳鼻舌身意", "mu gen ni bi zetsu shin i"]
-      ],
-      "english": "no eye, ear, nose, tongue, body, mind,"
-    },
-    {
-      "characters": [
-        ["無色声香味触法", "mu shiki shō kō mi soku hō"]
-      ],
-      "english": "no color, sound, scent, taste, touch, thought;"
-    },
-    {
-      "characters": [
-        ["無眼界", "mu gen kai"],
-        ["乃至無意識界", "nai shi mu ishiki kai"]
-      ],
-      "english": "no seeing and so on to no thinking;"
-    },
-    {
-      "characters": [
-        ["無無明", "mu mumyō"],
-        ["亦無無明尽", "yaku mu mumyō jin"]
-      ],
-      "english": "no ignorance and also no ending of ignorance,"
-    },
-    {
-      "characters": [
-        ["乃至無老死", "nai shi mu rōshi"],
-        ["亦無老死尽", "yaku mu rōshi jin"]
-      ],
-      "english": "and so on to no old age and death and also no ending of old age and death;"
-    },
-    {
-      "characters": [
-        ["無苦集滅道", "mu ku shū metsu dō"]
-      ],
-      "english": "no suffering, cause of suffering, cessation, path;"
-    },
-    {
-      "characters": [
-        ["無智亦無得", "mu chi yaku mu toku"],
-        ["以無所得故", "i mu sho toku ko"]
-      ],
-      "english": "no wisdom and no attainment."
-    },
-    {
-      "characters": [
-        ["菩提薩埵", "bodai sattā"],
-        ["依般若波羅蜜多故", "e hannya haramitta ko"]
-      ],
-      "english": "Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,"
-    },
-    {
-      "characters": [
-        ["心無罣礙", "shin mu keige"],
-        ["無罣礙故", "mu keige ko"],
-        ["無有恐怖", "mu u ku fu"]
-      ],
-      "english": "with no hindrance in the mind; no hindrance and therefore no fear;"
-    },
-    {
-      "characters": [
-        ["遠離一切顛倒夢想", "onri issai tendō musō"],
-        ["究竟涅槃", "ku gyō nehan"]
-      ],
-      "english": "far beyond delusive thinking, right here is Nirvana."
-    },
-    {
-      "characters": [
-        ["三世諸仏", "sanze shobutsu"],
-        ["依般若波羅蜜多故", "e hannya haramitta ko"]
-      ],
-      "english": "All Buddhas of past, present and future live by Prajna Paramita,"
-    },
-    {
-      "characters": [
-        ["得阿耨多羅三藐三菩提", "toku anokutara sanmyaku sambodai"]
-      ],
-      "english": "attaining Anuttara-samyak-sambodhi."
-    },
-    {
-      "characters": [
-        ["故知般若波羅蜜多", "ko chi hannya haramitta"]
-      ],
-      "english": "Therefore know that Prajna Paramita is the great mantra, the vivid mantra,"
-    },
-    {
-      "characters": [
-        ["是大神呪", "ze dai jin shu"],
-        ["是大明呪", "ze dai myō shu"]
-      ],
-      "english": "the unsurpassed mantra, the supreme mantra,"
-    },
-    {
-      "characters": [
-        ["是無上呪", "ze mu jō shu"],
-        ["是無等等呪", "ze mu tō dō shu"]
-      ],
-      "english": "which completely removes all suffering."
-    },
-    {
-      "characters": [
-        ["能除一切苦", "nō jo issai ku"],
-        ["真実不虚", "shin jitsu fu ko"]
-      ],
-      "english": "This is truth, not mere formality."
-    },
-    {
-      "characters": [
-        ["故説般若波羅蜜多呪", "ko setsu hannya haramitta shu"]
-      ],
-      "english": "Therefore set for the Prajna Paramita mantra,"
-    },
-    {
-      "characters": [
-        ["即説呪曰", "soku setsu shu watsu"]
-      ],
-      "english": "set forth this mantra and proclaim:"
-    },
-    {
-      "characters": [
-        ["羯諦", "gyatei"],
-        ["羯諦", "gyatei"],
-        ["波羅羯諦", "haragyatei"],
-        ["波羅僧羯諦", "harasōgyatei"],
-        ["菩DE薩婆訶", "bodhi sowaka"]
-      ],
-      "english": "Gate Gate Paragate Parasamgate Bodhi Swaha!"
-    }
-]
-</script>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">舎利子</span></rb><rt><span class="pronunciation">sharishi</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">色</span></rb><rt><span class="pronunciation">shiki</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">不異</span></rb><rt><span class="pronunciation">fu i</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">空</span></rb><rt><span class="pronunciation">kū</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">空</span></rb><rt><span class="pronunciation">kū</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">不異</span></rb><rt><span class="pronunciation">fu i</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">色</span></rb><rt><span class="pronunciation">shiki</span></rt></ruby>
-  <div class="english">Shariputra, form is no other than emptiness, emptiness no other than form;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">色</span></rb><rt><span class="pronunciation">shiki</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">即是</span></rb><rt><span class="pronunciation">soku ze</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">空</span></rb><rt><span class="pronunciation">kū</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">空</span></rb><rt><span class="pronunciation">kū</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">即是</span></rb><rt><span class="pronunciation">soku ze</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">色</span></rb><rt><span class="pronunciation">shiki</span></rt></ruby>
-  <div class="english">form is exactly emptiness, emptiness exactly form;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">受想行識</span></rb><rt><span class="pronunciation">ju sō gyō shiki</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">亦復如是</span></rb><rt><span class="pronunciation">yaku bu nyo ze</span></rt></ruby>
-  <div class="english">sensation, perception, mental reaction, consciousness, are also like this.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">舎利子</span></rb><rt><span class="pronunciation">sharishi</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">是諸法空相</span></rb><rt><span class="pronunciation">ze sho hō kū sō</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">不生不滅</span></rb><rt><span class="pronunciation">fu shō fu metsu</span></rt></ruby>
-  <div class="english">Shariputra, all things are essentially empty—not born, not destroyed;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">不垢不浄</span></rb><rt><span class="pronunciation">fu kū fu jō</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">不増不減</span></rb><rt><span class="pronunciation">fu zō fu gen</span></rt></ruby>
-  <div class="english">no stained, not pure; without loss, without gain.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">是故空中無色</span></rb><rt><span class="pronunciation">ze ko kū chū mu shiki</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">無受想行識</span></rb><rt><span class="pronunciation">mu ju sō gyō shiki</span></rt></ruby>
-  <div class="english">Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">無眼耳鼻舌身意</span></rb><rt><span class="pronunciation">mu gen ni bi zetsu shin i</span></rt></ruby>
-  <div class="english">no eye, ear, nose, tongue, body, mind,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">無色声香味触法</span></rb><rt><span class="pronunciation">mu shiki shō kō mi soku hō</span></rt></ruby>
-  <div class="english">no color, sound, scent, taste, touch, thought;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">無眼界</span></rb><rt><span class="pronunciation">mu gen kai</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">乃至無意識界</span></rb><rt><span class="pronunciation">nai shi mu ishiki kai</span></rt></ruby>
-  <div class="english">no seeing and so on to no thinking;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">無無明</span></rb><rt><span class="pronunciation">mu mumyō</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">亦無無明尽</span></rb><rt><span class="pronunciation">yaku mu mumyō jin</span></rt></ruby>
-  <div class="english">no ignorance and also no ending of ignorance,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">乃至無老死</span></rb><rt><span class="pronunciation">nai shi mu rōshi</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">亦無老死尽</span></rb><rt><span class="pronunciation">yaku mu rōshi jin</span></rt></ruby>
-  <div class="english">and so on to no old age and death and also no ending of old age and death;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">無苦集滅道</span></rb><rt><span class="pronunciation">mu ku shū metsu dō</span></rt></ruby>
-  <div class="english">no suffering, cause of suffering, cessation, path;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">無智亦無得</span></rb><rt><span class="pronunciation">mu chi yaku mu toku</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">以無所得故</span></rb><rt><span class="pronunciation">i mu sho toku ko</span></rt></ruby>
-  <div class="english">no wisdom and no attainment.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">菩提薩埵</span></rb><rt><span class="pronunciation">bodai sattā</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">依般若波羅蜜多故</span></rb><rt><span class="pronunciation">e hannya haramitta ko</span></rt></ruby>
-  <div class="english">Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">心無罣礙</span></rb><rt><span class="pronunciation">shin mu keige</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">無罣礙故</span></rb><rt><span class="pronunciation">mu keige ko</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">無有恐怖</span></rb><rt><span class="pronunciation">mu u ku fu</span></rt></ruby>
-  <div class="english">with no hindrance in the mind; no hindrance and therefore no fear;</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">遠離一切顛倒夢想</span></rb><rt><span class="pronunciation">onri issai tendō musō</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">究竟涅槃</span></rb><rt><span class="pronunciation">ku gyō nehan</span></rt></ruby>
-  <div class="english">far beyond delusive thinking, right here is Nirvana.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">三世諸仏</span></rb><rt><span class="pronunciation">sanze shobutsu</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">依般若波羅蜜多故</span></rb><rt><span class="pronunciation">e hannya haramitta ko</span></rt></ruby>
-  <div class="english">All Buddhas of past, present and future live by Prajna Paramita,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">得阿耨多羅三藐三菩提</span></rb><rt><span class="pronunciation">toku anokutara sanmyaku sambodai</span></rt></ruby>
-  <div class="english">attaining Anuttara-samyak-sambodhi.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">故知般若波羅蜜多</span></rb><rt><span class="pronunciation">ko chi hannya haramitta</span></rt></ruby>
-  <div class="english">Therefore know that Prajna Paramita is the great mantra, the vivid mantra,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">是大神呪</span></rb><rt><span class="pronunciation">ze dai jin shu</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">是大明呪</span></rb><rt><span class="pronunciation">ze dai myō shu</span></rt></ruby>
-  <div class="english">the unsurpassed mantra, the supreme mantra,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">是無上呪</span></rb><rt><span class="pronunciation">ze mu jō shu</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">是無等等呪</span></rb><rt><span class="pronunciation">ze mu tō dō shu</span></rt></ruby>
-  <div class="english">which completely removes all suffering.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">能除一切苦</span></rb><rt><span class="pronunciation">nō jo issai ku</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">真実不虚</span></rb><rt><span class="pronunciation">shin jitsu fu ko</span></rt></ruby>
-  <div class="english">This is truth, not mere formality.</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">故説般若波羅蜜多呪</span></rb><rt><span class="pronunciation">ko setsu hannya haramitta shu</span></rt></ruby>
-  <div class="english">Therefore set for the Prajna Paramita mantra,</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">即説呪曰</span></rb><rt><span class="pronunciation">soku setsu shu watsu</span></rt></ruby>
-  <div class="english">set forth this mantra and proclaim:</div>
-</div>
-<div class="sutra-line">
-  <ruby><rb><span class="chinese" style="display: none;">羯諦</span></rb><rt><span class="pronunciation">gyatei</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">羯諦</span></rb><rt><span class="pronunciation">gyatei</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">波羅羯諦</span></rb><rt><span class="pronunciation">haragyatei</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">波羅僧羯諦</span></rb><rt><span class="pronunciation">harasōgyatei</span></rt></ruby><ruby><rb><span class="chinese" style="display: none;">菩提薩婆訶</span></rb><rt><span class="pronunciation">bodhi sowaka</span></rt></ruby>
-  <div class="english">Gate Gate Paragate Parasamgate Bodhi Swaha!</div>
-</div>
+:::translation
+觀(Kan) 自在(jizai) 菩薩(bosatsu) 行(gyō) 深(jin) 般若(hannya) 波羅蜜多(haramitta) 時(ji)
+|Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,
+
+照(shō) 見(ken) 五蘊(go un) 皆(kai) 空(kū) 度(do) 一切(issai) 苦厄(ku yaku)
+|clearly saw that all five skandhas are empty, transforming all suffering and distress.
+
+舎利子(sharishi) 色(shiki) 不異(fu i) 空(kū) 空(kū) 不異(fu i) 色(shiki)
+|Shariputra, form is no other than emptiness, emptiness no other than form;
+
+色(shiki) 即是(soku ze) 空(kū) 空(kū) 即是(soku ze) 色(shiki)
+|form is exactly emptiness, emptiness exactly form;
+
+受想行識(ju sō gyō shiki) 亦復如是(yaku bu nyo ze)
+|sensation, perception, mental reaction, consciousness, are also like this.
+
+舎利子(sharishi) 是諸法空相(ze sho hō kū sō) 不生不滅(fu shō fu metsu)
+|Shariputra, all things are essentially empty—not born, not destroyed;
+
+不垢不浄(fu kū fu jō) 不増不減(fu zō fu gen)
+|not stained, not pure; without loss, without gain.
+
+是故空中無色(ze ko kū chū mu shiki) 無受想行識(mu ju sō gyō shiki)
+|Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;
+
+無眼耳鼻舌身意(mu gen ni bi zetsu shin i)
+|no eye, ear, nose, tongue, body, mind,
+
+無色声香味触法(mu shiki shō kō mi soku hō)
+|no color, sound, scent, taste, touch, thought;
+
+無眼界(mu gen kai) 乃至無意識界(nai shi mu ishiki kai)
+|no seeing and so on to no thinking;
+
+無無明(mu mumyō) 亦無無明尽(yaku mu mumyō jin)
+|no ignorance and also no ending of ignorance,
+
+乃至無老死(nai shi mu rōshi) 亦無老死尽(yaku mu rōshi jin)
+|and so on to no old age and death and also no ending of old age and death;
+
+無苦集滅道(mu ku shū metsu dō)
+|no suffering, cause of suffering, cessation, path;
+
+無智亦無得(mu chi yaku mu toku) 以無所得故(i mu sho toku ko)
+|no wisdom and no attainment.
+
+菩提薩埵(bodai sattā) 依般若波羅蜜多故(e hannya haramitta ko)
+|Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,
+
+心無罣礙(shin mu keige) 無罣礙故(mu keige ko) 無有恐怖(mu u ku fu)
+|with no hindrance in the mind; no hindrance and therefore no fear;
+
+遠離一切顛倒夢想(onri issai tendō musō) 究竟涅槃(ku gyō nehan)
+|far beyond delusive thinking, right here is Nirvana.
+
+三世諸仏(sanze shobutsu) 依般若波羅蜜多故(e hannya haramitta ko)
+|All Buddhas of past, present and future live by Prajna Paramita,
+
+得阿耨多羅三藐三菩提(toku anokutara sanmyaku sambodai)
+|attaining Anuttara-samyak-sambodhi.
+
+故知般若波羅蜜多(ko chi hannya haramitta)
+|Therefore know that Prajna Paramita is the great mantra, the vivid mantra,
+
+是大神呪(ze dai jin shu) 是大明呪(ze dai myō shu)
+|the unsurpassed mantra, the supreme mantra,
+
+是無上呪(ze mu jō shu) 是無等等呪(ze mu tō dō shu)
+|which completely removes all suffering.
+
+能除一切苦(nō jo issai ku) 真実不虚(shin jitsu fu ko)
+|This is truth, not mere formality.
+
+故説般若波羅蜜多呪(ko setsu hannya haramitta shu)
+|Therefore set for the Prajna Paramita mantra,
+
+即説呪曰(soku setsu shu watsu)
+|set forth this mantra and proclaim:
+
+羯諦(gyatei) 羯諦(gyatei) 波羅羯諦(haragyatei) 波羅僧羯諦(harasōgyatei) 菩DE薩婆訶(bodhi sowaka)
+|Gate Gate Paragate Parasamgate Bodhi Swaha!
+:::
+
+
 
 
 ## Dharani for Dispelling Misfortune 
