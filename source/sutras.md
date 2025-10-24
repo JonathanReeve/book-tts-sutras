@@ -498,21 +498,38 @@ Why abandon the seat in your own home to wander in vain through the dusty region
 
 Eminent students of the Dharma, you are long accustomed to groping for the elephant. Please do not doubt the true dragon. Apply yourselves to the Way that points directly at reality; honor the one who is beyond learning and free of rank. Accord with the bodhi of all the Buddhas; succeed to the samadhi of all the Ancestors. If you conduct yourself as such a person for a long time, you will become such a person. Your storehouse of treasures will open of itself, and you may use them as you will.
 
+^[Note: Version by Robert Aitken, based on the translation by Carl Bielefeldt, _Dōgen's Manuals of Zen Meditation_, 1988]
+
+
 ## Actualizing the Fundamental Point
 
+^[Note: Translation and copyright by Paul Jaffe, _Flowers Fall: a Commentary on Dogen's Genjokoan_, 1996.] 
+
 ## The Four Virtues of a Bodhisattva
+
+^[Note: Translation and copyright by Lew Richmond and Kazuaki Tanahashi, _Moon in a Dewdrop_, 1985. Adapted by Three Treasures Sangha, 2005]
+
 
 ## Dai-O Kokushi: On Zen 
 
 ## Song of Enlightenment
 
+^[Attributed to Yung-chia Hsuan-chue [Yongjia Xuanjue], d. 713. Translation and revisions by Robert Aitken and copyright by the Honolulu Diamond Sangha, 1991.] 
+
 ## The Coincidence of Opposites 
+
+^[Attributed to Shih-T'ou Hsi-ch'ien [Shitou Xiqian], 700–790. Translation and copyright by Nelson Foster and Jack Shoemaker, _The Roaring Stream: A New Zen Reader_, 1996.] 
 
 ## Song of the Grass-Roof Hermitage 
 
+^[Attributed to Shih-T'ou Hsi-ch'ien [Shitou Xiqian], 700–790. Translation and copyright by Taigen Dan Leighton, _Cultivating the Empty Field: the Silent Illumination of Zen Master Hongzhi, 1987]
+
 ## Discourse on Love 
+
+^[Metta Sutta (Suttanipata 1) adapted by Thich Nhat Hanh for the _Plum Village Chantin Book_]
 
 ## Discourse on Happiness
 
-# Sources 
+^[Mahamangala Sutta (Suttanipata 1) adapted by Thich Nhat Hanh for the _Plum Village Chanting Book]
+
 
