@@ -26,3 +26,49 @@ Almost nothing has been implemented, yet, but here are some ideas:
 # Technical Details
 
 The source markdown files are in `source/`. The `Makefile` runs `pandoc` which uses the templates in `templates/` to output HTML and then PDF.
+
+## Zen Markdown
+
+Zen Markdown is a superset of Markdown with a few additions. 
+
+### Trilingual Translations
+
+One new feature of this markup is trilingual translations. 
+
+This allows us to have Chinese, Japanese (rōmaji), and English side-by-side, and to toggle them on and off. 
+
+```markdown
+:::translation
+衆生(Shu jo) 無邊(mu hen) 誓願度(sei gan do)  
+| All beings beyond number, I vow to free.
+煩惱(Bon no) 無盡(mu jin) 誓願斷 (sei gan dan) 
+| Blind passions without cease, I vow to see through.
+法門(Ho mon) 無量(mu ryo) 誓願學(sei gan gaku)  
+| Dharma gates beyond measure, I vow to realize.
+佛道(Butsu do)  無上(mu jo) 誓願成(sei gan jo) 
+| Buddha ways without end, I vow to embody .
+:::
+```
+
+That's basically just a shorthand way of writing : 
+
+```html
+<ruby>衆生<rt>Shu jo</rt></ruby>
+<ruby>無邊<rt>mu hen</rt></ruby>
+<ruby>誓願度<rt>sei gan do</rt></ruby>
+```
+
+### Ino Annotations
+
+The chant leader (_ino_) will usually punctuate chants with closed (muted) or open (resonant) hits on a _kei_ (磬子, a large bell) or _rin_ (鈴, a smaller bell), an _inkin_ (引鏧, a small, handheld bell), or a _mokugyo_ (木魚, a wooden fish). 
+
+|               | Markup | Rendered |
+|:-------------:|:------:|:--------:|
+| Kei, Open     | @{O}   | ▢        |
+| Kei, Closed   | @{C}   | ▣        |
+| Inkin, Open   | @{IO}  | △        |
+| Inkin, Closed | @{IC}  | ▲        |
+| Mokugyo       | @{X}   | 🐟       |
+
+Sometimes there are notes for the _ino_ marked up like `@{Note: ... }`. 
+
