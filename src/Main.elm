@@ -1,12 +1,10 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, div, span, text)
+import Html exposing (Html, Attribute, div, span, text)
 import Html.Attributes
-import Markdown.Inline
-import Markdown.Parser
-import Markdown.Renderer
-import Parser
+import Markdown
+import Parser exposing ((|.), (|=), Parser)
 
 
 main : Program () Model Msg
@@ -65,7 +63,7 @@ type CustomInline
     | InoNote String
 
 
-inoParser : Parser.Parser String
+inoParser : Parser String
 inoParser =
     Parser.succeed identity
         |. Parser.symbol "@{"
@@ -82,35 +80,21 @@ toCustomInline content =
         InoAnnotation content
 
 
-customInlineParser : Markdown.Parser.Parser CustomInline
+customInlineParser : Parser (Result String CustomInline)
 customInlineParser =
-    Markdown.Parser.take inoParser
-        |> Markdown.Parser.map toCustomInline
+    inoParser
+        |> Parser.map toCustomInline
+        |> Parser.map Ok
 
 
-inlineParser : Markdown.Parser.Parser (Markdown.Inline.Inline CustomInline)
-inlineParser =
-    Markdown.Parser.oneOf
-        [ Markdown.Parser.map Markdown.Inline.Custom customInlineParser
-        , Markdown.Parser.inline
-        ]
-
-
-customRenderer : Markdown.Renderer.Renderer CustomInline
-customRenderer =
-    { render = renderCustom
-    , text = Markdown.Renderer.default.text
-    }
-
-
-renderCustom : CustomInline -> List (Html msg)
-renderCustom custom =
+viewCustom : CustomInline -> ( String, List (Attribute msg), List (Html msg) )
+viewCustom custom =
     case custom of
         InoAnnotation content ->
-            [ text (inoToSymbols content) ]
+            ( "span", [], [ text (inoToSymbols content) ] )
 
         InoNote note ->
-            [ span [ Html.Attributes.style "font-style" "italic" ] [ text ("Note: " ++ note) ] ]
+            ( "span", [ Html.Attributes.style "font-style" "italic" ], [ text ("Note: " ++ note) ] )
 
 
 inoToSymbols : String -> String
@@ -143,14 +127,11 @@ inoToSymbols content =
 
 view : Model -> Html Msg
 view model =
-    let
-        ast =
-            Markdown.Parser.parse
-                { block = Markdown.Parser.block
-                , inline = inlineParser
-                }
-                markdownText
-                |> Result.withDefault []
-    in
     div []
-        (Markdown.Renderer.render customRenderer ast)
+        (Markdown.toHtmlWith
+            { viewCustom = viewCustom
+            , customInline = Just customInlineParser
+            , customBlock = Nothing
+            }
+            markdownText
+        )
