@@ -3,7 +3,7 @@ module Main exposing (..)
 import Browser
 import Html exposing (Html, Attribute, div, span, text)
 import Html.Attributes
-import Markdown
+import Markdown.Html
 import Parser exposing ((|.), (|=), Parser)
 
 
@@ -58,6 +58,22 @@ I @{O3} now confess @{O3} openly and @{C1,2 O3} fully.
 """
 
 
+type CustomBlock
+    = TrilingualTranslation (List TranslationLine)
+
+
+type alias TranslationLine =
+    { chineseRomaji : List ChineseRomaji
+    , english : String
+    }
+
+
+type alias ChineseRomaji =
+    { chinese : String
+    , romaji : Maybe String
+    }
+
+
 type CustomInline
     = InoAnnotation String
     | InoNote String
@@ -69,6 +85,34 @@ inoParser =
         |. Parser.symbol "@{"
         |= Parser.chompWhile (\c -> c /= '}')
         |. Parser.symbol "}"
+
+
+chineseRomajiParser : Parser ChineseRomaji
+chineseRomajiParser =
+    Parser.succeed ChineseRomaji
+        |= Parser.chompWhile isChineseChar
+        |= Parser.oneOf
+            [ Parser.succeed Just
+                |. Parser.symbol "("
+                |= Parser.chompWhile (\c -> c /= ')')
+                |. Parser.symbol ")"
+            , Parser.succeed Nothing
+            ]
+
+
+isChineseChar : Char -> Bool
+isChineseChar char =
+    char >= '\u{4E00}' && char <= '\u{9FFF}'
+
+
+translationLineParser : Parser TranslationLine
+translationLineParser =
+    Parser.succeed TranslationLine
+        |= Parser.loop [] (\_ -> Parser.chompWhile (\c -> c == ' ') |> Parser.map (\_ -> ()) >> chineseRomajiParser)
+        |. Parser.chompWhile (\c -> c == ' ')
+        |. Parser.symbol "|"
+        |. Parser.chompWhile (\c -> c == ' ')
+        |= Parser.chompUntil (\c -> c == '\n' || c == '\r')
 
 
 toCustomInline : String -> CustomInline
@@ -87,6 +131,21 @@ customInlineParser =
         |> Parser.map Ok
 
 
+translationBlockParser : Parser (Result String CustomBlock)
+translationBlockParser =
+    Parser.succeed TrilingualTranslation
+        |. Parser.symbol ":::translation"
+        |. Parser.spaces
+        |= Parser.loop [] (\_ -> translationLineParser |. Parser.spaces)
+        |. Parser.symbol ":::"
+        |> Parser.map Ok
+
+
+customBlockParser : Parser (Result String ( String, List (Attribute msg), List (Html msg) ))
+customBlockParser =
+    Parser.map (Result.map viewCustomBlock) translationBlockParser
+
+
 viewCustom : CustomInline -> ( String, List (Attribute msg), List (Html msg) )
 viewCustom custom =
     case custom of
@@ -95,6 +154,39 @@ viewCustom custom =
 
         InoNote note ->
             ( "span", [ Html.Attributes.style "font-style" "italic" ], [ text ("Note: " ++ note) ] )
+
+
+viewCustomBlock : CustomBlock -> ( String, List (Attribute msg), List (Html msg) )
+viewCustomBlock customBlock =
+    case customBlock of
+        TrilingualTranslation lines ->
+            ( "div"
+            , [ Html.Attributes.class "trilingual-translation" ]
+            , List.map viewTranslationLine lines
+            )
+
+
+viewTranslationLine : TranslationLine -> Html msg
+viewTranslationLine line =
+    div []
+        ([ span [ Html.Attributes.class "chinese-romaji" ]
+            (List.map viewChineseRomaji line.chineseRomaji)
+         , span [ Html.Attributes.class "english" ] [ text line.english ]
+         ]
+        )
+
+
+viewChineseRomaji : ChineseRomaji -> Html msg
+viewChineseRomaji cr =
+    case cr.romaji of
+        Just romaji ->
+            Html.node "ruby" []
+                [ text cr.chinese
+                , Html.node "rt" [] [ text romaji ]
+                ]
+
+        Nothing ->
+            text cr.chinese
 
 
 inoToSymbols : String -> String
@@ -128,10 +220,10 @@ inoToSymbols content =
 view : Model -> Html Msg
 view model =
     div []
-        (Markdown.toHtmlWith
+        (Markdown.Html.toHtmlWith
             { viewCustom = viewCustom
             , customInline = Just customInlineParser
-            , customBlock = Nothing
+            , customBlock = Just translationBlockParser
             }
             markdownText
         )

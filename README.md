@@ -4,7 +4,7 @@ This repository contains a work-in-progress redesign of the sutra book for [Thre
 
 The idea behind this project is to update the book, correcting typographic errors, unifying page numbers between online and print versions, and making it look a little nicer in the process.
 
-The texts are written in Markdown, and exported to HTML (for the web) and PDF (for print) using [Pandoc](https://pandoc.org/). All of this is done automatically, using [GitHub Actions](https://docs.github.com/en/actions).
+The texts are written in Markdown, and exported to HTML (for the web) and PDF (for print) using [Elm](https://elm-lang.org/). All of this is done automatically, using [GitHub Actions](https://docs.github.com/en/actions).
 
 # How to Edit 
 
@@ -25,8 +25,8 @@ Almost nothing has been implemented, yet, but here are some ideas:
 
 # Technical Details
 
-The source markdown files are in `source/`. The `Makefile` runs `pandoc` which uses the templates in `templates/` to output HTML and then PDF.
-
+The source markdown files are in `content/`. Elm converts the markdown to HTML. 
+  
 ## Zen Markdown
 
 Zen Markdown is a superset of Markdown with a few additions. 
