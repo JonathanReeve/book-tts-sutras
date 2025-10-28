@@ -124,46 +124,44 @@ toCustomInline content =
         InoAnnotation content
 
 
-customInlineParser : Parser (Result String CustomInline)
+viewCustomInline : CustomInline -> Html msg
+viewCustomInline custom =
+    case custom of
+        InoAnnotation content ->
+            span [] [ text (inoToSymbols content) ]
+
+        InoNote note ->
+            span [ Html.Attributes.style "font-style" "italic" ] [ text ("Note: " ++ note) ]
+
+
+customInlineParser : Parser (Html msg)
 customInlineParser =
     inoParser
         |> Parser.map toCustomInline
-        |> Parser.map Ok
+        |> Parser.map viewCustomInline
 
 
-translationBlockParser : Parser (Result String CustomBlock)
+translationBlockParser : Parser CustomBlock
 translationBlockParser =
     Parser.succeed TrilingualTranslation
         |. Parser.symbol ":::translation"
         |. Parser.spaces
         |= Parser.loop [] (\_ -> translationLineParser |. Parser.spaces)
         |. Parser.symbol ":::"
-        |> Parser.map Ok
 
 
-customBlockParser : Parser (Result String ( String, List (Attribute msg), List (Html msg) ))
+customBlockParser : Parser (Html msg)
 customBlockParser =
-    Parser.map (Result.map viewCustomBlock) translationBlockParser
+    Parser.map viewCustomBlock translationBlockParser
 
 
-viewCustom : CustomInline -> ( String, List (Attribute msg), List (Html msg) )
-viewCustom custom =
-    case custom of
-        InoAnnotation content ->
-            ( "span", [], [ text (inoToSymbols content) ] )
-
-        InoNote note ->
-            ( "span", [ Html.Attributes.style "font-style" "italic" ], [ text ("Note: " ++ note) ] )
-
-
-viewCustomBlock : CustomBlock -> ( String, List (Attribute msg), List (Html msg) )
+viewCustomBlock : CustomBlock -> Html msg
 viewCustomBlock customBlock =
     case customBlock of
         TrilingualTranslation lines ->
-            ( "div"
-            , [ Html.Attributes.class "trilingual-translation" ]
-            , List.map viewTranslationLine lines
-            )
+            div
+                [ Html.Attributes.class "trilingual-translation" ]
+                (List.map viewTranslationLine lines)
 
 
 viewTranslationLine : TranslationLine -> Html msg
@@ -221,8 +219,7 @@ view : Model -> Html Msg
 view model =
     div []
         (Markdown.Html.toHtmlWith
-            { viewCustom = viewCustom
-            , customInline = Just customInlineParser
+            { customInline = Just customInlineParser
             , customBlock = Just translationBlockParser
             }
             markdownText
