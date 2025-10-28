@@ -3,6 +3,7 @@ module Main exposing (..)
 import Browser
 import Html exposing (Html, Attribute, div, span, text)
 import Html.Attributes
+import Markdown
 import Markdown.Html
 import Parser exposing ((|.), (|=), Parser)
 
@@ -217,10 +218,17 @@ inoToSymbols content =
 
 view : Model -> Html Msg
 view model =
+    let
+        renderer =
+            Markdown.Html.defaultRenderer
+                |> Markdown.withCustom
+                    { inline = Just customInlineParser
+                    , block = Just customBlockParser
+                    }
+    in
     div []
-        (Markdown.Html.toHtmlWith
-            { customInline = Just customInlineParser
-            , customBlock = Just translationBlockParser
-            }
-            markdownText
+        (markdownText
+            |> Markdown.parse
+            |> Result.map (Markdown.toHtmlWith renderer)
+            |> Result.withDefault []
         )
