@@ -1,19 +1,23 @@
-module Main exposing (..)
+module Main exposing (..) 
 
 import Browser
 import Html exposing (Html, Attribute, div, span, text)
 import Html.Attributes
-import Markdown
+import Markdown.Block
 import Markdown.Html
+import Markdown.Parser
+import Markdown.Renderer
 import Parser exposing ((|.), (|=), Parser)
+import Regex
 
 
 main : Program () Model Msg
-main =
+main = 
     Browser.sandbox
-        { init = init
-        , view = view
-        , update = update
+        {
+            init = init
+        ,   view = view
+        ,   update = update
         }
 
 
@@ -41,7 +45,10 @@ markdownText : String
 markdownText =
     """
 # @{IO IC} Shiku Seigan Mon (^) @{IO}
+
+:::translation
 | Four Infinite Vows
+:::
 
 ## @{O O O} The Five Remembrances
 
@@ -52,40 +59,61 @@ There is no way to escape growing old. @{O}
 
 ## @{O O O C} Purification @{O} (^)
 
-All the evil karma ever created by me since of old, @{O3}
-on account of my beginningless greed, hatred, and ignorance,
-born of my conduct, speech and thought,
-I @{O3} now confess @{O3} openly and @{C1,2 O3} fully.
+:::translation
+All the evil karma ever created by me since of old, @{O3} | on account of my beginningless greed, hatred, and ignorance,
+born of my conduct, speech and thought, | born of my conduct, speech and thought,
+I @{O3} now confess @{O3} openly and @{C1,2 O3} fully. | I now confess openly and fully.
+:::
 """
 
 
-type CustomBlock
-    = TrilingualTranslation (List TranslationLine)
+preprocess : String -> String
+preprocess markdown =
+    let
+        translationRegex =
+            Regex.fromString "(?s):::translation\n(.*?):::"
+                |> Maybe.withDefault Regex.never
+
+        replaceTranslation match =
+            case List.head match.submatches of
+                Just (Just content) ->
+                    "<trilingual-translation content=\"" ++ content ++ "\"></trilingual-translation>"
+
+                _ ->
+                    ""
+
+        preprocessInoAnnotations text =
+            let
+                parts = String.split "@{" text
+            in
+            case parts of
+                first :: rest ->
+                    first ++ (rest |> List.map (\s ->
+                        case String.split "}" s of
+                            content :: after ->
+                                "<ino-annotation content=\"" ++ content ++ "\" />" ++ (String.join "}" after)
+                            _ -> s
+                        ) |> String.join "")
+                [] -> ""
+
+    in
+    markdown
+        |> Regex.replace translationRegex replaceTranslation
+        |> preprocessInoAnnotations
 
 
 type alias TranslationLine =
-    { chineseRomaji : List ChineseRomaji
-    , english : String
+    {
+        chineseRomaji : List ChineseRomaji
+    ,   english : String
     }
 
 
 type alias ChineseRomaji =
-    { chinese : String
-    , romaji : Maybe String
+    {
+        chinese : String
+    ,   romaji : Maybe String
     }
-
-
-type CustomInline
-    = InoAnnotation String
-    | InoNote String
-
-
-inoParser : Parser String
-inoParser =
-    Parser.succeed identity
-        |. Parser.symbol "@{"
-        |= Parser.chompWhile (\c -> c /= '}')
-        |. Parser.symbol "}"
 
 
 chineseRomajiParser : Parser ChineseRomaji
@@ -93,11 +121,13 @@ chineseRomajiParser =
     Parser.succeed ChineseRomaji
         |= Parser.chompWhile isChineseChar
         |= Parser.oneOf
-            [ Parser.succeed Just
-                |. Parser.symbol "("
-                |= Parser.chompWhile (\c -> c /= ')')
-                |. Parser.symbol ")"
-            , Parser.succeed Nothing
+            [
+                Parser.succeed Just
+                    |. Parser.symbol "("
+                    |= Parser.chompWhile (\c -> c /= ')')
+                    |. Parser.symbol ")"
+            ,
+                Parser.succeed Nothing
             ]
 
 
@@ -109,70 +139,28 @@ isChineseChar char =
 translationLineParser : Parser TranslationLine
 translationLineParser =
     Parser.succeed TranslationLine
-        |= Parser.loop [] (\_ -> Parser.chompWhile (\c -> c == ' ') |> Parser.map (\_ -> ()) >> chineseRomajiParser)
+        |= Parser.loop [] (\previous ->
+            Parser.oneOf
+                [ Parser.succeed (\new -> Parser.Loop (new :: previous))
+                    |= chineseRomajiParser
+                , Parser.succeed (Parser.Done (List.reverse previous))
+                ]
+        )
         |. Parser.chompWhile (\c -> c == ' ')
         |. Parser.symbol "|"
         |. Parser.chompWhile (\c -> c == ' ')
         |= Parser.chompUntil (\c -> c == '\n' || c == '\r')
 
 
-toCustomInline : String -> CustomInline
-toCustomInline content =
-    if String.startsWith "Note: " content then
-        InoNote (String.dropLeft 6 content)
-
-    else
-        InoAnnotation content
-
-
-viewCustomInline : CustomInline -> Html msg
-viewCustomInline custom =
-    case custom of
-        InoAnnotation content ->
-            span [] [ text (inoToSymbols content) ]
-
-        InoNote note ->
-            span [ Html.Attributes.style "font-style" "italic" ] [ text ("Note: " ++ note) ]
-
-
-customInlineParser : Parser (Html msg)
-customInlineParser =
-    inoParser
-        |> Parser.map toCustomInline
-        |> Parser.map viewCustomInline
-
-
-translationBlockParser : Parser CustomBlock
-translationBlockParser =
-    Parser.succeed TrilingualTranslation
-        |. Parser.symbol ":::translation"
-        |. Parser.spaces
-        |= Parser.loop [] (\_ -> translationLineParser |. Parser.spaces)
-        |. Parser.symbol ":::"
-
-
-customBlockParser : Parser (Html msg)
-customBlockParser =
-    Parser.map viewCustomBlock translationBlockParser
-
-
-viewCustomBlock : CustomBlock -> Html msg
-viewCustomBlock customBlock =
-    case customBlock of
-        TrilingualTranslation lines ->
-            div
-                [ Html.Attributes.class "trilingual-translation" ]
-                (List.map viewTranslationLine lines)
-
-
 viewTranslationLine : TranslationLine -> Html msg
 viewTranslationLine line =
     div []
-        ([ span [ Html.Attributes.class "chinese-romaji" ]
-            (List.map viewChineseRomaji line.chineseRomaji)
-         , span [ Html.Attributes.class "english" ] [ text line.english ]
-         ]
-        )
+        [
+            span [ Html.Attributes.class "chinese-romaji" ]
+                (List.map viewChineseRomaji line.chineseRomaji)
+        ,
+            span [ Html.Attributes.class "english" ] [ text line.english ]
+        ]
 
 
 viewChineseRomaji : ChineseRomaji -> Html msg
@@ -180,55 +168,91 @@ viewChineseRomaji cr =
     case cr.romaji of
         Just romaji ->
             Html.node "ruby" []
-                [ text cr.chinese
-                , Html.node "rt" [] [ text romaji ]
+                [
+                    text cr.chinese
+                ,
+                    Html.node "rt" [] [ text romaji ]
                 ]
 
         Nothing ->
             text cr.chinese
 
-
-inoToSymbols : String -> String
-inoToSymbols content =
+oSymbols : String -> String
+oSymbols content =
     content
         |> String.words
         |> List.map
             (\part ->
                 case part of
-                    "O" ->
-                        "▢"
-
-                    "C" ->
-                        "▣"
-
-                    "IO" ->
-                        "△"
-
-                    "IC" ->
-                        "▲"
-
-                    "X" ->
-                        "🐟"
-
-                    _ ->
-                        ""
+                    "O" -> "▢"
+                    "C" -> "▣"
+                    "IO" -> "△"
+                    "IC" -> "▲"
+                    "X" -> "🐟"
+                    _ -> ""
             )
         |> String.join " "
 
 
+renderer : Markdown.Renderer.Renderer (Html msg)
+renderer =
+    let
+        baseRenderer =
+            Markdown.Renderer.defaultHtmlRenderer
+    in 
+    { baseRenderer
+        | html =
+            \html ->
+                Markdown.Html.oneOf
+                    [
+                        Markdown.Html.tag "trilingual-translation"
+                            (\attrs markdown ->
+                                let
+                                    content =
+                                        attrs
+                                            |> List.filter (\( key, _ ) -> key == "content")
+                                            |> List.head
+                                            |> Maybe.map Tuple.second
+                                            |> Maybe.withDefault ""
+
+                                    lines =
+                                        content
+                                            |> String.lines
+                                            |> List.filterMap (Parser.run translationLineParser >> Result.toMaybe)
+                                in
+                                div [ Html.Attributes.class "trilingual-translation" ] (List.map viewTranslationLine lines)
+                            )
+                    ,
+                        Markdown.Html.tag "ino-annotation"
+                            (\attrs markdown ->
+                                let
+                                    content =
+                                        attrs
+                                            |> List.filter (\( key, _ ) -> key == "content")
+                                            |> List.head
+                                            |> Maybe.map Tuple.second
+                                            |> Maybe.withDefault ""
+                                in
+                                if String.startsWith "Note: " content then
+                                    span [ Html.Attributes.style "font-style" "italic" ] [ text content ]
+
+                                else
+                                    span [] [ text (oSymbols content) ]
+                            )
+                    ]
+                    html
+    }
+
+
 view : Model -> Html Msg
 view model =
-    let
-        renderer =
-            Markdown.Html.defaultRenderer
-                |> Markdown.withCustom
-                    { inline = Just customInlineParser
-                    , block = Just customBlockParser
-                    }
-    in
     div []
-        (markdownText
-            |> Markdown.parse
-            |> Result.map (Markdown.toHtmlWith renderer)
-            |> Result.withDefault []
+        (
+            markdownText
+                |> preprocess
+                |> Markdown.Parser.parse
+                |> Result.mapError Markdown.Parser.deadEndToString
+                |> Result.andThen (Markdown.Renderer.render renderer)
+                |> Result.map (List.singleton << div [])
+                |> Result.withDefault []
         )

@@ -5,7 +5,7 @@
 # @{IO IC} Shiku Seigan Mon (^) @{IO}
 | Four Infinite Vows 
 
-:::translation
+<trilingual-translation>
 衆生(Shu jo) 無邊(mu hen) 誓願度(sei gan do) @{IO3} 
 | All beings beyond number, I vow to free.
 煩惱(Bon no) 無盡(mu jin) 誓願斷 (sei gan dan) 
@@ -14,7 +14,7 @@
 | Dharma gates beyond measure, I vow to realize.
 佛道(Butsu do) @{IO3} 無上(mu jo) 誓願成(sei gan jo) @{IO1,2,3}
 | Buddha ways without end@{IO3}, I vow to @{IO3}embody@{IO1,2} @{IO3...}.
-::: 
+</trilingual-translation> 
 
 
 # Early Morning Sutras
@@ -69,7 +69,7 @@ Namo tassa bhagavato arahato sammasambuddhasa @{O}
 
 ## The Great Prajna Paramita Heart Sutra
 
-:::translation
+<trilingual-translation>
 觀(Kan) 自在(jizai) 菩薩(bosatsu) 行(gyō) 深(jin) 般若(hannya) 波羅蜜多(haramitta) 時(ji)
 |Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,
 
@@ -150,7 +150,7 @@ Namo tassa bhagavato arahato sammasambuddhasa @{O}
 
 羯諦(gyatei) 羯諦(gyatei) 波羅羯諦(haragyatei) 波羅僧羯諦(harasōgyatei) 菩DE薩婆訶(bodhi sowaka)
 |Gate Gate Paragate Parasamgate Bodhi Swaha!
-:::
+</trilingual-translation>
 
 
 # Sho Sai Myo Kichijo Darani
@@ -158,7 +158,7 @@ Dharani for Dispelling Misfortune
 
 @{3 times. Mokugyo throughout.} 
 
-:::translation
+<trilingual-translation>
 南無(No mo) 三曼多(San man da) 母駄喃(Moto nan)
 |Veneration to all enlightened ones!
 
@@ -179,7 +179,7 @@ Dharani for Dispelling Misfortune
 
 莎婆訶(Somo ko)
 |Swaha!
-:::
+</trilingual-translation>
 
 
 # Zenkai Dedication (^)
@@ -306,7 +306,7 @@ become mature in Buddha's wisdom. @{O}
 
 @{Mokugyo throughout} 
 
-:::translation
+<trilingual-translation>
 Kan ze on
 | Kannon!
 Na mu butsu
@@ -327,7 +327,7 @@ Nen nen ju shin ki
 | Thought after thought arises in the mind,
 Nen nen fu ri shin
 | Thoughts are not separate from the mind. 
-:::
+</trilingual-translation>
 
 # Dedication (^)
 

@@ -38,7 +38,7 @@ One new feature of this markup is trilingual translations.
 This allows us to have Chinese, Japanese (rōmaji), and English side-by-side, and to toggle them on and off. 
 
 ```markdown
-:::translation
+<trilingual-translation>
 衆生(Shu jo) 無邊(mu hen) 誓願度(sei gan do)  
 | All beings beyond number, I vow to free.
 煩惱(Bon no) 無盡(mu jin) 誓願斷 (sei gan dan) 
@@ -47,7 +47,7 @@ This allows us to have Chinese, Japanese (rōmaji), and English side-by-side, an
 | Dharma gates beyond measure, I vow to realize.
 佛道(Butsu do)  無上(mu jo) 誓願成(sei gan jo) 
 | Buddha ways without end, I vow to embody .
-:::
+</trilingual-translation>
 ```
 
 That's basically just a shorthand way of writing : 
