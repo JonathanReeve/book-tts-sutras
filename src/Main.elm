@@ -17,17 +17,15 @@ import RemoteData exposing (RemoteData)
 main : Program () Model Msg
 main = 
     Browser.element
-        {
-            init = \() -> init
-        ,   view = view
-        ,   update = update
-        ,   subscriptions = \_ -> Sub.none
+        { init = \() -> init
+        , view = view
+        , update = update
+        , subscriptions = \_ -> Sub.none
         }
 
 
 type alias Model =
-    {
-        sutras : WebData String
+    { sutras : WebData String
     }
 
 
@@ -41,13 +39,14 @@ init =
         {
             sutras = RemoteData.Loading
         }
-    ,   Http.get
+        ,
+        Http.get
             {
                 url = "../content/sutras.md"
-            ,   expect = Http.expectString GotSutras
+            ,
+                expect = Http.expectString GotSutras
             }
     )
-
 
 type Msg
     = GotSutras (Result Http.Error String)
@@ -56,15 +55,18 @@ type Msg
 type alias TranslationLine =
     {
         chineseRomaji : List ChineseRomaji
-    ,   english : String
+    ,
+        english : String
     }
 
 
 type alias ChineseRomaji =
     {
         chinese : String
-    ,   romaji : Maybe String
+    ,
+        romaji : Maybe String
     }
+
 
 isChineseChar : Char -> Bool
 isChineseChar char =
@@ -114,7 +116,8 @@ update msg model =
                 {
                     model | sutras = RemoteData.fromResult result
                 }
-            ,   Cmd.none
+                ,
+                Cmd.none
             )
         NoOp ->
             ( model, Cmd.none )
@@ -231,21 +234,21 @@ view model =
                 |> (\options -> { options | rawHtml = Config.DontParse })
     in
     div []
-        [
-            case model.sutras of
-                RemoteData.NotAsked ->
-                    text ""
+        [ case model.sutras of
+            RemoteData.NotAsked ->
+                text ""
 
-                RemoteData.Loading ->
-                    text "Loading..."
+            RemoteData.Loading ->
+                text "Loading..."
 
-                RemoteData.Failure error ->
-                    text ("Error: " ++ Debug.toString error)
+            RemoteData.Failure error ->
+                text ("Error: " ++ Debug.toString error)
 
-                RemoteData.Success markdownText ->
-                    div []
-                        (markdownText
-                            |> preprocessInoAnnotations
-                            |> Markdown.Block.parse (Just customOptions)
-                            |> List.concatMap renderBlock)
+            RemoteData.Success markdownText ->
+                div []
+                    (markdownText
+                        |> preprocessInoAnnotations
+                        |> Markdown.Block.parse (Just customOptions)
+                        |> List.take 2
+                        |> List.concatMap renderBlock)
         ]
