@@ -62,3 +62,25 @@ We will create a single Clerk notebook file that will:
     *   **Styling**: Define custom CSS using `clerk/html` and `[:style ...]`, or `clerk/css`, to style the layout, toggles, and position the sidenotes (e.g., using absolute positioning).
 
 This plan fully incorporates all user requirements while leveraging Clerk's strengths for interactive and content-rich applications.
+
+---
+
+## Project Status (End of Session)
+
+This section summarizes the state of the project after a lengthy debugging session.
+
+### Accomplishments
+
+1.  **Robust Nix Environment**: A working `flake.nix` was created. It uses a `shellHook` to automatically download and install the official Clojure CLI into a project-local directory (`.clj-tools`). It also includes the necessary `cacert` package, which solved all network issues related to dependency fetching. This setup successfully provides a working `clojure` command that can download dependencies from Clojars.
+2.  **Clojure Project Setup**: A `deps.edn` file is in place with the correct dependency for Clerk. An alias (`:serve`) is configured to run the Clerk server.
+3.  **Clerk Notebook Implementation**: The file `src/sutra_book.clj` has been created and contains a full, self-contained implementation of the desired sutra book UI, including reactive controls and custom components for sidenotes. Several syntax errors within this file have been identified and fixed.
+
+### Unresolved Issue
+
+Despite the successful environment setup, a "Heisenbug" is preventing final success:
+
+*   **The Problem**: The Clerk server process only appears to run correctly when initiated in a fully interactive terminal. When I attempt to run it as a background process to capture its log output for debugging, it exits silently without creating any logs.
+*   **The User's Observation**: The user has confirmed that when they run the server interactively, it *does* start and they can see errors rendered in the browser.
+*   **The Impasse**: This behavior prevents me from being able to "see" the errors that the user sees. I cannot programmatically access the rendered HTML or the logs to identify the final bug within `src/sutra_book.clj`. The act of observing the process changes its behavior and causes it to fail.
+
+The project is therefore paused in a state where the environment is correct, the code is nearly complete, but a final, subtle bug within `src/sutra_book.clj` remains elusive due to the interactive nature of the Clerk server process.
