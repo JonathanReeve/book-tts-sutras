@@ -84,3 +84,20 @@ Despite the successful environment setup, a "Heisenbug" is preventing final succ
 *   **The Impasse**: This behavior prevents me from being able to "see" the errors that the user sees. I cannot programmatically access the rendered HTML or the logs to identify the final bug within `src/sutra_book.clj`. The act of observing the process changes its behavior and causes it to fail.
 
 The project is therefore paused in a state where the environment is correct, the code is nearly complete, but a final, subtle bug within `src/sutra_book.clj` remains elusive due to the interactive nature of the Clerk server process.
+
+## Refactoring to Literate Programming with Clerk
+
+The project has been refactored to use Clerk in a literate programming style, moving away from a complex setup involving Elm and manual HTML generation.
+
+### Key Changes:
+
+*   **New `src/sutra_book.clj`**: The entire content of the sutra book, previously in `content/sutras.md`, has been converted into a single Clerk notebook at `src/sutra_book.clj`. This file now serves as the single source of truth for the project.
+*   **Literate Programming Style**: The new notebook uses standard Clojure comment blocks (` ;; `) for all prose, which Clerk renders as Markdown. This allows for a more natural and maintainable way to mix text and code.
+*   **Clojure Functions for Custom Syntax**: The custom Markdown syntax previously used has been replaced with Clojure functions that generate HTML (Hiccup):
+    *   `@{...}` is now handled by an `(ino "...")` function.
+    *   `@[Note: ...]` is now handled by a `(note "...")` function.
+    *   These functions are called inline within the Markdown comments using backticks (e.g., `(ino "O")`).
+*   **Trilingual Text Handling**: The complex trilingual texts with ruby annotations have been manually converted into Hiccup data structures within the `sutra_book.clj` file. This ensures accurate rendering of the ruby text.
+*   **Styling**: The old CSS has been removed. Styles are now handled directly within the Clojure code using either inline style maps or Tailwind CSS classes.
+*   **Build Process**: The `deps.edn` file is configured with a `:build` alias that uses `nextjournal.clerk/build!` to compile `src/sutra_book.clj` into a standalone static HTML file in the `public` directory.
+*   **Obsolete Files**: The `content/sutras.md` file is now obsolete and can be removed. The Elm-related files are also no longer in use.
