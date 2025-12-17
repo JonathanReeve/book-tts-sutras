@@ -1,4 +1,3 @@
-#import "sys.typ" as sys
 
 // sutra_book.typ
 
@@ -33,20 +32,21 @@
 #let ino(symbol_key) = {
   let symbol_content = ""
   if symbol_key == "O" {
-    symbol_content = circle.stroked()
+    symbol_content = sym.circle.stroked
   } else if symbol_key == "C" {
-    symbol_content = circle.filled()
+    symbol_content = sym.circle.filled
   } else if symbol_key == "IO" {
-    symbol_content = triangle.stroked.t()
+    symbol_content = sym.triangle.stroked.t
   } else if symbol_key == "IC" {
-    symbol_content = triangle.filled.t()
+    symbol_content = sym.triangle.filled.t
   } else if symbol_key == "X" {
-    symbol_content = times()
-  } else if symbol_key == "V" {
-    symbol_content = "V" // Keep as "V" for now, or define a specific representation
-  } else {
-    symbol_content = symbol_key // Fallback
+    symbol_content = sym.times
+  } else if symbol_key == "V" { // 'V' found in Enmei Jikku Kannon Gyo, no specific unicode
+      symbol_content = "V"
+    } else {
+    symbol_content = symbol_key // Fallback for unmapped symbols
   }
+
   super(text(font: "serif", weight: "bold", fill: red, symbol_content))
 }
 
@@ -99,7 +99,7 @@
     ("衆生", "Shu jo"),
     ("無邊", "mu hen"),
     ("誓願度", "sei gan do"),
-    ino("O"),ino("O"),ino("O") // Corrected from ino("IO3")
+    ino("O"),ino("O"),ino("O")
   ),
   [All beings beyond number, I vow to free.]
 )
