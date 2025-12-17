@@ -1,0 +1,9 @@
+/clerk_stderr.log
+/clerk_stdout.log
+/public/
+/.clerk/
+/.clj-config/
+/.clj-tools/
+/.cpcache/
+/.direnv/
+/.shadow-cljs/
