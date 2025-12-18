@@ -95,9 +95,7 @@
   ])
 ]
 
-#align(center)[
-  = Three Treasures Sangha Sutra Book
-]
+= Three Treasures Sangha Sutra Book
 
 == #ino("inkin_ringing") #ino("inkin_muted") Shiku Seigan Mon #ino("inkin_ringing")
 
@@ -146,17 +144,9 @@
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Early Morning Sutras")
-  ]
-])
+= Early Morning Sutras
 
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") The Five Remembrances])
-  ]
-])
+== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") The Five Remembrances
 
 #note("All O are ten seconds long.")
 
@@ -179,12 +169,8 @@ My actions are the ground on which I stand. #ino("bell_ringing") #ino("bell_ring
 
 #pagebreak()
 
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Purification #ino("bell_ringing")])
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Purification #ino("bell_ringing")
+*in gassho*
 
 All the evil karma ever created by me since of old, #ino("bell_ringing", subscript: "3")
 on account of my beginningless greed, hatred, and ignorance,
@@ -199,18 +185,10 @@ I #ino("bell_ringing", subscript: "3") now confess #ino("bell_ringing", subscrip
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Morning Sutra Service")
-  ]
-])
+= Morning Sutra Service
 
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, [ #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") Ti-Sarana #ino("bell_muted")])
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") Ti-Sarana #ino("bell_muted")
+*in gassho*
 
 Buddham saranam gacchami;
 dhammam saranam gacchami;
@@ -230,22 +208,14 @@ sangham saranam gacchami. #ino("bell_ringing")
 
 #pagebreak()
 
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") Vandana #ino("bell_muted")])
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+== #ino("bell_ringing") #ino("bell_ringing") Vandana #ino("bell_muted")
+*in gassho*
 
 Namo tassa bhagavato arahato sammasambuddhasa #ino("bell_ringing")
 
 #pagebreak()
 
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, "The Great Prajna Paramita Heart Sutra")
-  ]
-])
+== The Great Prajna Paramita Heart Sutra
 
 #trilingual(
   ruby-line(("觀", "Kan"), ("自在", "jizai"), ("菩薩", "bosatsu"), ("行", "gyō"), ("深", "jin"), ("般若", "hannya"), ("波羅蜜多", "haramitta"), ("時", "ji")),
@@ -358,16 +328,8 @@ Namo tassa bhagavato arahato sammasambuddhasa #ino("bell_ringing")
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Sho Sai Myo Kichijo Darani")
-  ]
-])
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, "Dharani for Dispelling Misfortune")
-  ]
-])
+== Sho Sai Myo Kichijo Darani
+=== Dharani for Dispelling Misfortune
 
 #note("3 times. Mokugyo throughout.")
 
@@ -402,12 +364,8 @@ Namo tassa bhagavato arahato sammasambuddhasa #ino("bell_ringing")
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Zenkai Dedication")
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+= Zenkai Dedication
+*in gassho*
 
 #set text(weight: "bold")[Leader:]
 Our words ring out through space beyond the stars;
@@ -428,12 +386,8 @@ the great Prajna Paramita #ino("bell_ringing").
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Sesshin Dedication")
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+= Sesshin Dedication
+*in gassho*
 
 #set text(weight: "bold")[Leader:]
 Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajna Paramita Heart Sutra" (Maka Hannya Haramita Shingyo) and the "Sho Sai Myo Kichijo Dharani," let us unite with:
@@ -496,11 +450,7 @@ The great Prajna Paramita #ino("bell_ringing")
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, [#ino("bell_ringing") #ino("bell_muted") Torei Zenji: Bodhisattva's Vow])
-  ]
-])
+= #ino("bell_ringing") #ino("bell_muted") Torei Zenji: Bodhisattva's Vow
 
 #set text(weight: "bold")[Leader:]
 
@@ -551,12 +501,8 @@ become mature in Buddha's wisdom. #ino("bell_ringing")
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, [#ino("bell_ringing") #ino("bell_muted") #ino("mokugyo_hit") Enmei Jikku Kannon #ino("vocal_dip")Gyo #ino("bell_ringing")])
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+== #ino("bell_ringing") #ino("bell_muted") #ino("mokugyo_hit") Enmei Jikku Kannon #ino("vocal_dip")Gyo #ino("bell_ringing")
+*in gassho*
 
 #note("Mokugyo throughout")
 
@@ -603,12 +549,8 @@ become mature in Buddha's wisdom. #ino("bell_ringing")
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Dedication")
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+= Dedication
+*in gassho*
 
 The Buddha and his teachers and his many sons and daughters
 turn the Dharma wheel to show the wisdom of the stones and clouds; 
@@ -627,18 +569,10 @@ the great prajna paramita #ino("bell_ringing")
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Teisho Sutras")
-  ]
-])
+= Teisho Sutras
 
-#text(1.5em, [
-  #align(center)[
-    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") On Opening the #ino("vocal_dip")Dharma #ino("bell_ringing")])
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") On Opening the #ino("vocal_dip")Dharma #ino("bell_ringing")
+*in gassho*
 
 The dharma, incomparably profound and minutely subtle, #ino("bell_muted", subscript: "3")
 Is rarely encountered, even in hundreds of thousands of millions of ages; 
@@ -650,12 +584,8 @@ Of the Tathagata #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subsc
 
 #pagebreak()
 
-#text(2em, [
-  #align(center)[
-    #heading(level: 1, "Evening Sutra Service")
-    #align(center)[#text(style: "italic")[in gassho]]
-  ]
-])
+= Evening Sutra Service
+*in gassho*
 
 == #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Hakuin Zenji: Song of Zazen #ino("bell_ringing")
 
@@ -711,4 +641,3 @@ Truly, is anything missing now?
 Nirvana is right here, before our eyes; #ino("bell_ringing")
 This very place is the Lotus Land; #ino("bell_ringing")
 This very body, the Buddha. #ino("bell_ringing")
-
