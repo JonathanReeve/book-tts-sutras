@@ -1,4 +1,3 @@
-
 // sutra_book.typ
 
 // A helper macro to wrap any content in a classed <div> for JS to find.
@@ -32,15 +31,15 @@
 #let ino(symbol_key) = {
   let symbol_content = ""
   if symbol_key == "O" {
-    symbol_content = sym.circle.stroked
+    symbol_content = "○" // White Circle
   } else if symbol_key == "C" {
-    symbol_content = sym.circle.filled
+    symbol_content = "●" // Black Circle
   } else if symbol_key == "IO" {
-    symbol_content = sym.triangle.stroked.t
+    symbol_content = "△" // White Up-Pointing Triangle
   } else if symbol_key == "IC" {
-    symbol_content = sym.triangle.filled.t
+    symbol_content = "▲" // Black Up-Pointing Triangle
   } else if symbol_key == "X" {
-    symbol_content = sym.times
+    symbol_content = "×" // Multiplication Sign (for mokugyo)
   } else if symbol_key == "V" { // 'V' found in Enmei Jikku Kannon Gyo, no specific unicode
       symbol_content = "V"
     } else {
@@ -118,3 +117,425 @@
 #if sys.inputs.output == "html" [
   #html.elem("script", attrs: (src: "interactivity.js"))
 ]
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Morning Sutra Service")
+  ]
+])
+
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, [ #ino("O") #ino("O") #ino("O") Ti-Sarana #ino("C") (^)])
+  ]
+])
+
+Buddham saranam gacchami;
+dhammam saranam gacchami;
+sangham saranam gacchami.
+
+#v(1em)
+
+I take refuge in the Buddha:
+I take refuge in the Dharma;
+I take refuge in the Sangha.
+
+#v(1em)
+
+Buddham saranam gacchami;
+dhammam saranam gacchami;
+sangham saranam gacchami. #ino("O")
+
+#pagebreak()
+
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, [#ino("O") #ino("O") Vandana #ino("C") (^)])
+  ]
+])
+
+Namo tassa bhagavato arahato sammasambuddhasa #ino("O")
+
+#pagebreak()
+
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, "The Great Prajna Paramita Heart Sutra")
+  ]
+])
+
+#trilingual(
+  ruby-line(("觀", "Kan"), ("自在", "jizai"), ("菩薩", "bosatsu"), ("行", "gyō"), ("深", "jin"), ("般若", "hannya"), ("波羅蜜多", "haramitta"), ("時", "ji")),
+  [Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,]
+)
+#trilingual(
+  ruby-line(("照", "shō"), ("見", "ken"), ("五蘊", "go un"), ("皆", "kai"), ("空", "kū"), ("度", "do"), ("一切", "issai"), ("苦厄", "ku yaku")),
+  [clearly saw that all five skandhas are empty, transforming all suffering and distress.]
+)
+#trilingual(
+  ruby-line(("舎利子", "sharishi"), ("色", "shiki"), ("不異", "fu i"), ("空", "kū"), ("空", "kū"), ("不異", "fu i"), ("色", "shiki")),
+  [Shariputra, form is no other than emptiness, emptiness no other than form;]
+)
+#trilingual(
+  ruby-line(("色", "shiki"), ("即是", "soku ze"), ("空", "kū"), ("空", "kū"), ("即是", "soku ze"), ("色", "shiki")),
+  [form is exactly emptiness, emptiness exactly form;]
+)
+#trilingual(
+  ruby-line(("受想行識", "ju sō gyō shiki"), ("亦復如是", "yaku bu nyo ze")),
+  [sensation, perception, mental reaction, consciousness, are also like this.]
+)
+#trilingual(
+  ruby-line(("舎利子", "sharishi"), ("是諸法空相", "ze sho hō kū sō"), ("不生不滅", "fu shō fu metsu")),
+  [Shariputra, all things are essentially empty—not born, not destroyed;]
+)
+#trilingual(
+  ruby-line(("不垢不浄", "fu kū fu jō"), ("不増不減", "fu zō fu gen")),
+  [not stained, not pure; without loss, without gain.]
+)
+#trilingual(
+  ruby-line(("是故空中無色", "ze ko kū chū mu shiki"), ("無受想行識", "mu ju sō gyō shiki")),
+  [Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;]
+)
+#trilingual(
+  ruby-line(("無眼耳鼻舌身意", "mu gen ni bi zetsu shin i")),
+  [no eye, ear, nose, tongue, body, mind,]
+)
+#trilingual(
+  ruby-line(("無色声香味触法", "mu shiki shō kō mi soku hō")),
+  [no color, sound, scent, taste, touch, thought;]
+)
+#trilingual(
+  ruby-line(("無眼界", "mu gen kai"), ("乃至無意識界", "nai shi mu ishiki kai")),
+  [no seeing and so on to no thinking;]
+)
+#trilingual(
+  ruby-line(("無無明", "mu mumyō"), ("亦無無明尽", "yaku mu mumyō jin")),
+  [no ignorance and also no ending of ignorance,]
+)
+#trilingual(
+  ruby-line(("乃至無老死", "nai shi mu rōshi"), ("亦無老死尽", "yaku mu rōshi jin")),
+  [and so on to no old age and death and also no ending of old age and death;]
+)
+#trilingual(
+  ruby-line(("無苦集滅道", "mu ku shū metsu dō")),
+  [no suffering, cause of suffering, cessation, path;]
+)
+#trilingual(
+  ruby-line(("無智亦無得", "mu chi yaku mu toku"), ("以無所得故", "i mu sho toku ko")),
+  [no wisdom and no attainment.]
+)
+#trilingual(
+  ruby-line(("菩提薩埵", "bodai sattā'), ("依般若波羅蜜多故", "e hannya haramitta ko")),
+  [Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,]
+)
+#trilingual(
+  ruby-line(("心無罣礙", "shin mu keige"), ("無罣礙故", "mu keige ko"), ("無有恐怖", "mu u ku fu")),
+  [with no hindrance in the mind; no hindrance and therefore no fear;]
+)
+#trilingual(
+  ruby-line(("遠離一切顛倒夢想", "onri issai tendō musō"), ("究竟涅槃", "ku gyō nehan")),
+  [far beyond delusive thinking, right here is Nirvana.]
+)
+#trilingual(
+  ruby-line(("三世諸仏", "sanze shobutsu"), ("依般若波羅蜜多故", "e hannya haramitta ko")),
+  [All Buddhas of past, present and future live by Prajna Paramita,]
+)
+#trilingual(
+  ruby-line(("得阿耨多羅三藐三菩提", "toku anokutara sanmyaku sambodai")),
+  [attaining Anuttara-samyak-sambodhi.]
+)
+#trilingual(
+  ruby-line(("故知般若波羅蜜多", "ko chi hannya haramitta")),
+  [Therefore know that Prajna Paramita is the great mantra, the vivid mantra,]
+)
+#trilingual(
+  ruby-line(("是大神呪", "ze dai jin shu"), ("是大明呪", "ze dai myō shu")),
+  [the unsurpassed mantra, the supreme mantra,]
+)
+#trilingual(
+  ruby-line(("是無上呪", "ze mu jō shu"), ("是無等等呪", "ze mu tō dō shu")),
+  [which completely removes all suffering.]
+)
+#trilingual(
+  ruby-line(("能除一切苦", "nō jo issai ku"), ("真実不虚", "shin jitsu fu ko")),
+  [This is truth, not mere formality.]
+)
+#trilingual(
+  ruby-line(("故説般若波羅蜜多呪", "ko setsu hannya haramitta shu")),
+  [Therefore set for the Prajna Paramita mantra,]
+)
+#trilingual(
+  ruby-line(("即説呪曰", "soku setsu shu watsu")),
+  [set forth this mantra and proclaim:]
+)
+#trilingual(
+  ruby-line(("羯諦", "gyatei"), ("羯諦", "gyatei"), ("波羅羯諦", "haragyatei"), ("波羅僧羯諦", "harasōgyatei"), ("菩DE薩婆訶", "bodhi sowaka")),
+  [Gate Gate Paragate Parasamgate Bodhi Swaha!]
+)
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Sho Sai Myo Kichijo Darani")
+  ]
+])
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, "Dharani for Dispelling Misfortune")
+  ]
+])
+
+#note("3 times. Mokugyo throughout.")
+
+#trilingual(
+  ruby-line(("南無", "No mo"), ("三曼多", "San man da"), ("母駄喃", "Moto nan")),
+  [Veneration to all enlightened ones!]
+)
+#trilingual(
+  ruby-line(("阿", "O"), ("跋囉底", "ha ra chi"), ("賀多", "koto sha"), ("舍", "sono"), ("喃", "nan")),
+  [The incomparable bodhi-power that banishes misfortune!]
+)
+#trilingual(
+  ruby-line(("怛姪他", "To ji to"), ("唵", "en"), ("佉佉", "gya gya"), ("佉呬", "gya ki"), ("佉呬", "gya ki"), ("吽吽", "un nun")),
+  [Om! The Buddha of reality, wisdom, nirvana!]
+)
+#trilingual(
+  ruby-line(("入嚩囉", "Shifu ra"), ("入嚩囉", "Shifu ra"), ("鉢囉", "hara shifu ra"), ("鉢囉", "hara shifu ra")),
+  [Light, light! Great light, great light!]
+)
+#trilingual(
+  ruby-line(("底哩", "Chishu sa"), ("底哩", "Chishu sa"), ("娑婆訶", "shushi ri"), ("娑婆訶", "shushi ri")),
+  [With no categories, this mysterious power saves all beings.]
+)
+#trilingual(
+  ruby-line(("莎婆訶", "Soha ja"), ("莎婆訶", "soha ja"), ("戰地", "sen chi"), ("伽隸", "gya shiri"), ("娑婆訶", "ei")),
+  [Misfortune goes, happiness comes.]
+)
+#trilingual(
+  ruby-line(("莎婆訶", "Somo ko")),
+  [Swaha!]
+)
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Zenkai Dedication #ino(^)")
+  ]
+])
+
+#set text(weight: "bold")[Leader:]
+Our words ring out through space beyond the stars;
+their virtue and compassion echo back from all the many beings;
+we recite the "Great Prajna Paramita Heart Sutra"
+#text(size: 0.8em, [Or: Maka Hannya Haramita Shin Gyo])
+and the "Sho Sai Myo Kichijo Darani"
+for renewal of the Buddha-mind in fields and forests,
+homes and streets, throughout the world,
+in grateful thanks to all our many guides along the ancient way;
+
+#v(1em)
+
+#set text(weight: "bold")[Assembly:]
+#ino("C")All Buddhas throughout space and #ino("O")time;
+all Bodhisattvas, Mahasattvas #ino("O");
+the great Prajna Paramita #ino("O").
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Sesshin Dedication #ino(^)")
+  ]
+])
+
+#set text(weight: "bold")[Leader:]
+Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajna Paramita Heart Sutra" (Maka Hannya Haramita Shingyo) and the "Sho Sai Myo Kichijo Dharani," let us unite with:
+
+#v(1em)
+
+#set text(weight: "bold")[Assembly:]
+- #ino("C") The Ancient Seven Buddhas, Dai Busso
+- #ino("C") Shakyamuni Buddha, Dai Busso
+- #ino("C") Mahaprajapati Gautami, Dai Busso
+  #h(1em) maha prajApati go'tami
+- #ino("C") Vimalakirti, Dai Busso
+  #h(1.5em) vi'mala kIrti
+- #ino("C") Patacara, Dai Busso 
+  #h(1em) p'ta chAra
+- #ino("C") Bhadda Kapilani
+- #ino("C") Bodhidarma
+- #ino("C") Shitou Xiqian 
+  #h(1em) shure'-toe she-chwen
+- #ino("C") Mazu Daoji
+  #h(1em) ma'-zoo dao'-ee
+- #ino("C") Dongshan Liangjie
+  #h(1em) dong-shan liang-jay
+- #ino("C") Pang Yun Jushi
+  #h(1em) pong yun jew-sure 
+- #ino("C") Pang Lingzhao
+  #h(1em) pong ling-jao
+- #ino("C") Liu Tiemo
+  #h(1em) leo tyeh'-mo
+- #ino("C") Jishou Daojen
+  #h(1em) jee-show dow-ren
+- #ino("C") Dahui Zonggao
+  #h(1em) da-whey zong-gao
+- #ino("C") Miao Dao
+  #h(1em) meow dow
+- #ino("C") Miao Zong
+  #h(1em) meow zong
+- #ino("C") Dogen Kigen
+- #ino("C") Keizan Jokin
+- #ino("C") Daiun Sogaku
+- #ino("C") Hakuun Ryoko
+- #ino("C") Koun Zenshin
+- #ino("C") Single-Mind Aitken
+- #ino("C") Dawn-Cloud Aitken
+
+#v(1em)
+
+#set text(weight: "bold")[Leader:]
+
+All founding teachers, past, present, future, Dai Busso.
+Let true Dharma continue, Sangha relations become complete;
+
+#v(1em)
+
+#set text(weight: "bold")[Assembly:]
+
+#ino("C")All Buddhas throughout space and time; #ino("O")
+All Bodhisattvas, Mahasattvas; #ino("O")
+The great Prajna Paramita #ino("O")
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, [#ino("O") #ino("C") Torei Zenji: Bodhisattva's Vow])
+  ]
+])
+
+#set text(weight: "bold")[Leader:]
+
+I am only a simple disciple, #ino("O")
+but I offer these respectful words:
+
+#v(1em)
+
+#set text(weight: "bold")[Assembly:]
+
+When I regard the true nature of the many dharmas,
+I find them all to be sacred forms
+of the Tathagata's never-failing essence.
+Each particle of matter, each moment,
+is no other than the Tathagata's inexpressible radiance.
+With this realization, our virtuous ancestors,
+with compassionate minds and hearts,
+gave tender care to beasts and birds.
+
+Among us, in our own daily lives,
+who is not reverently grateful for the protections of life:
+food, drink, and clothing!
+Though they are inanimate things,
+they are nonetheless the warm flesh and blood,
+the merciful incarnations of Buddha.
+
+All the more, we can be especially sympathetic
+and affectionate with foolish people,
+particularly with someone who becomes a sworn enemy
+and persecutes us with abusive language.
+That very abuse conveys the Buddha's boundless loving-kindness.
+It is a compassionate device to liberate us entirely
+from the mean-spirited delusions that we have built up
+with our wrongful conduct from the beginningless past.
+With our response to such abuse
+we completely relinquish ourselves
+and the most profound and pure faith arises.
+
+At the peak of each thought a lotus flower opens,
+and on each flower there is revealed a Buddha.
+Everywhere is the Pure Land in its beauty.
+We see fully the Tathagata's radiant light
+right where we are.
+May we retain this mind 
+and extend it throughout the world #ino("O")
+so that we and all beings #ino("O")
+become mature in Buddha's wisdom. #ino("O")
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, [#ino("O") #ino("C") #ino("X") Enmei Jikku Kannon #ino("V")Gyo #ino("O")])
+  ]
+])
+
+#note("Mokugyo throughout")
+
+#trilingual(
+  ruby-line("Kan ze on"),
+  [Kannon!]
+)
+#trilingual(
+  ruby-line("Na mu butsu"),
+  [Veneration to the Buddha!]
+)
+#trilingual(
+  ruby-line("Yo butsu u in"),
+  [With Buddha's cause,]
+)
+#trilingual(
+  ruby-line("Yo butsu u en"),
+  [With Buddha's effect;]
+)
+#trilingual(
+  ruby-line("Bup po so en"),
+  [Affinity with Buddha, Dharma, Sangha]
+)
+#trilingual(
+  ruby-line("Jo raku ga jo"),
+  [Eternity, bliss, self, purity;]
+)
+#trilingual(
+  ruby-line("Cho nen Kan ze on"),
+  [Mornings my thoughts are Kannon,]
+)
+#trilingual(
+  ruby-line("Bo nen Kan ze on"),
+  [Evenings my thoughts are Kannon,]
+)
+#trilingual(
+  ruby-line("Nen nen ju shin ki"),
+  [Thought after thought arises in the mind,]
+)
+#trilingual(
+  ruby-line("Nen nen fu ri shin"),
+  [Thoughts are not separate from the mind.]
+)
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Dedication #ino(^)")
+  ]
+])
+
+The Buddha and his teachers and his many sons and daughters
+turn the Dharma wheel to show the wisdom of the stones and clouds; 
+we dedicate the virtues of reciting Torei Zenji's Bodhisattva's Vow and the Enmei Jikku Kannon Gyo to: 
+- Choro Nyogen, Dai Busso
+- Hannya Gempo, Dai Busso
+- Mita Soen, Dai Busso
+and to our relatives and companions of the past who rest in deepest samadhi; 
+
+#v(1em)
+
+#set text(weight: "bold")[All:] 
+#ino("C")All Buddhas throughout space and time; #ino("O") 
+all Bodhisattvas, Mahasattvas; #ino("O")
+the great prajna paramita #ino("O")

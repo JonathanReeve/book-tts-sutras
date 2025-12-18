@@ -1,43 +1,97 @@
+
 {
-  description = "A Typst environment for the Sutra Book project.";
+  description = "A Typst project";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    typix = {
+      url = "github:loqusion/typix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    flake-utils.url = "github:numtide/flake-utils";
+
+    # Example of downloading icons from a non-flake source
+    # font-awesome = {
+    #   url = "github:FortAwesome/Font-Awesome";
+    #   flake = false;
+    # };
   };
 
-  outputs = { self, nixpkgs }:
-    let
-      system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
-    in
-    {
-      devShells.${system}.default = pkgs.mkShell {
-        buildInputs = [
-          pkgs.typst
-          pkgs.bash
+  outputs = inputs @ {
+    nixpkgs,
+    typix,
+    flake-utils,
+    ...
+  }:
+    flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+      inherit (pkgs) lib;
+
+      typixLib = typix.lib.${system};
+
+      src = typixLib.cleanTypstSource src/.;
+      commonArgs = {
+        typstSource = "src/sutra_book.typ";
+
+        fontPaths = [
+          # Add paths to fonts here
+          "${pkgs.roboto}/share/fonts/truetype"
+        ];
+
+        virtualPaths = [
+          # Add paths that must be locally accessible to typst here
+          # {
+          #   dest = "icons";
+          #   src = "${inputs.font-awesome}/svgs/regular";
+          # }
         ];
       };
 
-      packages.${system}.build = pkgs.writeShellApplication {
-        name = "build-sutra-book";
-        runtimeInputs = [ pkgs.typst ];
-        text = ''
-          #!/usr/bin/env bash
-          set -euo pipefail
+      # Compile a Typst project, *without* copying the result
+      # to the current directory
+      build-drv = typixLib.buildTypstProject (commonArgs
+        // {
+          inherit src;
+        });
 
-          echo "Building HTML..."
-          typst compile --features html src/sutra_book.typ public/sutra_book.html --input output="html"
+      # Compile a Typst project, and then copy the result
+      # to the current directory
+      build-script = typixLib.buildTypstProjectLocal (commonArgs
+        // {
+          inherit src;
+        });
 
-          echo "Building PDF..."
-          typst compile src/sutra_book.typ public/sutra_book.pdf --input output="pdf"
-
-          echo "Build complete. Outputs are in public/"
-        '';
+      # Watch a project and recompile on changes
+      watch-script = typixLib.watchTypstProject commonArgs;
+    in {
+      checks = {
+        inherit build-drv build-script watch-script;
       };
 
-      apps.${system}.default = {
-        type = "app";
-        program = "${self.packages.${system}.build}/bin/build-sutra-book";
+      packages.default = build-drv;
+
+      apps = rec {
+        default = watch;
+        build = flake-utils.lib.mkApp {
+          drv = build-script;
+        };
+        watch = flake-utils.lib.mkApp {
+          drv = watch-script;
+        };
       };
-    };
+
+      devShells.default = typixLib.devShell {
+        inherit (commonArgs) fontPaths virtualPaths;
+        packages = [
+          # WARNING: Don't run `typst-build` directly, instead use `nix run .#build`
+          # See https://github.com/loqusion/typix/issues/2
+          # build-script
+          watch-script
+          # More packages can be added here, like typstfmt
+          # pkgs.typstfmt
+        ];
+      };
+    });
 }
