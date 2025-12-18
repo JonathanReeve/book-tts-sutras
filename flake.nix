@@ -33,7 +33,7 @@
 
       src = typixLib.cleanTypstSource src/.;
       commonArgs = {
-        typstSource = "src/sutra_book.typ";
+        typstSource = "sutra_book.typ";
 
         fontPaths = [
           # Add paths to fonts here
