@@ -28,25 +28,35 @@
 }
 
 // Define custom functions for your special syntax at the top.
-#let ino(symbol_key) = {
+#let ino(type, subscript: none) = {
   let symbol_content = ""
-  if symbol_key == "O" {
+  if type == "bell_ringing" {
     symbol_content = "○" // White Circle
-  } else if symbol_key == "C" {
+  } else if type == "bell_muted" {
     symbol_content = "●" // Black Circle
-  } else if symbol_key == "IO" {
+  } else if type == "inkin_ringing" {
     symbol_content = "△" // White Up-Pointing Triangle
-  } else if symbol_key == "IC" {
+  } else if type == "inkin_muted" {
     symbol_content = "▲" // Black Up-Pointing Triangle
-  } else if symbol_key == "X" {
-    symbol_content = "×" // Multiplication Sign (for mokugyo)
-  } else if symbol_key == "V" { // 'V' found in Enmei Jikku Kannon Gyo, no specific unicode
-      symbol_content = "V"
-    } else {
-    symbol_content = symbol_key // Fallback for unmapped symbols
+  } else if type == "mokugyo_hit" {
+    symbol_content = "×" // Multiplication Sign
+  } else if type == "vocal_dip" {
+    symbol_content = "V"
+  } else if type == "mokugyo_continuing" {
+    symbol_content = "..."
   }
 
-  super(text(font: "serif", weight: "bold", fill: red, symbol_content))
+  // Render
+  let rendered_content = super(text(font: "serif", weight: "bold", fill: red, symbol_content))
+  if subscript != none {
+    rendered_content += sub(text(font: "serif", weight: "bold", fill: red, subscript))
+  }
+  rendered_content
+}
+
+#let note(text_content) = {
+  set text(size: 0.8em, fill: gray)
+  [#strong("Note:")] #text_content
 }
 
 // The trilingual function still just handles layout.
@@ -89,7 +99,7 @@
   = Three Treasures Sangha Sutra Book
 ]
 
-== #ino("IO") #ino("IC") Shiku Seigan Mon #ino("IO")
+== #ino("inkin_ringing") #ino("inkin_muted") Shiku Seigan Mon #ino("inkin_ringing")
 
 === Four Infinite Vows
 
@@ -98,7 +108,7 @@
     ("衆生", "Shu jo"),
     ("無邊", "mu hen"),
     ("誓願度", "sei gan do"),
-    ino("O"),ino("O"),ino("O")
+    ino("bell_ringing", subscript: "3")
   ),
   [All beings beyond number, I vow to free.]
 )
@@ -111,6 +121,75 @@
   ),
   [Blind passions without cease, I vow to see through.]
 )
+
+#trilingual(
+  ruby-line(
+    ("法門", "Ho mon"),
+    ("無量", "mu ryo"),
+    ("誓願學", "sei gan gaku"),
+    ino("inkin_ringing", subscript: "3")
+  ),
+  [Dharma gates beyond measure, I vow to realize.]
+)
+
+#trilingual(
+  ruby-line(
+    ("佛道", "Butsu do"),
+    ino("inkin_ringing", subscript: "3"),
+    ("無上", "mu jo"),
+    ("誓願成", "sei gan jo"),
+    ino("inkin_ringing", subscript: "1,2,3")
+  ),
+  [Buddha ways without end#ino("inkin_ringing", subscript: "3"), I vow to #ino("inkin_ringing", subscript: "3")embody#ino("inkin_ringing", subscript: "1,2") #ino("inkin_ringing", subscript: "3...").]
+)
+
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Early Morning Sutras")
+  ]
+])
+
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") The Five Remembrances])
+  ]
+])
+
+#note("All O are ten seconds long.")
+
+1. #ino("bell_muted") I am of the nature to grow old.
+There is no way to escape growing old. #ino("bell_ringing")
+
+2. #ino("bell_muted") I am of the nature to have ill health.
+There is no way to escape having ill health. #ino("bell_ringing")
+
+3. #ino("bell_muted") I am of the nature to die.
+There is no way to escape death. #ino("bell_ringing")
+
+4. #ino("bell_muted") All that is dear to me and everyone I love
+are of the nature to change.
+There is no way to escape being separated from them. #ino("bell_ringing")
+
+5. #ino("bell_muted") My actions are my only true belongings.
+I cannot escape the consequences of my actions.
+My actions are the ground on which I stand. #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing")
+
+#pagebreak()
+
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Purification #ino("bell_ringing")])
+    #align(center)[#text(style: "italic")[in gassho]]
+  ]
+])
+
+All the evil karma ever created by me since of old, #ino("bell_ringing", subscript: "3")
+on account of my beginningless greed, hatred, and ignorance,
+born of my conduct, speech and thought,
+I #ino("bell_ringing", subscript: "3") now confess #ino("bell_ringing", subscript: "3") openly and #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subscript: "3") fully.
 
 
 // This raw block injects the <script> tag into the final HTML file.
@@ -128,7 +207,8 @@
 
 #text(1.5em, [
   #align(center)[
-    #heading(level: 2, [ #ino("O") #ino("O") #ino("O") Ti-Sarana #ino("C") (^)])
+    #heading(level: 2, [ #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") Ti-Sarana #ino("bell_muted")])
+    #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
 
@@ -146,17 +226,18 @@ I take refuge in the Sangha.
 
 Buddham saranam gacchami;
 dhammam saranam gacchami;
-sangham saranam gacchami. #ino("O")
+sangham saranam gacchami. #ino("bell_ringing")
 
 #pagebreak()
 
 #text(1.5em, [
   #align(center)[
-    #heading(level: 2, [#ino("O") #ino("O") Vandana #ino("C") (^)])
+    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") Vandana #ino("bell_muted")])
+    #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
 
-Namo tassa bhagavato arahato sammasambuddhasa #ino("O")
+Namo tassa bhagavato arahato sammasambuddhasa #ino("bell_ringing")
 
 #pagebreak()
 
@@ -323,7 +404,8 @@ Namo tassa bhagavato arahato sammasambuddhasa #ino("O")
 
 #text(2em, [
   #align(center)[
-    #heading(level: 1, "Zenkai Dedication #ino(^)")
+    #heading(level: 1, "Zenkai Dedication")
+    #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
 
@@ -340,15 +422,16 @@ in grateful thanks to all our many guides along the ancient way;
 #v(1em)
 
 #set text(weight: "bold")[Assembly:]
-#ino("C")All Buddhas throughout space and #ino("O")time;
-all Bodhisattvas, Mahasattvas #ino("O");
-the great Prajna Paramita #ino("O").
+#ino("bell_muted")All Buddhas throughout space and #ino("bell_ringing")time;
+all Bodhisattvas, Mahasattvas #ino("bell_ringing");
+the great Prajna Paramita #ino("bell_ringing").
 
 #pagebreak()
 
 #text(2em, [
   #align(center)[
-    #heading(level: 1, "Sesshin Dedication #ino(^)")
+    #heading(level: 1, "Sesshin Dedication")
+    #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
 
@@ -358,43 +441,43 @@ Buddha nature pervades the whole universe, existing right here now. With our rec
 #v(1em)
 
 #set text(weight: "bold")[Assembly:]
-- #ino("C") The Ancient Seven Buddhas, Dai Busso
-- #ino("C") Shakyamuni Buddha, Dai Busso
-- #ino("C") Mahaprajapati Gautami, Dai Busso
+- #ino("bell_muted") The Ancient Seven Buddhas, Dai Busso
+- #ino("bell_muted") Shakyamuni Buddha, Dai Busso
+- #ino("bell_muted") Mahaprajapati Gautami, Dai Busso
   #h(1em) maha prajApati go'tami
-- #ino("C") Vimalakirti, Dai Busso
+- #ino("bell_muted") Vimalakirti, Dai Busso
   #h(1.5em) vi'mala kIrti
-- #ino("C") Patacara, Dai Busso 
+- #ino("bell_muted") Patacara, Dai Busso 
   #h(1em) p'ta chAra
-- #ino("C") Bhadda Kapilani
-- #ino("C") Bodhidarma
-- #ino("C") Shitou Xiqian 
+- #ino("bell_muted") Bhadda Kapilani
+- #ino("bell_muted") Bodhidarma
+- #ino("bell_muted") Shitou Xiqian 
   #h(1em) shure'-toe she-chwen
-- #ino("C") Mazu Daoji
+- #ino("bell_muted") Mazu Daoji
   #h(1em) ma'-zoo dao'-ee
-- #ino("C") Dongshan Liangjie
+- #ino("bell_muted") Dongshan Liangjie
   #h(1em) dong-shan liang-jay
-- #ino("C") Pang Yun Jushi
+- #ino("bell_muted") Pang Yun Jushi
   #h(1em) pong yun jew-sure 
-- #ino("C") Pang Lingzhao
+- #ino("bell_muted") Pang Lingzhao
   #h(1em) pong ling-jao
-- #ino("C") Liu Tiemo
+- #ino("bell_muted") Liu Tiemo
   #h(1em) leo tyeh'-mo
-- #ino("C") Jishou Daojen
+- #ino("bell_muted") Jishou Daojen
   #h(1em) jee-show dow-ren
-- #ino("C") Dahui Zonggao
+- #ino("bell_muted") Dahui Zonggao
   #h(1em) da-whey zong-gao
-- #ino("C") Miao Dao
+- #ino("bell_muted") Miao Dao
   #h(1em) meow dow
-- #ino("C") Miao Zong
+- #ino("bell_muted") Miao Zong
   #h(1em) meow zong
-- #ino("C") Dogen Kigen
-- #ino("C") Keizan Jokin
-- #ino("C") Daiun Sogaku
-- #ino("C") Hakuun Ryoko
-- #ino("C") Koun Zenshin
-- #ino("C") Single-Mind Aitken
-- #ino("C") Dawn-Cloud Aitken
+- #ino("bell_muted") Dogen Kigen
+- #ino("bell_muted") Keizan Jokin
+- #ino("bell_muted") Daiun Sogaku
+- #ino("bell_muted") Hakuun Ryoko
+- #ino("bell_muted") Koun Zenshin
+- #ino("bell_muted") Single-Mind Aitken
+- #ino("bell_muted") Dawn-Cloud Aitken
 
 #v(1em)
 
@@ -407,21 +490,21 @@ Let true Dharma continue, Sangha relations become complete;
 
 #set text(weight: "bold")[Assembly:]
 
-#ino("C")All Buddhas throughout space and time; #ino("O")
-All Bodhisattvas, Mahasattvas; #ino("O")
-The great Prajna Paramita #ino("O")
+#ino("bell_muted")All Buddhas throughout space and time; #ino("bell_ringing")
+All Bodhisattvas, Mahasattvas; #ino("bell_ringing")
+The great Prajna Paramita #ino("bell_ringing")
 
 #pagebreak()
 
 #text(2em, [
   #align(center)[
-    #heading(level: 1, [#ino("O") #ino("C") Torei Zenji: Bodhisattva's Vow])
+    #heading(level: 1, [#ino("bell_ringing") #ino("bell_muted") Torei Zenji: Bodhisattva's Vow])
   ]
 ])
 
 #set text(weight: "bold")[Leader:]
 
-I am only a simple disciple, #ino("O")
+I am only a simple disciple, #ino("bell_ringing")
 but I offer these respectful words:
 
 #v(1em)
@@ -462,15 +545,16 @@ Everywhere is the Pure Land in its beauty.
 We see fully the Tathagata's radiant light
 right where we are.
 May we retain this mind 
-and extend it throughout the world #ino("O")
-so that we and all beings #ino("O")
-become mature in Buddha's wisdom. #ino("O")
+and extend it throughout the world #ino("bell_ringing")
+so that we and all beings #ino("bell_ringing")
+become mature in Buddha's wisdom. #ino("bell_ringing")
 
 #pagebreak()
 
 #text(2em, [
   #align(center)[
-    #heading(level: 1, [#ino("O") #ino("C") #ino("X") Enmei Jikku Kannon #ino("V")Gyo #ino("O")])
+    #heading(level: 1, [#ino("bell_ringing") #ino("bell_muted") #ino("mokugyo_hit") Enmei Jikku Kannon #ino("vocal_dip")Gyo #ino("bell_ringing")])
+    #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
 
@@ -521,7 +605,8 @@ become mature in Buddha's wisdom. #ino("O")
 
 #text(2em, [
   #align(center)[
-    #heading(level: 1, "Dedication #ino(^)")
+    #heading(level: 1, "Dedication")
+    #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
 
@@ -536,6 +621,38 @@ and to our relatives and companions of the past who rest in deepest samadhi;
 #v(1em)
 
 #set text(weight: "bold")[All:] 
-#ino("C")All Buddhas throughout space and time; #ino("O") 
-all Bodhisattvas, Mahasattvas; #ino("O")
-the great prajna paramita #ino("O")
+#ino("bell_muted")All Buddhas throughout space and time; #ino("bell_ringing") 
+all Bodhisattvas, Mahasattvas; #ino("bell_ringing")
+the great prajna paramita #ino("bell_ringing")
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Teisho Sutras")
+  ]
+])
+
+#text(1.5em, [
+  #align(center)[
+    #heading(level: 2, [#ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") On Opening the #ino("vocal_dip")Dharma #ino("bell_ringing")])
+    #align(center)[#text(style: "italic")[in gassho]]
+  ]
+])
+
+The dharma, incomparably profound and minutely subtle, #ino("bell_muted", subscript: "3")
+Is rarely encountered, even in hundreds of thousands of millions of ages; 
+We now can see it, hear it, accept and hold it; 
+May we #ino("bell_muted")completely realize the true #ino("bell_muted")meaning 
+Of the Tathagata #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subscript: "3")
+
+#note("If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.")
+
+#pagebreak()
+
+#text(2em, [
+  #align(center)[
+    #heading(level: 1, "Evening Sutra Service")
+    #align(center)[#text(style: "italic")[in gassho]]
+  ]
+])
