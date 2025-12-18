@@ -656,3 +656,59 @@ Of the Tathagata #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subsc
     #align(center)[#text(style: "italic")[in gassho]]
   ]
 ])
+
+== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Hakuin Zenji: Song of Zazen #ino("bell_ringing")
+
+All beings by nature are Buddha,
+As ice by nature is water. 
+Apart from water there is no ice; 
+Apart from beings, no Buddha. 
+
+How sad that people ignore the near 
+And search for truth afar: 
+Like someone in the midst of water 
+Crying out in thirst; 
+Like a child of a wealthy home 
+Wandering among the poor. 
+
+Lost on dark paths of ignorance, 
+We wander through the Six Worlds; 
+From dark path to dark path
+When shall we be freed from birth and death? 
+
+Oh, the zazen of the Mahayana! 
+To this the highest praise! 
+Devotion, repentance, training, 
+The many Paramitas
+All have their source in zazen. 
+
+Those who try zazen even once 
+Wipe away beginningless crimes. 
+Where are all the dark paths then? 
+The Pure Land itself is near 
+
+Those who hear this truth even once 
+And listen with a grateful heart, 
+Treasuring it, revering it, 
+Gain blessings without end. 
+
+Much more, those who turn about 
+And bear witness to self-nature,
+Self nature that is no-nature,
+Go far beyond mere doctrine. 
+
+Here effect and cause are the same; 
+The Way is neither two nor three. 
+
+With form that is no-form, 
+Going and coming we are never astray; 
+With thought that is no-thought, 
+Singing and dancing are the voice of the Law. 
+
+Boundless and free is the sky of Samadhi!
+Bright the full moon of wisdom!
+Truly, is anything missing now? 
+Nirvana is right here, before our eyes; #ino("bell_ringing")
+This very place is the Lotus Land; #ino("bell_ringing")
+This very body, the Buddha. #ino("bell_ringing")
+
