@@ -121,7 +121,7 @@
 
 == ○ ○ ○ The Five Remembrances
 
-#note("All O are ten seconds long.")
+#ino_note("All O are ten seconds long.")
 
 1. ● I am of the nature to grow old.
 There is no way to escape growing old. ○
@@ -304,7 +304,7 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 == Sho Sai Myo Kichijo Darani
 === Dharani for Dispelling Misfortune
 
-#note("3 times. Mokugyo throughout.")
+#ino_note("Ino: 3 times. Mokugyo throughout.")
 
 #trilingual(
   ruby-line(("南無", "No mo"), ("三曼多", "San man da"), ("母駄喃", "Moto nan")),
@@ -477,7 +477,7 @@ become mature in Buddha's wisdom. ○
 == ○ ● × Enmei Jikku Kannon VGyo ○
 *in gassho*
 
-#note("Mokugyo throughout")
+#ino_note("Mokugyo throughout")
 
 #trilingual(
   ruby-line(("觀", "Kan"), ("世音", "ze on")),
@@ -544,8 +544,10 @@ the great prajna paramita ○
 
 = Teisho Sutras
 
-== ○ ○ ○ ● On Opening the VDharma ○
+== ○ ○ ○ ● On Opening the Dharma V ○
 *in gassho*
+
+#ino_note("Ino: if you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.")
 
 The dharma, incomparably profound and minutely subtle, ●$3$
 Is rarely encountered, even in hundreds of thousands of millions of ages;
@@ -553,7 +555,6 @@ We now can see it, hear it, accept and hold it;
 May we ●completely realize the true ●meaning
 Of the Tathagata ●$1,2$ ○$3$
 
-#note("If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.")
 
 #pagebreak()
 
