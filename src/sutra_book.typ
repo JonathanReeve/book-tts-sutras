@@ -27,33 +27,6 @@
   content
 }
 
-// Define custom functions for your special syntax at the top.
-#let ino(type, subscript: none) = {
-  let symbol_content = ""
-  if type == "bell_ringing" {
-    symbol_content = "○" // White Circle
-  } else if type == "bell_muted" {
-    symbol_content = "●" // Black Circle
-  } else if type == "inkin_ringing" {
-    symbol_content = "△" // White Up-Pointing Triangle
-  } else if type == "inkin_muted" {
-    symbol_content = "▲" // Black Up-Pointing Triangle
-  } else if type == "mokugyo_hit" {
-    symbol_content = "×" // Multiplication Sign
-  } else if type == "vocal_dip" {
-    symbol_content = "V"
-  } else if type == "mokugyo_continuing" {
-    symbol_content = "..."
-  }
-
-  // Render
-  let rendered_content = super(text(font: "serif", weight: "bold", fill: red, symbol_content))
-  if subscript != none {
-    rendered_content += sub(text(font: "serif", weight: "bold", fill: red, subscript))
-  }
-  rendered_content
-}
-
 #let note(text_content) = {
   set text(size: 0.8em, fill: gray)
   [#strong("Note:")] #text_content
@@ -97,7 +70,7 @@
 
 = Three Treasures Sangha Sutra Book
 
-== #ino("inkin_ringing") #ino("inkin_muted") Shiku Seigan Mon #ino("inkin_ringing")
+== △ ▲ Shiku Seigan Mon △
 
 === Four Infinite Vows
 
@@ -106,7 +79,7 @@
     ("衆生", "Shu jo"),
     ("無邊", "mu hen"),
     ("誓願度", "sei gan do"),
-    ino("bell_ringing", subscript: "3")
+    ○$3$
   ),
   [All beings beyond number, I vow to free.]
 )
@@ -125,7 +98,7 @@
     ("法門", "Ho mon"),
     ("無量", "mu ryo"),
     ("誓願學", "sei gan gaku"),
-    ino("inkin_ringing", subscript: "3")
+    △$3$
   ),
   [Dharma gates beyond measure, I vow to realize.]
 )
@@ -133,12 +106,12 @@
 #trilingual(
   ruby-line(
     ("佛道", "Butsu do"),
-    ino("inkin_ringing", subscript: "3"),
+    △$3$,
     ("無上", "mu jo"),
     ("誓願成", "sei gan jo"),
-    ino("inkin_ringing", subscript: "1,2,3")
+    △$1,2,3$
   ),
-  [Buddha ways without end#ino("inkin_ringing", subscript: "3"), I vow to #ino("inkin_ringing", subscript: "3")embody#ino("inkin_ringing", subscript: "1,2") #ino("inkin_ringing", subscript: "3...").]
+  [Buddha ways without end△$3$, I vow to △$3$embody△$1,2$ △$3...$.]
 )
 
 
@@ -146,36 +119,36 @@
 
 = Early Morning Sutras
 
-== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") The Five Remembrances
+== ○ ○ ○ The Five Remembrances
 
 #note("All O are ten seconds long.")
 
-1. #ino("bell_muted") I am of the nature to grow old.
-There is no way to escape growing old. #ino("bell_ringing")
+1. ● I am of the nature to grow old.
+There is no way to escape growing old. ○
 
-2. #ino("bell_muted") I am of the nature to have ill health.
-There is no way to escape having ill health. #ino("bell_ringing")
+2. ● I am of the nature to have ill health.
+There is no way to escape having ill health. ○
 
-3. #ino("bell_muted") I am of the nature to die.
-There is no way to escape death. #ino("bell_ringing")
+3. ● I am of the nature to die.
+There is no way to escape death. ○
 
-4. #ino("bell_muted") All that is dear to me and everyone I love
+4. ● All that is dear to me and everyone I love
 are of the nature to change.
-There is no way to escape being separated from them. #ino("bell_ringing")
+There is no way to escape being separated from them. ○
 
-5. #ino("bell_muted") My actions are my only true belongings.
+5. ● My actions are my only true belongings.
 I cannot escape the consequences of my actions.
-My actions are the ground on which I stand. #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing")
+My actions are the ground on which I stand. ○ ○ ○
 
 #pagebreak()
 
-== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Purification #ino("bell_ringing")
+== ○ ○ ○ ● Purification ○
 *in gassho*
 
-All the evil karma ever created by me since of old, #ino("bell_ringing", subscript: "3")
+All the evil karma ever created by me since of old, ○$3$
 on account of my beginningless greed, hatred, and ignorance,
 born of my conduct, speech and thought,
-I #ino("bell_ringing", subscript: "3") now confess #ino("bell_ringing", subscript: "3") openly and #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subscript: "3") fully.
+I ○$3$ now confess ○$3$ openly and ●$1,2$ ○$3$ fully.
 
 
 // This raw block injects the <script> tag into the final HTML file.
@@ -187,7 +160,7 @@ I #ino("bell_ringing", subscript: "3") now confess #ino("bell_ringing", subscrip
 
 = Morning Sutra Service
 
-== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") Ti-Sarana #ino("bell_muted")
+== ○ ○ ○ ● Ti-Sarana
 *in gassho*
 
 Buddham saranam gacchami;
@@ -204,14 +177,14 @@ I take refuge in the Sangha.
 
 Buddham saranam gacchami;
 dhammam saranam gacchami;
-sangham saranam gacchami. #ino("bell_ringing")
+sangham saranam gacchami. ○
 
 #pagebreak()
 
-== #ino("bell_ringing") #ino("bell_ringing") Vandana #ino("bell_muted")
+== ○ ○ ● Vandana
 *in gassho*
 
-Namo tassa bhagavato arahato sammasambuddhasa #ino("bell_ringing")
+Namo tassa bhagavato arahato sammasambuddhasa ○
 
 #pagebreak()
 
@@ -380,9 +353,9 @@ in grateful thanks to all our many guides along the ancient way;
 #v(1em)
 
 #set text(weight: "bold")[Assembly:]
-#ino("bell_muted")All Buddhas throughout space and #ino("bell_ringing")time;
-all Bodhisattvas, Mahasattvas #ino("bell_ringing");
-the great Prajna Paramita #ino("bell_ringing").
+●All Buddhas throughout space and ○time;
+all Bodhisattvas, Mahasattvas ○;
+the great Prajna Paramita ○.
 
 #pagebreak()
 
@@ -395,43 +368,43 @@ Buddha nature pervades the whole universe, existing right here now. With our rec
 #v(1em)
 
 #set text(weight: "bold")[Assembly:]
-- #ino("bell_muted") The Ancient Seven Buddhas, Dai Busso
-- #ino("bell_muted") Shakyamuni Buddha, Dai Busso
-- #ino("bell_muted") Mahaprajapati Gautami, Dai Busso
+- ● The Ancient Seven Buddhas, Dai Busso
+- ● Shakyamuni Buddha, Dai Busso
+- ● Mahaprajapati Gautami, Dai Busso
   #h(1em) maha prajApati go'tami
-- #ino("bell_muted") Vimalakirti, Dai Busso
+- ● Vimalakirti, Dai Busso
   #h(1.5em) vi'mala kIrti
-- #ino("bell_muted") Patacara, Dai Busso 
+- ● Patacara, Dai Busso
   #h(1em) p'ta chAra
-- #ino("bell_muted") Bhadda Kapilani
-- #ino("bell_muted") Bodhidarma
-- #ino("bell_muted") Shitou Xiqian 
+- ● Bhadda Kapilani
+- ● Bodhidarma
+- ● Shitou Xiqian
   #h(1em) shure'-toe she-chwen
-- #ino("bell_muted") Mazu Daoji
+- ● Mazu Daoji
   #h(1em) ma'-zoo dao'-ee
-- #ino("bell_muted") Dongshan Liangjie
+- ● Dongshan Liangjie
   #h(1em) dong-shan liang-jay
-- #ino("bell_muted") Pang Yun Jushi
-  #h(1em) pong yun jew-sure 
-- #ino("bell_muted") Pang Lingzhao
+- ● Pang Yun Jushi
+  #h(1em) pong yun jew-sure
+- ● Pang Lingzhao
   #h(1em) pong ling-jao
-- #ino("bell_muted") Liu Tiemo
+- ● Liu Tiemo
   #h(1em) leo tyeh'-mo
-- #ino("bell_muted") Jishou Daojen
+- ● Jishou Daojen
   #h(1em) jee-show dow-ren
-- #ino("bell_muted") Dahui Zonggao
+- ● Dahui Zonggao
   #h(1em) da-whey zong-gao
-- #ino("bell_muted") Miao Dao
+- ● Miao Dao
   #h(1em) meow dow
-- #ino("bell_muted") Miao Zong
+- ● Miao Zong
   #h(1em) meow zong
-- #ino("bell_muted") Dogen Kigen
-- #ino("bell_muted") Keizan Jokin
-- #ino("bell_muted") Daiun Sogaku
-- #ino("bell_muted") Hakuun Ryoko
-- #ino("bell_muted") Koun Zenshin
-- #ino("bell_muted") Single-Mind Aitken
-- #ino("bell_muted") Dawn-Cloud Aitken
+- ● Dogen Kigen
+- ● Keizan Jokin
+- ● Daiun Sogaku
+- ● Hakuun Ryoko
+- ● Koun Zenshin
+- ● Single-Mind Aitken
+- ● Dawn-Cloud Aitken
 
 #v(1em)
 
@@ -444,17 +417,17 @@ Let true Dharma continue, Sangha relations become complete;
 
 #set text(weight: "bold")[Assembly:]
 
-#ino("bell_muted")All Buddhas throughout space and time; #ino("bell_ringing")
-All Bodhisattvas, Mahasattvas; #ino("bell_ringing")
-The great Prajna Paramita #ino("bell_ringing")
+●All Buddhas throughout space and time; ○
+All Bodhisattvas, Mahasattvas; ○
+The great Prajna Paramita ○
 
 #pagebreak()
 
-= #ino("bell_ringing") #ino("bell_muted") Torei Zenji: Bodhisattva's Vow
+= ○ ● Torei Zenji: Bodhisattva's Vow
 
 #set text(weight: "bold")[Leader:]
 
-I am only a simple disciple, #ino("bell_ringing")
+I am only a simple disciple, ○
 but I offer these respectful words:
 
 #v(1em)
@@ -494,14 +467,14 @@ and on each flower there is revealed a Buddha.
 Everywhere is the Pure Land in its beauty.
 We see fully the Tathagata's radiant light
 right where we are.
-May we retain this mind 
-and extend it throughout the world #ino("bell_ringing")
-so that we and all beings #ino("bell_ringing")
-become mature in Buddha's wisdom. #ino("bell_ringing")
+May we retain this mind
+and extend it throughout the world ○
+so that we and all beings ○
+become mature in Buddha's wisdom. ○
 
 #pagebreak()
 
-== #ino("bell_ringing") #ino("bell_muted") #ino("mokugyo_hit") Enmei Jikku Kannon #ino("vocal_dip")Gyo #ino("bell_ringing")
+== ○ ● × Enmei Jikku Kannon VGyo ○
 *in gassho*
 
 #note("Mokugyo throughout")
@@ -553,32 +526,32 @@ become mature in Buddha's wisdom. #ino("bell_ringing")
 *in gassho*
 
 The Buddha and his teachers and his many sons and daughters
-turn the Dharma wheel to show the wisdom of the stones and clouds; 
-we dedicate the virtues of reciting Torei Zenji's Bodhisattva's Vow and the Enmei Jikku Kannon Gyo to: 
+turn the Dharma wheel to show the wisdom of the stones and clouds;
+we dedicate the virtues of reciting Torei Zenji's Bodhisattva's Vow and the Enmei Jikku Kannon Gyo to:
 - Choro Nyogen, Dai Busso
 - Hannya Gempo, Dai Busso
 - Mita Soen, Dai Busso
-and to our relatives and companions of the past who rest in deepest samadhi; 
+and to our relatives and companions of the past who rest in deepest samadhi;
 
 #v(1em)
 
-#set text(weight: "bold")[All:] 
-#ino("bell_muted")All Buddhas throughout space and time; #ino("bell_ringing") 
-all Bodhisattvas, Mahasattvas; #ino("bell_ringing")
-the great prajna paramita #ino("bell_ringing")
+#set text(weight: "bold")[All:]
+●All Buddhas throughout space and time; ○
+all Bodhisattvas, Mahasattvas; ○
+the great prajna paramita ○
 
 #pagebreak()
 
 = Teisho Sutras
 
-== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") On Opening the #ino("vocal_dip")Dharma #ino("bell_ringing")
+== ○ ○ ○ ● On Opening the VDharma ○
 *in gassho*
 
-The dharma, incomparably profound and minutely subtle, #ino("bell_muted", subscript: "3")
-Is rarely encountered, even in hundreds of thousands of millions of ages; 
-We now can see it, hear it, accept and hold it; 
-May we #ino("bell_muted")completely realize the true #ino("bell_muted")meaning 
-Of the Tathagata #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subscript: "3")
+The dharma, incomparably profound and minutely subtle, ●$3$
+Is rarely encountered, even in hundreds of thousands of millions of ages;
+We now can see it, hear it, accept and hold it;
+May we ●completely realize the true ●meaning
+Of the Tathagata ●$1,2$ ○$3$
 
 #note("If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.")
 
@@ -587,57 +560,57 @@ Of the Tathagata #ino("bell_muted", subscript: "1,2") #ino("bell_ringing", subsc
 = Evening Sutra Service
 *in gassho*
 
-== #ino("bell_ringing") #ino("bell_ringing") #ino("bell_ringing") #ino("bell_muted") Hakuin Zenji: Song of Zazen #ino("bell_ringing")
+== ○ ○ ○ ● Hakuin Zenji: Song of Zazen ○
 
 All beings by nature are Buddha,
-As ice by nature is water. 
-Apart from water there is no ice; 
-Apart from beings, no Buddha. 
+As ice by nature is water.
+Apart from water there is no ice;
+Apart from beings, no Buddha.
 
-How sad that people ignore the near 
-And search for truth afar: 
-Like someone in the midst of water 
-Crying out in thirst; 
-Like a child of a wealthy home 
-Wandering among the poor. 
+How sad that people ignore the near
+And search for truth afar:
+Like someone in the midst of water
+Crying out in thirst;
+Like a child of a wealthy home
+Wandering among the poor.
 
-Lost on dark paths of ignorance, 
-We wander through the Six Worlds; 
+Lost on dark paths of ignorance,
+We wander through the Six Worlds;
 From dark path to dark path
-When shall we be freed from birth and death? 
+When shall we be freed from birth and death?
 
-Oh, the zazen of the Mahayana! 
-To this the highest praise! 
-Devotion, repentance, training, 
+Oh, the zazen of the Mahayana!
+To this the highest praise!
+Devotion, repentance, training,
 The many Paramitas
-All have their source in zazen. 
+All have their source in zazen.
 
-Those who try zazen even once 
-Wipe away beginningless crimes. 
-Where are all the dark paths then? 
-The Pure Land itself is near 
+Those who try zazen even once
+Wipe away beginningless crimes.
+Where are all the dark paths then?
+The Pure Land itself is near
 
-Those who hear this truth even once 
-And listen with a grateful heart, 
-Treasuring it, revering it, 
-Gain blessings without end. 
+Those who hear this truth even once
+And listen with a grateful heart,
+Treasuring it, revering it,
+Gain blessings without end.
 
-Much more, those who turn about 
+Much more, those who turn about
 And bear witness to self-nature,
 Self nature that is no-nature,
-Go far beyond mere doctrine. 
+Go far beyond mere doctrine.
 
-Here effect and cause are the same; 
-The Way is neither two nor three. 
+Here effect and cause are the same;
+The Way is neither two nor three.
 
-With form that is no-form, 
-Going and coming we are never astray; 
-With thought that is no-thought, 
-Singing and dancing are the voice of the Law. 
+With form that is no-form,
+Going and coming we are never astray;
+With thought that is no-thought,
+Singing and dancing are the voice of the Law.
 
 Boundless and free is the sky of Samadhi!
 Bright the full moon of wisdom!
-Truly, is anything missing now? 
-Nirvana is right here, before our eyes; #ino("bell_ringing")
-This very place is the Lotus Land; #ino("bell_ringing")
-This very body, the Buddha. #ino("bell_ringing")
+Truly, is anything missing now?
+Nirvana is right here, before our eyes; ○
+This very place is the Lotus Land; ○
+This very body, the Buddha. ○
