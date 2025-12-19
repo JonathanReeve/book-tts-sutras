@@ -480,43 +480,43 @@ become mature in Buddha's wisdom. ○
 #note("Mokugyo throughout")
 
 #trilingual(
-  ruby-line("Kan ze on"),
+  ruby-line(("觀", "Kan"), ("世音", "ze on")),
   [Kannon!]
 )
 #trilingual(
-  ruby-line("Na mu butsu"),
+  ruby-line(("南無", "Na mu"), ("佛", "butsu")),
   [Veneration to the Buddha!]
 )
 #trilingual(
-  ruby-line("Yo butsu u in"),
+  ruby-line(("與佛", "Yo butsu"), ("有因", "u in")),
   [With Buddha's cause,]
 )
 #trilingual(
-  ruby-line("Yo butsu u en"),
+  ruby-line(("與佛", "Yo butsu"), ("有緣", "u en")),
   [With Buddha's effect;]
 )
 #trilingual(
-  ruby-line("Bup po so en"),
+  ruby-line(("佛法", "Bup po"), ("相緣", "so en")),
   [Affinity with Buddha, Dharma, Sangha]
 )
 #trilingual(
-  ruby-line("Jo raku ga jo"),
+  ruby-line(("常樂", "Jo raku"), ("我淨", "ga jo")),
   [Eternity, bliss, self, purity;]
 )
 #trilingual(
-  ruby-line("Cho nen Kan ze on"),
+  ruby-line(("朝念", "Cho nen"), ("觀", "Kan"), ("世音", "ze on")),
   [Mornings my thoughts are Kannon,]
 )
 #trilingual(
-  ruby-line("Bo nen Kan ze on"),
+  ruby-line(("暮念", "Bo nen"), ("觀", "Kan"), ("世音", "ze on")),
   [Evenings my thoughts are Kannon,]
 )
 #trilingual(
-  ruby-line("Nen nen ju shin ki"),
+  ruby-line(("念念", "Nen nen"), ("從心", "ju shin"), ("起", "ki")),
   [Thought after thought arises in the mind,]
 )
 #trilingual(
-  ruby-line("Nen nen fu ri shin"),
+  ruby-line(("念念", "Nen nen"), ("不離", "fu ri"), ("心", "shin")),
   [Thoughts are not separate from the mind.]
 )
 
