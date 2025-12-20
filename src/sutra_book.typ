@@ -5,22 +5,29 @@
 // sutra_book.typ
 
 // A helper macro to wrap any content in a classed <div> for JS to find.
-#let classed-block(class, content) = {
-  if "output" in sys.inputs and sys.inputs.output == "html" {
-    html.elem("div", attrs: (class: class), content)
+// 1. A robust helper for inline spans
+#let classed-span(classname, content) = {
+  // Check for the CLI input "target". Default to "pdf" if not present.
+  if sys.inputs.at("target", default: "pdf") == "html" {
+    html.elem("span", content, attrs: (class: classname))
   } else {
     content
   }
 }
 
-#let eng(content) = {
-  classed-block("lang-en", text(style: "italic", content))
+// 2. English Wrapper
+// Applies italics AND sets Typst's internal lang to "en" (good for hyphenation)
+#let eng(body) = {
+  let content = text(lang: "en", style: "italic", body)
+  classed-span("lang-en", content)
 }
 
-#let zh(content) = {
-  classed-block("lang-zh", text(style: "italic", content))
-} 
-
+// 3. Chinese Wrapper
+// Sets lang to "zh" (crucial for correct CJK font selection)
+#let zh(body) = {
+  let content = text(lang: "zh", body)
+  classed-span("lang-zh", content)
+}
 
 
 #let ino_note(text_content) = {
@@ -38,7 +45,14 @@
 )
 
 
-
+// 1. Define the 'above' function (from previous step)
+#let above(word, top) = box(grid(
+  columns: 1,
+  gutter: 4pt,
+  align: center,
+  text(size: 0.6em, top),
+  word
+))
 
 
 #if "output" in sys.inputs and sys.inputs.output == "html" [
@@ -69,26 +83,18 @@
 
 === Four Infinite Vows
 
-#classed-block("lang-zh", [
-  #ruby[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度] ○$3$
-])
-#eng[All beings beyond number, I vow to free.]
+#zh[ #ruby[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度] ]
+#eng[ All beings beyond number, I vow to #above("free", $△^3$)]
 
-#classed-block("lang-zh", [
-  #ruby[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷]
-])
+#zh[ #ruby[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷] ]
 #eng[Blind passions without cease, I vow to see through.]
 
-#classed-block("lang-zh", [
-  #ruby[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學] △$3$
-])
-#eng[Dharma gates beyond measure, I vow to realize.]
+#zh[ #ruby[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學] ]
+#eng[Dharma gates beyond measure, I vow to #above("realize", $△^3$)].
 
-#classed-block("lang-zh", [
-  #ruby[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成] △$3$ △$1,2,3$
-])
-#eng[Buddha ways without end△$3$, I vow to △$3$embody△$1,2$ △$3...$.]
+#zh[ #ruby[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成] ]
 
+#eng[#above("Buddha", "△") ways without #above("end", $△^3$), I vow to #above("embody", $△^3$).]
 
 #pagebreak()
 
@@ -118,7 +124,7 @@ My actions are the ground on which I stand. ○ ○ ○
 #pagebreak()
 
 == ○ ○ ○ ● Purification ○
-*in gassho*
+_in gassho_
 
 All the evil karma ever created by me since of old, ○$3$
 on account of my beginningless greed, hatred, and ignorance,
@@ -136,28 +142,28 @@ I ○$3$ now confess ○$3$ openly and ●$1,2$ ○$3$ fully.
 = Morning Sutra Service
 
 == ○ ○ ○ ● Ti-Sarana
-*in gassho*
+_in gassho_
 
-Buddham saranam gacchami;
-dhammam saranam gacchami;
-sangham saranam gacchami.
-
-#v(1em)
-
-I take refuge in the Buddha:
-I take refuge in the Dharma;
-I take refuge in the Sangha.
+Buddham saranam gacchami; \
+dhammam saranam gacchami; \
+sangham saranam gacchami. \
 
 #v(1em)
 
-Buddham saranam gacchami;
-dhammam saranam gacchami;
-sangham saranam gacchami. ○
+I take refuge in the Buddha: \
+I take refuge in the Dharma; \
+I take refuge in the Sangha. \
+
+#v(1em)
+
+Buddham saranam gacchami; \
+dhammam saranam gacchami; \
+sangham saranam gacchami. ○ \
 
 #pagebreak()
 
 == ○ ○ ● Vandana
-*in gassho*
+_in gassho_
 
 Namo tassa bhagavato arahato sammasambuddhasa ○
 
@@ -165,111 +171,114 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 == The Great Prajna Paramita Heart Sutra
 
-#classed-block("lang-zh", [
-  #ruby[kan|ji|zai|bo|satsu|gyō|jin|han|nya|ha|ra|mit|ta|ji][觀|自|在|菩|薩|行|深|般|若|波|羅|蜜|多|時]
+#zh[ #ruby[kan|ji|zai|bo|satsu|gyō|jin|han|nya|ha|ra|mit|ta|ji][觀|自|在|菩|薩|行|深|般|若|波|羅|蜜|多|時]
 ])
 #eng[Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,]
-#classed-block("lang-zh", [
-  #ruby[shō|ken|go|un|kai|kū|do|is|sai|ku|yaku][照|見|五|蘊|皆|空|度|一|切|苦|厄]
-])
+
+#zh[ #ruby[shō|ken|go|un|kai|kū|do|is|sai|ku|yaku][照|見|五|蘊|皆|空|度|一|切|苦|厄] ]
 #eng[clearly saw that all five skandhas are empty, transforming all suffering and distress.]
-#classed-block("lang-zh", [
-  #ruby[sha|ri|shi|shiki|fu|i|kū|kū|fu|i|shiki][舎|利|子|色|不|異|空|空|不|異|色]
-])
+
+#zh[ #ruby[sha|ri|shi|shiki|fu|i|kū|kū|fu|i|shiki][舎|利|子|色|不|異|空|空|不|異|色]
+]
 #eng[Shariputra, form is no other than emptiness, emptiness no other than form;]
-#classed-block("lang-zh", [
+
+#zh[
   #ruby[shiki|soku|ze|kū|kū|soku|ze|shiki][色|即|是|空|空|即|是|色]
-])
+]
 #eng[form is exactly emptiness, emptiness exactly form;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[ju|sō|gyō|shiki|yaku|bu|nyo|ze][受|想|行|識|亦|復|如|是]
-])
+]
 #eng[sensation, perception, mental reaction, consciousness, are also like this.]
-#classed-block("lang-zh", [
-  #ruby[sha|ri|shi|ze|sho|hō|kū|sō|fu|shō|fu|metsu][舎|利|子|是|諸|法|空|相|不|生|不|滅]
-])
+#zh[
+#ruby[sha|ri|shi|ze|sho|hō|kū|sō|fu|shō|fu|metsu][舎|利|子|是|諸|法|空|相|不|生|不|滅]
+]
 #eng[Shariputra, all things are essentially empty—not born, not destroyed;]
-#classed-block("lang-zh", [
+
+#zh[
   #ruby[fu|kū|fu|jō|fu|zō|fu|gen][不|垢|不|浄|不|増|不|減]
 ])
 #eng[not stained, not pure; without loss, without gain.]
-#classed-block("lang-zh", [
-  #ruby[ze|ko|kū|chū|mu|shiki|mu|ju|sō|gyō|shiki][是|故|空|中|無|色|無|受|想|行|識]
-])
+
+#zh[ #ruby[ze|ko|kū|chū|mu|shiki|mu|ju|sō|gyō|shiki][是|故|空|中|無|色|無|受|想|行|識]
+]
 #eng[Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[mu|gen|ni|bi|zetsu|shin|i][無|眼|耳|鼻|舌|身|意]
-])
+]
 #eng[no eye, ear, nose, tongue, body, mind,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[mu|shiki|shō|kō|mi|soku|hō][無|色|声|香|味|触|法]
-])
+]
 #eng[no color, sound, scent, taste, touch, thought;]
-#classed-block("lang-zh", [
+
+#zh[
   #ruby[mu|gen|kai|nai|shi|mu|ishiki|kai][無|眼|界|乃|至|無|意|識|界]
-])
+]
 #eng[no seeing and so on to no thinking;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[mu|mu|myō|yaku|mu|mu|myō|jin][無|無|明|亦|無|無|明|尽]
-])
+]
 #eng[no ignorance and also no ending of ignorance,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[nai|shi|mu|rō|shi|yaku|mu|rō|shi|jin][乃|至|無|老|死|亦|無|老|死|尽]
-])
+]
 #eng[and so on to no old age and death and also no ending of old age and death;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[mu|ku|shū|metsu|dō][無|苦|集|滅|道]
-])
+]
 #eng[no suffering, cause of suffering, cessation, path;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[mu|chi|yaku|mu|toku|i|mu|sho|toku|ko][無|智|亦|無|得|以|無|所|得|故]
-])
+]
 #eng[no wisdom and no attainment.]
-#classed-block("lang-zh", [
+#zh[
   #ruby[bo|dai|sat|ta|e|han|nya|ha|ra|mit|ta|ko][菩|提|薩|埵|依|般|若|波|羅|蜜|多|故]
-])
+]
 #eng[Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,]
-#classed-block("lang-zh", [
+
+#zh[
   #ruby[shin|mu|kei|ge|mu|kei|ge|ko|mu|u|ku|fu][心|無|罣|礙|無|罣|礙|故|無|有|恐|怖]
-])
+]
 #eng[with no hindrance in the mind; no hindrance and therefore no fear;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[on|ri|is|sai|ten|dō|mu|sō|ku|gyō|ne|han][遠|離|一|切|顛|倒|夢|想|究|竟|涅|槃]
-])
+]
 #eng[far beyond delusive thinking, right here is Nirvana.]
-#classed-block("lang-zh", [
-  #ruby[san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故]
-])
+
+#zh[ #ruby[san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故]
+]
 #eng[All Buddhas of past, present and future live by Prajna Paramita,]
-#classed-block("lang-zh", [
+
+#zh[
   #ruby[toku|a|no|ku|ta|ra|san|myaku|san|bo|dai][得|阿|耨|多|羅|三|藐|三|菩|提]
 ])
 #eng[attaining Anuttara-samyak-sambodhi.]
-#classed-block("lang-zh", [
+#zh[
   #ruby[ko|chi|han|nya|ha|ra|mit|ta][故|知|般|若|波|羅|蜜|多]
 ])
 #eng[Therefore know that Prajna Paramita is the great mantra, the vivid mantra,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[ze|dai|jin|shu|ze|dai|myō|shu][是|大|神|呪|是|大|明|呪]
 ])
 #eng[the unsurpassed mantra, the supreme mantra,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[ze|mu|jō|shu|ze|mu|tō|dō|shu][是|無|上|呪|是|無|等|等|呪]
 ])
 #eng[which completely removes all suffering.]
-#classed-block("lang-zh", [
+#zh[
   #ruby[nō|jo|is|sai|ku|shin|jitsu|fu|ko][能|除|一|切|苦|真|実|不|虚]
 ])
 #eng[This is truth, not mere formality.]
-#classed-block("lang-zh", [
+#zh[
   #ruby[ko|setsu|han|nya|ha|ra|mit|ta|shu][故|説|般|若|波|羅|蜜|多|呪]
 ])
 #eng[Therefore set for the Prajna Paramita mantra,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[soku|setsu|shu|watsu][即|説|呪|曰]
 ])
 #eng[set forth this mantra and proclaim:]
-#classed-block("lang-zh", [
+#zh[
   #ruby[gya|tei|gya|tei|ha|ra|gya|tei|ha|ra|sō|gya|tei|bo|dhi|so|waka][羯|諦|羯|諦|波|羅|羯|諦|波|羅|僧|羯|諦|菩|薩|婆|訶]
 ])
 #eng[Gate Gate Paragate Parasamgate Bodhi Swaha!]
@@ -281,31 +290,31 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 #ino_note([3 times. Mokugyo throughout.])
 
-#classed-block("lang-zh", [
+#zh[
   #ruby[no|mo|san|man|da|mo|to|nan][南|無|三|曼|多|母|駄|喃]
 ])
 #eng[Veneration to all enlightened ones!]
-#classed-block("lang-zh", [
+#zh[
   #ruby[o|ha|ra|chi|ko|to|sha|so|no|nan][阿|跋|囉|底|賀|多|舍|喃]
 ])
 #eng[The incomparable bodhi-power that banishes misfortune!]
-#classed-block("lang-zh", [
+#zh[
   #ruby[to|ji|to|en|gya|gya|gya|ki|gya|ki|un|nun][怛|姪|他|唵|佉|佉|佉|呬|佉|呬|吽|吽]
 ])
 #eng[Om! The Buddha of reality, wisdom, nirvana!]
-#classed-block("lang-zh", [
+#zh[
   #ruby[shi|fu|ra|shi|fu|ra|ha|ra|shi|fu|ra|ha|ra|shi|fu|ra][入|嚩|囉|入|嚩|囉|鉢|囉|鉢|囉]
 ])
 #eng[Light, light! Great light, great light!]
-#classed-block("lang-zh", [
+#zh[
   #ruby[chi|shu|sa|chi|shu|sa|shu|shi|ri|shu|shi|ri][底|哩|底|哩|娑|婆|訶|娑|婆|訶]
 ])
 #eng[With no categories, this mysterious power saves all beings.]
-#classed-block("lang-zh", [
+#zh[
   #ruby[so|ha|ja|so|ha|ja|sen|chi|gya|shi|ri|ei][莎|婆|訶|莎|婆|訶|戰|地|伽|隸|娑|婆|訶]
 ])
 #eng[Misfortune goes, happiness comes.]
-#classed-block("lang-zh", [
+#zh[
   #ruby[so|mo|ko][莎|婆|訶]
 ])
 #eng[Swaha!]
@@ -332,7 +341,7 @@ the great Prajna Paramita ○.
 #pagebreak()
 
 = Sesshin Dedication
-*in gassho*
+_in gassho_
 
 *Leader:*
 Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajna Paramita Heart Sutra" (Maka Hannya Haramita Shingyo) and the "Sho Sai Myo Kichijo Dharani," let us unite with:
@@ -447,47 +456,45 @@ become mature in Buddha's wisdom. ○
 #pagebreak()
 
 == ○ ● × Enmei Jikku Kannon VGyo ○
-*in gassho*
+_in gassho_
 
 #ino_note([Mokugyo throughout])
 
-#classed-block("lang-zh", [
+#zh[
   #ruby[kan|ze|on][觀|世|音]
 ])
 #eng[Kannon!]
-#classed-block("lang-zh", [
+#zh[
   #ruby[na|mu|butsu][南|無|佛]
 ])
 #eng[Veneration to the Buddha!]
-#classed-block("lang-zh", [
+#zh[
   #ruby[yo|butsu|u|in][與|佛|有|因]
 ])
 #eng[With Buddha's cause,]
-#classed-block("lang-zh", [
-  #ruby[yo|butsu|u|en][與|佛|有|緣]
-])
+#zh[ #ruby[yo|butsu|u|en][與|佛|有|緣] ]
 #eng[With Buddha's effect;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[bup|po|so|en][佛|法|相|緣]
 ])
 #eng[Affinity with Buddha, Dharma, Sangha]
-#classed-block("lang-zh", [
+#zh[
   #ruby[jo|raku|ga|jo][常|樂|我|淨]
 ])
 #eng[Eternity, bliss, self, purity;]
-#classed-block("lang-zh", [
+#zh[
   #ruby[cho|nen|kan|ze|on][朝|念|觀|世|音]
 ])
 #eng[Mornings my thoughts are Kannon,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[bo|nen|kan|ze|on][暮|念|觀|世|音]
 ])
 #eng[Evenings my thoughts are Kannon,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[nen|nen|ju|shin|ki][念|念|從|心|起]
 ])
 #eng[Thought after thought arises in the mind,]
-#classed-block("lang-zh", [
+#zh[
   #ruby[nen|nen|fu|ri|shin][念|念|不|離|心]
 ])
 #eng[Thoughts are not separate from the mind.]
@@ -495,7 +502,7 @@ become mature in Buddha's wisdom. ○
 #pagebreak()
 
 = Dedication
-*in gassho*
+_in gassho_
 
 The Buddha and his teachers and his many sons and daughters
 turn the Dharma wheel to show the wisdom of the stones and clouds;
@@ -517,7 +524,7 @@ the great prajna paramita ○
 = Teisho Sutras
 
 == ○ ○ ○ ● On Opening the Dharma V ○
-*in gassho*
+_in gassho_
 
 #ino_note([If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.])
 
@@ -531,7 +538,7 @@ Of the Tathagata ●$1,2$ ○$3$
 #pagebreak()
 
 = Evening Sutra Service
-*in gassho*
+_in gassho_
 
 == ○ ○ ○ ● Hakuin Zenji: Song of Zazen ○
 
