@@ -294,29 +294,27 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
   #ruby[no|mo|san|man|da|mo|to|nan][南|無|三|曼|多|母|駄|喃]
 ])
 #eng[Veneration to all enlightened ones!]
-#zh[
-  #ruby[o|ha|ra|chi|ko|to|sha|so|no|nan][阿|跋|囉|底|賀|多|舍|喃]
-])
+
+#zh[#ruby[o|ha|ra|chi|ko|to|sha|so|no|nan][阿|跋|囉|底|賀|多|舍|喃]]
 #eng[The incomparable bodhi-power that banishes misfortune!]
-#zh[
-  #ruby[to|ji|to|en|gya|gya|gya|ki|gya|ki|un|nun][怛|姪|他|唵|佉|佉|佉|呬|佉|呬|吽|吽]
-])
+#zh[#ruby[to|ji|to|en|gya|gya|gya|ki|gya|ki|un|nun][怛|姪|他|唵|佉|佉|佉|呬|佉|呬|吽|吽]]
+
 #eng[Om! The Buddha of reality, wisdom, nirvana!]
 #zh[
   #ruby[shi|fu|ra|shi|fu|ra|ha|ra|shi|fu|ra|ha|ra|shi|fu|ra][入|嚩|囉|入|嚩|囉|鉢|囉|鉢|囉]
-])
+]
 #eng[Light, light! Great light, great light!]
 #zh[
   #ruby[chi|shu|sa|chi|shu|sa|shu|shi|ri|shu|shi|ri][底|哩|底|哩|娑|婆|訶|娑|婆|訶]
-])
+]
 #eng[With no categories, this mysterious power saves all beings.]
 #zh[
   #ruby[so|ha|ja|so|ha|ja|sen|chi|gya|shi|ri|ei][莎|婆|訶|莎|婆|訶|戰|地|伽|隸|娑|婆|訶]
-])
+]
 #eng[Misfortune goes, happiness comes.]
 #zh[
   #ruby[so|mo|ko][莎|婆|訶]
-])
+]
 #eng[Swaha!]
 
 #pagebreak()
