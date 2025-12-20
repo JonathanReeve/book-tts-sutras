@@ -35,6 +35,14 @@
       commonArgs = {
         typstSource = "sutra_book.typ";
 
+        unstable_typstPackages = [
+          {
+            name = "rubby";
+            version = "0.10.2";
+            hash = "sha256-xDHqPUWM6+xRO+AnEs2JiwYB4g91Tcq3suqrTtSpSwQ=";
+          }
+        ];
+
         fontPaths = [
           # Add paths to fonts here
           "${pkgs.roboto}/share/fonts/truetype"
