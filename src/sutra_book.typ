@@ -1,52 +1,47 @@
+
+
+#import "@preview/rubby:0.10.2": get-ruby
+
 // sutra_book.typ
 
 // A helper macro to wrap any content in a classed <div> for JS to find.
 #let classed-block(class, content) = {
-  if sys.inputs.output == "html" {
+  if "output" in sys.inputs and sys.inputs.output == "html" {
     html.elem("div", attrs: (class: class), content)
   } else {
     content
   }
 }
 
-// A Typst macro that operates on content, not strings.
-#let ruby-line(..items) = {
-  let content = [] // Initialize as an empty content block
-  let first = true
-  for item in items.pos() {
-    if not first {
-      content += [ ] // Add a space before subsequent items
-    }
-    if type(item) == "array" {
-      content += ruby(item.at(0))[#item.at(1)]
-    } else {
-      content += [item] // Ensure item is added as content
-    }
-    first = false
-  }
-  content
+#let eng(content) = {
+  classed-block("lang-en", text(style: "italic", content))
 }
 
-#let note(text_content) = {
-  set text(size: 0.8em, fill: gray)
-  [#strong("Note:")] #text_content
+#let zh(content) = {
+  classed-block("lang-zh", text(style: "italic", content))
+} 
+
+
+
+#let ino_note(text_content) = {
+  set text(fill: red) // Just print text in red
+  text_content
 }
 
-// The trilingual function still just handles layout.
-#let trilingual(chinese-content, english-content) = {
-  grid(
-    columns: (1fr),
-    rows: (auto, auto),
-    gutter: 8pt,
-    classed-block("lang-zh", chinese-content),
-    classed-block("lang-en", text(style: "italic", english-content)),
-  )
-  v(24pt)
-}
+#let ruby = get-ruby(
+  size: 0.5em,
+  dy: 0pt,
+  pos: top,
+  alignment: "center",
+  delimiter: "|",
+  auto-spacing: true,
+)
 
-// === Document Body ===
 
-#if sys.inputs.output == "html" [
+
+
+
+#if "output" in sys.inputs and sys.inputs.output == "html" [
   #html.elem("div", attrs: (class: "controls"), [
     #html.elem("h3", [Display Options])
     #html.elem("label", [
@@ -74,45 +69,25 @@
 
 === Four Infinite Vows
 
-#trilingual(
-  ruby-line(
-    ("衆生", "Shu jo"),
-    ("無邊", "mu hen"),
-    ("誓願度", "sei gan do"),
-    ○$3$
-  ),
-  [All beings beyond number, I vow to free.]
-)
+#classed-block("lang-zh", [
+  #ruby[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度] ○$3$
+])
+#eng[All beings beyond number, I vow to free.]
 
-#trilingual(
-  ruby-line(
-    ("煩惱", "Bon no"),
-    ("無盡", "mu jin"),
-    ("誓願斷", "sei gan dan"),
-  ),
-  [Blind passions without cease, I vow to see through.]
-)
+#classed-block("lang-zh", [
+  #ruby[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷]
+])
+#eng[Blind passions without cease, I vow to see through.]
 
-#trilingual(
-  ruby-line(
-    ("法門", "Ho mon"),
-    ("無量", "mu ryo"),
-    ("誓願學", "sei gan gaku"),
-    △$3$
-  ),
-  [Dharma gates beyond measure, I vow to realize.]
-)
+#classed-block("lang-zh", [
+  #ruby[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學] △$3$
+])
+#eng[Dharma gates beyond measure, I vow to realize.]
 
-#trilingual(
-  ruby-line(
-    ("佛道", "Butsu do"),
-    △$3$,
-    ("無上", "mu jo"),
-    ("誓願成", "sei gan jo"),
-    △$1,2,3$
-  ),
-  [Buddha ways without end△$3$, I vow to △$3$embody△$1,2$ △$3...$.]
-)
+#classed-block("lang-zh", [
+  #ruby[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成] △$3$ △$1,2,3$
+])
+#eng[Buddha ways without end△$3$, I vow to △$3$embody△$1,2$ △$3...$.]
 
 
 #pagebreak()
@@ -121,7 +96,7 @@
 
 == ○ ○ ○ The Five Remembrances
 
-#ino_note("All O are ten seconds long.")
+#ino_note([All O are ten seconds long.])
 
 1. ● I am of the nature to grow old.
 There is no way to escape growing old. ○
@@ -152,7 +127,7 @@ I ○$3$ now confess ○$3$ openly and ●$1,2$ ○$3$ fully.
 
 
 // This raw block injects the <script> tag into the final HTML file.
-#if sys.inputs.output == "html" [
+#if "output" in sys.inputs and sys.inputs.output == "html" [
   #html.elem("script", attrs: (src: "interactivity.js"))
 ]
 
@@ -190,157 +165,154 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 == The Great Prajna Paramita Heart Sutra
 
-#trilingual(
-  ruby-line(("觀", "Kan"), ("自在", "jizai"), ("菩薩", "bosatsu"), ("行", "gyō"), ("深", "jin"), ("般若", "hannya"), ("波羅蜜多", "haramitta"), ("時", "ji")),
-  [Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,]
-)
-#trilingual(
-  ruby-line(("照", "shō"), ("見", "ken"), ("五蘊", "go un"), ("皆", "kai"), ("空", "kū"), ("度", "do"), ("一切", "issai"), ("苦厄", "ku yaku")),
-  [clearly saw that all five skandhas are empty, transforming all suffering and distress.]
-)
-#trilingual(
-  ruby-line(("舎利子", "sharishi"), ("色", "shiki"), ("不異", "fu i"), ("空", "kū"), ("空", "kū"), ("不異", "fu i"), ("色", "shiki")),
-  [Shariputra, form is no other than emptiness, emptiness no other than form;]
-)
-#trilingual(
-  ruby-line(("色", "shiki"), ("即是", "soku ze"), ("空", "kū"), ("空", "kū"), ("即是", "soku ze"), ("色", "shiki")),
-  [form is exactly emptiness, emptiness exactly form;]
-)
-#trilingual(
-  ruby-line(("受想行識", "ju sō gyō shiki"), ("亦復如是", "yaku bu nyo ze")),
-  [sensation, perception, mental reaction, consciousness, are also like this.]
-)
-#trilingual(
-  ruby-line(("舎利子", "sharishi"), ("是諸法空相", "ze sho hō kū sō"), ("不生不滅", "fu shō fu metsu")),
-  [Shariputra, all things are essentially empty—not born, not destroyed;]
-)
-#trilingual(
-  ruby-line(("不垢不浄", "fu kū fu jō"), ("不増不減", "fu zō fu gen")),
-  [not stained, not pure; without loss, without gain.]
-)
-#trilingual(
-  ruby-line(("是故空中無色", "ze ko kū chū mu shiki"), ("無受想行識", "mu ju sō gyō shiki")),
-  [Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;]
-)
-#trilingual(
-  ruby-line(("無眼耳鼻舌身意", "mu gen ni bi zetsu shin i")),
-  [no eye, ear, nose, tongue, body, mind,]
-)
-#trilingual(
-  ruby-line(("無色声香味触法", "mu shiki shō kō mi soku hō")),
-  [no color, sound, scent, taste, touch, thought;]
-)
-#trilingual(
-  ruby-line(("無眼界", "mu gen kai"), ("乃至無意識界", "nai shi mu ishiki kai")),
-  [no seeing and so on to no thinking;]
-)
-#trilingual(
-  ruby-line(("無無明", "mu mumyō"), ("亦無無明尽", "yaku mu mumyō jin")),
-  [no ignorance and also no ending of ignorance,]
-)
-#trilingual(
-  ruby-line(("乃至無老死", "nai shi mu rōshi"), ("亦無老死尽", "yaku mu rōshi jin")),
-  [and so on to no old age and death and also no ending of old age and death;]
-)
-#trilingual(
-  ruby-line(("無苦集滅道", "mu ku shū metsu dō")),
-  [no suffering, cause of suffering, cessation, path;]
-)
-#trilingual(
-  ruby-line(("無智亦無得", "mu chi yaku mu toku"), ("以無所得故", "i mu sho toku ko")),
-  [no wisdom and no attainment.]
-)
-#trilingual(
-  ruby-line(("菩提薩埵", "bodai sattā'), ("依般若波羅蜜多故", "e hannya haramitta ko")),
-  [Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,]
-)
-#trilingual(
-  ruby-line(("心無罣礙", "shin mu keige"), ("無罣礙故", "mu keige ko"), ("無有恐怖", "mu u ku fu")),
-  [with no hindrance in the mind; no hindrance and therefore no fear;]
-)
-#trilingual(
-  ruby-line(("遠離一切顛倒夢想", "onri issai tendō musō"), ("究竟涅槃", "ku gyō nehan")),
-  [far beyond delusive thinking, right here is Nirvana.]
-)
-#trilingual(
-  ruby-line(("三世諸仏", "sanze shobutsu"), ("依般若波羅蜜多故", "e hannya haramitta ko")),
-  [All Buddhas of past, present and future live by Prajna Paramita,]
-)
-#trilingual(
-  ruby-line(("得阿耨多羅三藐三菩提", "toku anokutara sanmyaku sambodai")),
-  [attaining Anuttara-samyak-sambodhi.]
-)
-#trilingual(
-  ruby-line(("故知般若波羅蜜多", "ko chi hannya haramitta")),
-  [Therefore know that Prajna Paramita is the great mantra, the vivid mantra,]
-)
-#trilingual(
-  ruby-line(("是大神呪", "ze dai jin shu"), ("是大明呪", "ze dai myō shu")),
-  [the unsurpassed mantra, the supreme mantra,]
-)
-#trilingual(
-  ruby-line(("是無上呪", "ze mu jō shu"), ("是無等等呪", "ze mu tō dō shu")),
-  [which completely removes all suffering.]
-)
-#trilingual(
-  ruby-line(("能除一切苦", "nō jo issai ku"), ("真実不虚", "shin jitsu fu ko")),
-  [This is truth, not mere formality.]
-)
-#trilingual(
-  ruby-line(("故説般若波羅蜜多呪", "ko setsu hannya haramitta shu")),
-  [Therefore set for the Prajna Paramita mantra,]
-)
-#trilingual(
-  ruby-line(("即説呪曰", "soku setsu shu watsu")),
-  [set forth this mantra and proclaim:]
-)
-#trilingual(
-  ruby-line(("羯諦", "gyatei"), ("羯諦", "gyatei"), ("波羅羯諦", "haragyatei"), ("波羅僧羯諦", "harasōgyatei"), ("菩DE薩婆訶", "bodhi sowaka")),
-  [Gate Gate Paragate Parasamgate Bodhi Swaha!]
-)
+#classed-block("lang-zh", [
+  #ruby[kan|ji|zai|bo|satsu|gyō|jin|han|nya|ha|ra|mit|ta|ji][觀|自|在|菩|薩|行|深|般|若|波|羅|蜜|多|時]
+])
+#eng[Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,]
+#classed-block("lang-zh", [
+  #ruby[shō|ken|go|un|kai|kū|do|is|sai|ku|yaku][照|見|五|蘊|皆|空|度|一|切|苦|厄]
+])
+#eng[clearly saw that all five skandhas are empty, transforming all suffering and distress.]
+#classed-block("lang-zh", [
+  #ruby[sha|ri|shi|shiki|fu|i|kū|kū|fu|i|shiki][舎|利|子|色|不|異|空|空|不|異|色]
+])
+#eng[Shariputra, form is no other than emptiness, emptiness no other than form;]
+#classed-block("lang-zh", [
+  #ruby[shiki|soku|ze|kū|kū|soku|ze|shiki][色|即|是|空|空|即|是|色]
+])
+#eng[form is exactly emptiness, emptiness exactly form;]
+#classed-block("lang-zh", [
+  #ruby[ju|sō|gyō|shiki|yaku|bu|nyo|ze][受|想|行|識|亦|復|如|是]
+])
+#eng[sensation, perception, mental reaction, consciousness, are also like this.]
+#classed-block("lang-zh", [
+  #ruby[sha|ri|shi|ze|sho|hō|kū|sō|fu|shō|fu|metsu][舎|利|子|是|諸|法|空|相|不|生|不|滅]
+])
+#eng[Shariputra, all things are essentially empty—not born, not destroyed;]
+#classed-block("lang-zh", [
+  #ruby[fu|kū|fu|jō|fu|zō|fu|gen][不|垢|不|浄|不|増|不|減]
+])
+#eng[not stained, not pure; without loss, without gain.]
+#classed-block("lang-zh", [
+  #ruby[ze|ko|kū|chū|mu|shiki|mu|ju|sō|gyō|shiki][是|故|空|中|無|色|無|受|想|行|識]
+])
+#eng[Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;]
+#classed-block("lang-zh", [
+  #ruby[mu|gen|ni|bi|zetsu|shin|i][無|眼|耳|鼻|舌|身|意]
+])
+#eng[no eye, ear, nose, tongue, body, mind,]
+#classed-block("lang-zh", [
+  #ruby[mu|shiki|shō|kō|mi|soku|hō][無|色|声|香|味|触|法]
+])
+#eng[no color, sound, scent, taste, touch, thought;]
+#classed-block("lang-zh", [
+  #ruby[mu|gen|kai|nai|shi|mu|ishiki|kai][無|眼|界|乃|至|無|意|識|界]
+])
+#eng[no seeing and so on to no thinking;]
+#classed-block("lang-zh", [
+  #ruby[mu|mu|myō|yaku|mu|mu|myō|jin][無|無|明|亦|無|無|明|尽]
+])
+#eng[no ignorance and also no ending of ignorance,]
+#classed-block("lang-zh", [
+  #ruby[nai|shi|mu|rō|shi|yaku|mu|rō|shi|jin][乃|至|無|老|死|亦|無|老|死|尽]
+])
+#eng[and so on to no old age and death and also no ending of old age and death;]
+#classed-block("lang-zh", [
+  #ruby[mu|ku|shū|metsu|dō][無|苦|集|滅|道]
+])
+#eng[no suffering, cause of suffering, cessation, path;]
+#classed-block("lang-zh", [
+  #ruby[mu|chi|yaku|mu|toku|i|mu|sho|toku|ko][無|智|亦|無|得|以|無|所|得|故]
+])
+#eng[no wisdom and no attainment.]
+#classed-block("lang-zh", [
+  #ruby[bo|dai|sat|ta|e|han|nya|ha|ra|mit|ta|ko][菩|提|薩|埵|依|般|若|波|羅|蜜|多|故]
+])
+#eng[Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,]
+#classed-block("lang-zh", [
+  #ruby[shin|mu|kei|ge|mu|kei|ge|ko|mu|u|ku|fu][心|無|罣|礙|無|罣|礙|故|無|有|恐|怖]
+])
+#eng[with no hindrance in the mind; no hindrance and therefore no fear;]
+#classed-block("lang-zh", [
+  #ruby[on|ri|is|sai|ten|dō|mu|sō|ku|gyō|ne|han][遠|離|一|切|顛|倒|夢|想|究|竟|涅|槃]
+])
+#eng[far beyond delusive thinking, right here is Nirvana.]
+#classed-block("lang-zh", [
+  #ruby[san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故]
+])
+#eng[All Buddhas of past, present and future live by Prajna Paramita,]
+#classed-block("lang-zh", [
+  #ruby[toku|a|no|ku|ta|ra|san|myaku|san|bo|dai][得|阿|耨|多|羅|三|藐|三|菩|提]
+])
+#eng[attaining Anuttara-samyak-sambodhi.]
+#classed-block("lang-zh", [
+  #ruby[ko|chi|han|nya|ha|ra|mit|ta][故|知|般|若|波|羅|蜜|多]
+])
+#eng[Therefore know that Prajna Paramita is the great mantra, the vivid mantra,]
+#classed-block("lang-zh", [
+  #ruby[ze|dai|jin|shu|ze|dai|myō|shu][是|大|神|呪|是|大|明|呪]
+])
+#eng[the unsurpassed mantra, the supreme mantra,]
+#classed-block("lang-zh", [
+  #ruby[ze|mu|jō|shu|ze|mu|tō|dō|shu][是|無|上|呪|是|無|等|等|呪]
+])
+#eng[which completely removes all suffering.]
+#classed-block("lang-zh", [
+  #ruby[nō|jo|is|sai|ku|shin|jitsu|fu|ko][能|除|一|切|苦|真|実|不|虚]
+])
+#eng[This is truth, not mere formality.]
+#classed-block("lang-zh", [
+  #ruby[ko|setsu|han|nya|ha|ra|mit|ta|shu][故|説|般|若|波|羅|蜜|多|呪]
+])
+#eng[Therefore set for the Prajna Paramita mantra,]
+#classed-block("lang-zh", [
+  #ruby[soku|setsu|shu|watsu][即|説|呪|曰]
+])
+#eng[set forth this mantra and proclaim:]
+#classed-block("lang-zh", [
+  #ruby[gya|tei|gya|tei|ha|ra|gya|tei|ha|ra|sō|gya|tei|bo|dhi|so|waka][羯|諦|羯|諦|波|羅|羯|諦|波|羅|僧|羯|諦|菩|薩|婆|訶]
+])
+#eng[Gate Gate Paragate Parasamgate Bodhi Swaha!]
 
 #pagebreak()
 
 == Sho Sai Myo Kichijo Darani
 === Dharani for Dispelling Misfortune
 
-#ino_note("Ino: 3 times. Mokugyo throughout.")
+#ino_note([3 times. Mokugyo throughout.])
 
-#trilingual(
-  ruby-line(("南無", "No mo"), ("三曼多", "San man da"), ("母駄喃", "Moto nan")),
-  [Veneration to all enlightened ones!]
-)
-#trilingual(
-  ruby-line(("阿", "O"), ("跋囉底", "ha ra chi"), ("賀多", "koto sha"), ("舍", "sono"), ("喃", "nan")),
-  [The incomparable bodhi-power that banishes misfortune!]
-)
-#trilingual(
-  ruby-line(("怛姪他", "To ji to"), ("唵", "en"), ("佉佉", "gya gya"), ("佉呬", "gya ki"), ("佉呬", "gya ki"), ("吽吽", "un nun")),
-  [Om! The Buddha of reality, wisdom, nirvana!]
-)
-#trilingual(
-  ruby-line(("入嚩囉", "Shifu ra"), ("入嚩囉", "Shifu ra"), ("鉢囉", "hara shifu ra"), ("鉢囉", "hara shifu ra")),
-  [Light, light! Great light, great light!]
-)
-#trilingual(
-  ruby-line(("底哩", "Chishu sa"), ("底哩", "Chishu sa"), ("娑婆訶", "shushi ri"), ("娑婆訶", "shushi ri")),
-  [With no categories, this mysterious power saves all beings.]
-)
-#trilingual(
-  ruby-line(("莎婆訶", "Soha ja"), ("莎婆訶", "soha ja"), ("戰地", "sen chi"), ("伽隸", "gya shiri"), ("娑婆訶", "ei")),
-  [Misfortune goes, happiness comes.]
-)
-#trilingual(
-  ruby-line(("莎婆訶", "Somo ko")),
-  [Swaha!]
-)
+#classed-block("lang-zh", [
+  #ruby[no|mo|san|man|da|mo|to|nan][南|無|三|曼|多|母|駄|喃]
+])
+#eng[Veneration to all enlightened ones!]
+#classed-block("lang-zh", [
+  #ruby[o|ha|ra|chi|ko|to|sha|so|no|nan][阿|跋|囉|底|賀|多|舍|喃]
+])
+#eng[The incomparable bodhi-power that banishes misfortune!]
+#classed-block("lang-zh", [
+  #ruby[to|ji|to|en|gya|gya|gya|ki|gya|ki|un|nun][怛|姪|他|唵|佉|佉|佉|呬|佉|呬|吽|吽]
+])
+#eng[Om! The Buddha of reality, wisdom, nirvana!]
+#classed-block("lang-zh", [
+  #ruby[shi|fu|ra|shi|fu|ra|ha|ra|shi|fu|ra|ha|ra|shi|fu|ra][入|嚩|囉|入|嚩|囉|鉢|囉|鉢|囉]
+])
+#eng[Light, light! Great light, great light!]
+#classed-block("lang-zh", [
+  #ruby[chi|shu|sa|chi|shu|sa|shu|shi|ri|shu|shi|ri][底|哩|底|哩|娑|婆|訶|娑|婆|訶]
+])
+#eng[With no categories, this mysterious power saves all beings.]
+#classed-block("lang-zh", [
+  #ruby[so|ha|ja|so|ha|ja|sen|chi|gya|shi|ri|ei][莎|婆|訶|莎|婆|訶|戰|地|伽|隸|娑|婆|訶]
+])
+#eng[Misfortune goes, happiness comes.]
+#classed-block("lang-zh", [
+  #ruby[so|mo|ko][莎|婆|訶]
+])
+#eng[Swaha!]
 
 #pagebreak()
 
-= Zenkai Dedication
-*in gassho*
-
-#set text(weight: "bold")[Leader:]
+*Leader:*
 Our words ring out through space beyond the stars;
 their virtue and compassion echo back from all the many beings;
 we recite the "Great Prajna Paramita Heart Sutra"
@@ -352,7 +324,7 @@ in grateful thanks to all our many guides along the ancient way;
 
 #v(1em)
 
-#set text(weight: "bold")[Assembly:]
+*Assembly:*
 ●All Buddhas throughout space and ○time;
 all Bodhisattvas, Mahasattvas ○;
 the great Prajna Paramita ○.
@@ -362,12 +334,12 @@ the great Prajna Paramita ○.
 = Sesshin Dedication
 *in gassho*
 
-#set text(weight: "bold")[Leader:]
+*Leader:*
 Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajna Paramita Heart Sutra" (Maka Hannya Haramita Shingyo) and the "Sho Sai Myo Kichijo Dharani," let us unite with:
 
 #v(1em)
 
-#set text(weight: "bold")[Assembly:]
+*Assembly:*
 - ● The Ancient Seven Buddhas, Dai Busso
 - ● Shakyamuni Buddha, Dai Busso
 - ● Mahaprajapati Gautami, Dai Busso
@@ -408,14 +380,14 @@ Buddha nature pervades the whole universe, existing right here now. With our rec
 
 #v(1em)
 
-#set text(weight: "bold")[Leader:]
+*Leader:*
 
 All founding teachers, past, present, future, Dai Busso.
 Let true Dharma continue, Sangha relations become complete;
 
 #v(1em)
 
-#set text(weight: "bold")[Assembly:]
+*Assembly:*
 
 ●All Buddhas throughout space and time; ○
 All Bodhisattvas, Mahasattvas; ○
@@ -425,14 +397,14 @@ The great Prajna Paramita ○
 
 = ○ ● Torei Zenji: Bodhisattva's Vow
 
-#set text(weight: "bold")[Leader:]
+*Leader:*
 
 I am only a simple disciple, ○
 but I offer these respectful words:
 
 #v(1em)
 
-#set text(weight: "bold")[Assembly:]
+*Assembly:*
 
 When I regard the true nature of the many dharmas,
 I find them all to be sacred forms
@@ -477,48 +449,48 @@ become mature in Buddha's wisdom. ○
 == ○ ● × Enmei Jikku Kannon VGyo ○
 *in gassho*
 
-#ino_note("Mokugyo throughout")
+#ino_note([Mokugyo throughout])
 
-#trilingual(
-  ruby-line(("觀", "Kan"), ("世音", "ze on")),
-  [Kannon!]
-)
-#trilingual(
-  ruby-line(("南無", "Na mu"), ("佛", "butsu")),
-  [Veneration to the Buddha!]
-)
-#trilingual(
-  ruby-line(("與佛", "Yo butsu"), ("有因", "u in")),
-  [With Buddha's cause,]
-)
-#trilingual(
-  ruby-line(("與佛", "Yo butsu"), ("有緣", "u en")),
-  [With Buddha's effect;]
-)
-#trilingual(
-  ruby-line(("佛法", "Bup po"), ("相緣", "so en")),
-  [Affinity with Buddha, Dharma, Sangha]
-)
-#trilingual(
-  ruby-line(("常樂", "Jo raku"), ("我淨", "ga jo")),
-  [Eternity, bliss, self, purity;]
-)
-#trilingual(
-  ruby-line(("朝念", "Cho nen"), ("觀", "Kan"), ("世音", "ze on")),
-  [Mornings my thoughts are Kannon,]
-)
-#trilingual(
-  ruby-line(("暮念", "Bo nen"), ("觀", "Kan"), ("世音", "ze on")),
-  [Evenings my thoughts are Kannon,]
-)
-#trilingual(
-  ruby-line(("念念", "Nen nen"), ("從心", "ju shin"), ("起", "ki")),
-  [Thought after thought arises in the mind,]
-)
-#trilingual(
-  ruby-line(("念念", "Nen nen"), ("不離", "fu ri"), ("心", "shin")),
-  [Thoughts are not separate from the mind.]
-)
+#classed-block("lang-zh", [
+  #ruby[kan|ze|on][觀|世|音]
+])
+#eng[Kannon!]
+#classed-block("lang-zh", [
+  #ruby[na|mu|butsu][南|無|佛]
+])
+#eng[Veneration to the Buddha!]
+#classed-block("lang-zh", [
+  #ruby[yo|butsu|u|in][與|佛|有|因]
+])
+#eng[With Buddha's cause,]
+#classed-block("lang-zh", [
+  #ruby[yo|butsu|u|en][與|佛|有|緣]
+])
+#eng[With Buddha's effect;]
+#classed-block("lang-zh", [
+  #ruby[bup|po|so|en][佛|法|相|緣]
+])
+#eng[Affinity with Buddha, Dharma, Sangha]
+#classed-block("lang-zh", [
+  #ruby[jo|raku|ga|jo][常|樂|我|淨]
+])
+#eng[Eternity, bliss, self, purity;]
+#classed-block("lang-zh", [
+  #ruby[cho|nen|kan|ze|on][朝|念|觀|世|音]
+])
+#eng[Mornings my thoughts are Kannon,]
+#classed-block("lang-zh", [
+  #ruby[bo|nen|kan|ze|on][暮|念|觀|世|音]
+])
+#eng[Evenings my thoughts are Kannon,]
+#classed-block("lang-zh", [
+  #ruby[nen|nen|ju|shin|ki][念|念|從|心|起]
+])
+#eng[Thought after thought arises in the mind,]
+#classed-block("lang-zh", [
+  #ruby[nen|nen|fu|ri|shin][念|念|不|離|心]
+])
+#eng[Thoughts are not separate from the mind.]
 
 #pagebreak()
 
@@ -535,7 +507,7 @@ and to our relatives and companions of the past who rest in deepest samadhi;
 
 #v(1em)
 
-#set text(weight: "bold")[All:]
+*All:*
 ●All Buddhas throughout space and time; ○
 all Bodhisattvas, Mahasattvas; ○
 the great prajna paramita ○
@@ -547,7 +519,7 @@ the great prajna paramita ○
 == ○ ○ ○ ● On Opening the Dharma V ○
 *in gassho*
 
-#ino_note("Ino: if you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.")
+#ino_note([If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.])
 
 The dharma, incomparably profound and minutely subtle, ●$3$
 Is rarely encountered, even in hundreds of thousands of millions of ages;
