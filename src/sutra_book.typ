@@ -22,6 +22,15 @@
   classed-span("lang-en", content)
 }
 
+#let ruby = get-ruby(
+  size: 0.5em,
+  dy: 0pt,
+  pos: top,
+  alignment: "center",
+  delimiter: "|",
+  auto-spacing: true,
+)
+
 // 3. Chinese Wrapper
 // Sets lang to "zh" (crucial for correct CJK font selection)
 #let zh(left_str, right_str) = {
@@ -40,14 +49,6 @@
   text_content
 }
 
-#let ruby = get-ruby(
-  size: 0.5em,
-  dy: 0pt,
-  pos: top,
-  alignment: "center",
-  delimiter: "|",
-  auto-spacing: true,
-)
 
 
 // 1. Define the 'above' function (from previous step)
@@ -205,7 +206,7 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 #zh[mu|shiki|shō|kō|mi|soku|hō][無|色|声|香|味|触|法]
 #eng[no color, sound, scent, taste, touch, thought;]
 
-#zh[mu|gen|kai|nai|shi|mu|ishiki|kai][無|眼|界|乃|至|無|意|識|界]
+#zh[mu|gen|kai|nai|shi|mu|i|shiki|kai][無|眼|界|乃|至|無|意|識|界]
 #eng[no seeing and so on to no thinking;]
 
 #zh[mu|mu|myō|yaku|mu|mu|myō|jin][無|無|明|亦|無|無|明|尽]
@@ -229,7 +230,7 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 #zh[on|ri|is|sai|ten|dō|mu|sō|ku|gyō|ne|han][遠|離|一|切|顛|倒|夢|想|究|竟|涅|槃]
 #eng[far beyond delusive thinking, right here is Nirvana.]
 
-#zh[ san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故]
+#zh[san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故]
 #eng[All Buddhas of past, present and future live by Prajna Paramita,]
 
 #zh[toku|a|no|ku|ta|ra|san|myaku|san|bo|dai][得|阿|耨|多|羅|三|藐|三|菩|提]
