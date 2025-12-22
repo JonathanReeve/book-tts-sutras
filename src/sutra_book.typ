@@ -24,8 +24,13 @@
 
 // 3. Chinese Wrapper
 // Sets lang to "zh" (crucial for correct CJK font selection)
-#let zh(body) = {
-  let content = text(lang: "zh", body)
+#let zh(left_str, right_str) = {
+  let left = text(left_str)
+  let right = text(right_str)
+  if left.text.split("|").len() != right.text.split("|").len() {
+    panic("Ruby text has imbalanced sides. Left: " + str(left.text.split("|").len()) + ", Right: " + str(right.text.split("|").len()))
+  }
+  let content = text(lang: "zh", ruby(left, right))
   classed-span("lang-zh", content)
 }
 
