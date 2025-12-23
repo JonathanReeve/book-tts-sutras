@@ -309,8 +309,8 @@ in grateful thanks to all our many guides along the ancient way;
 #v(1em)
 
 *Assembly:*
-● All Buddhas throughout space and ○time;
-all Bodhisattvas, Mahasattvas ○;
+● All Buddhas throughout space and time; ○
+all Bodhisattvas, Mahasattvas; ○
 the great Prajna Paramita ○.
 
 #pagebreak()
@@ -373,7 +373,7 @@ Let true Dharma continue, Sangha relations become complete;
 
 *Assembly:*
 
-●All Buddhas throughout space and time; ○
+● All Buddhas throughout space and time; ○
 All Bodhisattvas, Mahasattvas; ○
 The great Prajna Paramita ○
 
@@ -493,7 +493,7 @@ _in gassho_
 
 #ino_note([If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.])
 
-The dharma, incomparably profound and minutely subtle, ●$3$
+The dharma, incomparably profound and minutely subtle, $●3$
 Is rarely encountered, even in hundreds of thousands of millions of ages;
 We now can see it, hear it, accept and hold it;
 May we ●completely realize the true ●meaning
