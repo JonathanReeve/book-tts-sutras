@@ -28,6 +28,12 @@ This project uses [Typst](https://typst.app/) as its core technology. Typst is a
 
 The development environment is managed using [Nix](https://nixos.org/), ensuring reproducible builds across different systems.
 
+## Contents
+
+references: Reference material: this sutra book in older formats; other sutra books
+src: The main typst sources
+
+
 ## Outputs 
 
 This project effectively has two primary outputs generated from the single `src/sutra_book.typ` source file:
