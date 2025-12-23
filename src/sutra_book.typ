@@ -99,16 +99,16 @@
 === Four Infinite Vows
 
 #zh[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度]
-#eng[All beings beyond number, I vow to #above("free", $△^3$)]
+#eng[All beings beyond number, I vow to free #ino[$△^3$]]
 
 #zh[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷]
 #eng[Blind passions without cease, I vow to see through.]
 
 #zh[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學]
-#eng[Dharma gates beyond measure, I vow to #above("realize", $△^3$)].
+#eng[Dharma gates beyond measure, I vow to realize #ino[$△^3$]].
 
 #zh[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成]
-#eng[#above("Buddha", "△") ways without #above("end", $△^3$), I vow to #above("embody", $△^3$).]
+#eng[△ Buddha ways without #ino[$△^3$] end, I vow to embody. #ino[$△^3$]]
 
 #pagebreak()
 
