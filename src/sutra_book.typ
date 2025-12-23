@@ -118,32 +118,32 @@
 
 #ino_note([All O are ten seconds long.])
 
-1. ● I am of the nature to grow old.
-There is no way to escape growing old. ○
+1. #ino[●] I am of the nature to grow old.
+There is no way to escape growing old. #ino[○]
 
-2. ● I am of the nature to have ill health.
-There is no way to escape having ill health. ○
+2. #ino[●] I am of the nature to have ill health.
+There is no way to escape having ill health. #ino[○]
 
-3. ● I am of the nature to die.
-There is no way to escape death. ○
+3. #ino[●] I am of the nature to die.
+There is no way to escape death. #ino[○]
 
-4. ● All that is dear to me and everyone I love
+4. #ino[●] All that is dear to me and everyone I love
 are of the nature to change.
-There is no way to escape being separated from them. ○
+There is no way to escape being separated from them. #ino[○]
 
-5. ● My actions are my only true belongings.
+5. #ino[●] My actions are my only true belongings.
 I cannot escape the consequences of my actions.
-My actions are the ground on which I stand. ○ ○ ○
+My actions are the ground on which I stand. #ino[○ ○ ○]
 
 #pagebreak()
 
-== ○ ○ ○ ● Purification ○
+== #ino[○ ○ ○ ●] Purification #ino[○]
 _in gassho_
 
-All the evil karma ever created by me since of old, $○^3$
+All the evil karma ever created by me since of old, #ino[$○^3$]
 on account of my beginningless greed, hatred, and ignorance,
 born of my conduct, speech and thought,
-I $○^3$ now confess $○^3$ openly and $●^{1,2}$ $○^3$ fully.
+I #ino[$○^3$] now confess #ino[$○^3$] openly and #ino[$●^{1,2}$] #ino[$○^3$] fully.
 
 
 // This raw block injects the <script> tag into the final HTML file.
@@ -155,7 +155,7 @@ I $○^3$ now confess $○^3$ openly and $●^{1,2}$ $○^3$ fully.
 
 = Morning Sutra Service
 
-== ○ ○ ○ ● Ti-Sarana
+== #ino[○ ○ ○ ●] Ti-Sarana
 _in gassho_
 
 Buddham saranam gacchami; \
@@ -176,7 +176,7 @@ sangham saranam gacchami. ○ \
 
 #pagebreak()
 
-== ○ ○ ● Vandana
+== #ino[○ ○ ●] Vandana
 _in gassho_
 
 Namo tassa bhagavato arahato sammasambuddhasa ○
@@ -379,7 +379,7 @@ The great Prajna Paramita ○
 
 #pagebreak()
 
-= ○ ● Torei Zenji: Bodhisattva's Vow
+= #ino[○ ●] Torei Zenji: Bodhisattva's Vow
 
 *Leader:*
 
@@ -430,7 +430,7 @@ become mature in Buddha's wisdom. ○
 
 #pagebreak()
 
-== ○ ● × Enmei Jikku Kannon Gyo ○
+== #ino[○ ● ×] Enmei Jikku Kannon Gyo #ino[○]
 _in gassho_
 
 #ino_note([Mokugyo throughout])
@@ -488,7 +488,7 @@ the great prajna paramita ○
 
 = Teisho Sutras
 
-== ○ ○ ○ ● On Opening the Dharma V ○
+== #ino[○ ○ ○ ●] On Opening the Dharma V #ino[○]
 _in gassho_
 
 #ino_note([If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.])
@@ -505,7 +505,7 @@ Of the Tathagata $●^{1,2}$ $○^3$
 = Evening Sutra Service
 _in gassho_
 
-== ○ ○ ○ ● Hakuin Zenji: Song of Zazen ○
+== #ino[○ ○ ○ ●] Hakuin Zenji: Song of Zazen #ino[○]
 
 All beings by nature are Buddha,
 As ice by nature is water.
@@ -556,6 +556,6 @@ Singing and dancing are the voice of the Law.
 Boundless and free is the sky of Samadhi!
 Bright the full moon of wisdom!
 Truly, is anything missing now?
-Nirvana is right here, before our eyes; ○
-This very place is the Lotus Land; ○
-This very body, the Buddha. ○
+Nirvana is right here, before our eyes; #ino[○]
+This very place is the Lotus Land; #ino[○]
+This very body, the Buddha. #ino[○]
