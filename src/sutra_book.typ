@@ -99,16 +99,16 @@
 === Four Infinite Vows
 
 #zh[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度]
-#eng[All beings beyond number, I vow to free #ino[$△^3$]]
+#eng[All beings beyond number, I vow to free △³]
 
 #zh[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷]
 #eng[Blind passions without cease, I vow to see through.]
 
 #zh[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學]
-#eng[Dharma gates beyond measure, I vow to realize #ino[$△^3$]].
+#eng[Dharma gates beyond measure, I vow to realize △³].
 
 #zh[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成]
-#eng[△ Buddha ways without #ino[$△^3$] end, I vow to embody. #ino[$△^3$]]
+#eng[△ Buddha ways without △³ end, I vow to embody. △³]
 
 #pagebreak()
 
@@ -124,7 +124,7 @@ There is no way to escape growing old. ○
 2. ● I am of the nature to have ill health.
 There is no way to escape having ill health. ○
 
-3. ● I am of the nature to die.
+³. ● I am of the nature to die.
 There is no way to escape death. ○
 
 4. ● All that is dear to me and everyone I love
@@ -140,10 +140,10 @@ My actions are the ground on which I stand. ○ ○ ○
 == ○ ○ ○ ● Purification ○
 _in gassho_
 
-All the evil karma ever created by me since of old, #ino[$○^3$]
+All the evil karma ever created by me since of old, ○³
 on account of my beginningless greed, hatred, and ignorance,
 born of my conduct, speech and thought,
-I #ino[$○^3$] now confess #ino[$○^3$] openly and  fully. #ino[$●^{1,2}$ $○^3$]
+I ○³ now confess ○³ openly and  fully. ●¹² ○³
 
 #pagebreak()
 
@@ -487,11 +487,11 @@ _in gassho_
 
 #ino_note([If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.])
 
-The dharma, incomparably profound and minutely subtle, #ino[$●3$]
+The dharma, incomparably profound and minutely subtle, ●³
 Is rarely encountered, even in hundreds of thousands of millions of ages;
 We now can see it, hear it, accept and hold it;
 May we ●completely realize the true ●meaning
-Of the Tathagata #ino[$●^{1,2}$ $○^3$]
+Of the Tathagata ●¹² ○³
 
 
 #pagebreak()
