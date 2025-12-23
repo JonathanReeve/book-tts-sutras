@@ -57,48 +57,37 @@
         ];
       };
 
-      # Compile a Typst project, *without* copying the result
-      # to the current directory
-      build-drv = typixLib.buildTypstProject (commonArgs
-        // {
-          inherit src;
-        });
+      commonArgsHtml = commonArgs // { output = "html"; };
+      commonArgsPdf = commonArgs // { output = "pdf"; };
 
-      # Compile a Typst project, and then copy the result
-      # to the current directory
-      build-script = typixLib.buildTypstProjectLocal (commonArgs
-        // {
-          inherit src;
-        });
+      # Build Typst projects in the Nix store
+      html-drv = typixLib.buildTypstProject (commonArgsHtml // { inherit src; });
+      ino-pdf-drv = typixLib.buildTypstProject (commonArgsPdf // { inherit src; inputs = [ "show-ino-notation=true" ]; });
+      print-pdf-drv = typixLib.buildTypstProject (commonArgsPdf // { inherit src; inputs = [ "show-ino-notation=false" ]; });
 
-      # Watch a project and recompile on changes
+      # Watch a project and recompile on changes (for default development)
       watch-script = typixLib.watchTypstProject commonArgs;
     in {
       checks = {
-        inherit build-drv build-script watch-script;
+        inherit html-drv ino-pdf-drv print-pdf-drv watch-script;
       };
 
-      packages.default = build-drv;
+      packages = {
+        default = html-drv; # Default package is the HTML build
+        html = html-drv;
+        ino-pdf = ino-pdf-drv;
+        print-pdf = print-pdf-drv;
+      };
 
       apps = rec {
-        default = watch;
-        build = flake-utils.lib.mkApp {
-          drv = build-script;
-        };
-        watch = flake-utils.lib.mkApp {
-          drv = watch-script;
-        };
+        default = watch; # Default app is watch
+        watch = flake-utils.lib.mkApp { drv = watch-script; };
       };
 
       devShells.default = typixLib.devShell {
         inherit (commonArgs) fontPaths virtualPaths;
         packages = [
-          # WARNING: Don't run `typst-build` directly, instead use `nix run .#build`
-          # See https://github.com/loqusion/typix/issues/2
-          # build-script
           watch-script
-          # More packages can be added here, like typstfmt
-          # pkgs.typstfmt
         ];
       };
     });

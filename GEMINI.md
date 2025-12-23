@@ -9,4 +9,6 @@
 - Change the paper size to something more narrow, for verse 
 - Use proper citations for the book sources listed in the footnotes 
 - Create [Hyragriva YAML entries](https://github.com/typst/hayagriva/blob/main/docs/file-format.md) for each book mentioned in a citation
+- Regularize all spellings, following editorial conventions listed in the README
 - Add a bibliography at the end
+

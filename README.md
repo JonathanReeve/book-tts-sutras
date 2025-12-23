@@ -12,6 +12,16 @@ This sutra book needs to be:
 2. **Future-proof**: use open-source technologies that won't quickly go obsolete
 3. **Unified**: we should have one version of each text, which can produce various outputs. This way we won't have to update several versions of a text, or deal with textual variations or diverging page numbers. 
 
+## Editorial Conventions 
+
+1. Use modern romanization systems throughout: 
+  - Use Pinyin as the romanization form for Chinese
+    - Ex: Tao -> Dao; Tao Te Ching -> Daodejing 
+  - Use standard rōmaji for Japanese romanization
+    - Ex: Dogen -> Dōgen and for all other long vowels in Japanese
+  - Use standard devanagari transliteration (IAST) for Sanskrit
+    - Ex: Prajna Paramita -> Prajñā pāramitā and other Sanskrit conventions
+
 ## Technologies 
 
 This project uses [Typst](https://typst.app/) as its core technology. Typst is a modern, markup-based typesetting system that is designed for both print and web. It allows us to maintain a single source file for the sutra book, which can then be compiled to high-quality PDF documents and HTML websites.

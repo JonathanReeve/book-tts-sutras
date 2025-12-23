@@ -558,7 +558,90 @@ Nirvana is right here, before our eyes; ○ \
 This very place is the Lotus Land; ○ \
 This very body, the Buddha. ○
 
+== ○ ● Dai-o Kokushi: On Zen ○
+
+There is a reality even prior to heaven and earth;
+Indeed, it has no form, much less a name;
+Eyes fail to see it; it has no voice for ears to detect.
+To call it Mind or Buddha violates its nature
+For it then becomes like a visionary flower in the air.
+
+It is not Mind, nor Buddha;
+Absolutely quiet and yet illuminating in a mysterious way,
+It allows itself to be perceived only by the clear-eyed.
+It is Dharma, truly beyond form and sound;
+It is Dao, having nothing to do with words. 
+
+Wishing to entice the blind,
+The Buddha has playfully let words escape his golden mouth;
+Heaven and earth are ever since filled with entangling briars.
+O my good worthy friends gathered here,
+If you desire to listen to the thunderous voice of the Dharma,
+Exhaust your words, ○ empty your thoughts, ○
+For then you may come to recognize this ○
+
+== ○ ● Song of Enlightenment ○
+
+There is the leisurely one,
+walking the Dao, beyond philosophy,
+not avoiding fantasy, not seeking truth.
+The real nature of ignorance is the Buddha-nature itself;
+the empty delusory body is the very body of the Dharma.
+
+When the Dharma body awakens completely,
+there is nothing at all.
+The source of our self-nature
+is the Buddha of innocent truth.
+Mental and physical reactions come and go
+like clouds in the empty sky;
+greed, hatred and ignorance appear and disappear
+like bubbles on the surface of the sea.
+
+When we realize actuality,
+there is no distinction between mind and thing
+and the path to hell instantly vanishes.
+If this is a lie to fool the world,
+my tongue may be cut out forever.
+
+Once we awaken to the Tathagata-Zen,
+the six noble deeds and the ten thousand good actions
+are already complete within us.
+In our dream we see the six levels of illusion clearly;
+After we awaken the whole universe is empty.
+
+No bad fortune, no good fortune, no loss, no gain;
+never seek such things in eternal serenity.
+For years the dusty mirror has gone uncleaned,
+now let us polish it completely, once and for all.
+
+Who has no-thought? Who is not-born?
+If we are truly not-born, we are not un-born either.
+Ask a robot if this is not so.
+How can we realize ourselves
+by virtuous deeds or by seeking the Buddha?
+
+Release your hold on earth, water, fire, wind;
+drink and eat as you wish in eternal serenity.
+All things are transient and completely empty;
+this is the great enlightenment of the Tathagata.
+
+Transience, emptiness and enlightenment—
+these are the ultimate truths of Buddhism;
+eping and teaching them is true Sangha devotion.
+If you don't agree, please ask me about it.
+Cut out directly the root of it all:
+this is the very point of the Buddha-seal.
+I can't respond to any concern about leaves and branches.
+
+People do not recognize the Mani-jewel.
+Living intimately within the Tathāgata-garbha,
+it operates our sight, hearing, smell, taste, sensation, awareness;
+and all of these  
+
+
 // This raw block injects the <script> tag into the final HTML file.
 #if "output" in sys.inputs and sys.inputs.output == "html" [
   #html.elem("script", attrs: (src: "interactivity.js"))
 ]
+
+
