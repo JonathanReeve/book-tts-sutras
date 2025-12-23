@@ -36,9 +36,7 @@ To facilitate the unique requirements of the sutra book, several custom Typst ma
 
 * **`#ino_note("...")`**: Used for adding brief notes or comments. This macro formats the text as a small, gray paragraph, prefixed with "Note:".
   *   _Example:_ `#note("All O are ten seconds long.")`
-* **`#ino[]`**: This is used to mark up ino annotations that are more complex than just a ○ or ○ ○ ○ ●. 
-  * _Example:_ `#ino[$●^{1,2}$ $○^3$]` means "Ino, there is a muted bell the first and second times around, and an open bell on the third." 
-* **`#zh[romaji, kanji]`**: This macro is designed to take a sequence of content pairs and individual content blocks, rendering Chinese characters with their Romaji annotations using HTML `<ruby>` tags. 
+* **`#zh[romaji, kanji]`**: This macro is designed to take a sequence of content pairs and individual content blocks, rendering Chinese characters with their Romaji annotations using Ruby annotations 
     *   _Example:_ `#zh[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度]`
 * **`#classed-block(class, content)`**: A helper macro used internally by `#trilingual` to wrap content in a `<div>` element with a specified HTML class. This is essential for the JavaScript interactivity.
 

@@ -526,7 +526,7 @@ Eminent students of the Dharma, you are long accustomed to groping for the eleph
 
 ## Discourse on Love 
 
-^[Metta Sutta (Suttanipata 1) adapted by Thich Nhat Hanh for the _Plum Village Chantin Book_]
+^[Metta Sutta (Suttanipata 1) adapted by Thich Nhat Hanh for the _Plum Village Chanting Book_]
 
 ## Discourse on Happiness
 

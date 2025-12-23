@@ -2,6 +2,10 @@
 
 #import "@preview/rubby:0.10.2": get-ruby
 
+#if sys.inputs.at("show-ino-notation", default: "true") == "false" {
+  show regex("([△▲○●×])([¹²³]*)"): ""
+}
+
 // sutra_book.typ
 
 // A helper macro to wrap any content in a classed <div> for JS to find.
@@ -118,21 +122,21 @@
 
 #ino_note([All O are ten seconds long.])
 
-1. ● I am of the nature to grow old.
+1. ● I am of the nature to grow old. \
 There is no way to escape growing old. ○
 
-2. ● I am of the nature to have ill health.
+2. ● I am of the nature to have ill health. \
 There is no way to escape having ill health. ○
 
-³. ● I am of the nature to die.
+³. ● I am of the nature to die. \
 There is no way to escape death. ○
 
 4. ● All that is dear to me and everyone I love
-are of the nature to change.
+are of the nature to change. \
 There is no way to escape being separated from them. ○
 
-5. ● My actions are my only true belongings.
-I cannot escape the consequences of my actions.
+5. ● My actions are my only true belongings. \
+I cannot escape the consequences of my actions. \
 My actions are the ground on which I stand. ○ ○ ○
 
 #pagebreak()
@@ -140,9 +144,9 @@ My actions are the ground on which I stand. ○ ○ ○
 == ○ ○ ○ ● Purification ○
 _in gassho_
 
-All the evil karma ever created by me since of old, ○³
-on account of my beginningless greed, hatred, and ignorance,
-born of my conduct, speech and thought,
+All the evil karma ever created by me since of old, ○³ \
+on account of my beginningless greed, hatred, and ignorance, \
+born of my conduct, speech and thought, \
 I ○³ now confess ○³ openly and  fully. ●¹² ○³
 
 #pagebreak()
@@ -179,85 +183,85 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 == The Great Prajna Paramita Heart Sutra
 
-#zh[kan|ji|zai|bo|satsu|gyō|jin|han|nya|ha|ra|mit|ta|ji][觀|自|在|菩|薩|行|深|般|若|波|羅|蜜|多|時]
+#zh[kan|ji|zai|bo|satsu|gyō|jin|han|nya|ha|ra|mit|ta|ji][觀|自|在|菩|薩|行|深|般|若|波|羅|蜜|多|時] \
 #eng[Avalokiteshvara Bodhisattva, practicing deep Prajna Paramita,]
 
-#zh[shō|ken|go|un|kai|kū|do|is|sai|ku|yaku][照|見|五|蘊|皆|空|度|一|切|苦|厄]
+#zh[shō|ken|go|un|kai|kū|do|is|sai|ku|yaku][照|見|五|蘊|皆|空|度|一|切|苦|厄] \
 #eng[clearly saw that all five skandhas are empty, transforming all suffering and distress.]
 
-#zh[sha|ri|shi|shiki|fu|i|kū|kū|fu|i|shiki][舎|利|子|色|不|異|空|空|不|異|色]
+#zh[sha|ri|shi|shiki|fu|i|kū|kū|fu|i|shiki][舎|利|子|色|不|異|空|空|不|異|色] \
 #eng[Shariputra, form is no other than emptiness, emptiness no other than form;]
 
-#zh[shiki|soku|ze|kū|kū|soku|ze|shiki][色|即|是|空|空|即|是|色]
+#zh[shiki|soku|ze|kū|kū|soku|ze|shiki][色|即|是|空|空|即|是|色] \
 #eng[form is exactly emptiness, emptiness exactly form;]
 
-#zh[ju|sō|gyō|shiki|yaku|bu|nyo|ze][受|想|行|識|亦|復|如|是]
+#zh[ju|sō|gyō|shiki|yaku|bu|nyo|ze][受|想|行|識|亦|復|如|是] \
 #eng[sensation, perception, mental reaction, consciousness, are also like this.]
 
-#zh[sha|ri|shi|ze|sho|hō|kū|sō|fu|shō|fu|metsu][舎|利|子|是|諸|法|空|相|不|生|不|滅]
+#zh[sha|ri|shi|ze|sho|hō|kū|sō|fu|shō|fu|metsu][舎|利|子|是|諸|法|空|相|不|生|不|滅] \
 #eng[Shariputra, all things are essentially empty—not born, not destroyed;]
 
-#zh[fu|kū|fu|jō|fu|zō|fu|gen][不|垢|不|浄|不|増|不|減]
+#zh[fu|kū|fu|jō|fu|zō|fu|gen][不|垢|不|浄|不|増|不|減] \
 #eng[not stained, not pure; without loss, without gain.]
 
-#zh[ze|ko|kū|chū|mu|shiki|mu|ju|sō|gyō|shiki][是|故|空|中|無|色|無|受|想|行|識]
+#zh[ze|ko|kū|chū|mu|shiki|mu|ju|sō|gyō|shiki][是|故|空|中|無|色|無|受|想|行|識] \
 #eng[Therefore in emptiness there is no form, no sensation, perception, mental reaction, consciousness;]
 
-#zh[mu|gen|ni|bi|zetsu|shin|i][無|眼|耳|鼻|舌|身|意]
+#zh[mu|gen|ni|bi|zetsu|shin|i][無|眼|耳|鼻|舌|身|意] \
 #eng[no eye, ear, nose, tongue, body, mind,]
 
-#zh[mu|shiki|shō|kō|mi|soku|hō][無|色|声|香|味|触|法]
+#zh[mu|shiki|shō|kō|mi|soku|hō][無|色|声|香|味|触|法] \
 #eng[no color, sound, scent, taste, touch, thought;]
 
-#zh[mu|gen|kai|nai|shi|mu|i|shiki|kai][無|眼|界|乃|至|無|意|識|界]
+#zh[mu|gen|kai|nai|shi|mu|i|shiki|kai][無|眼|界|乃|至|無|意|識|界] \
 #eng[no seeing and so on to no thinking;]
 
-#zh[mu|mu|myō|yaku|mu|mu|myō|jin][無|無|明|亦|無|無|明|尽]
+#zh[mu|mu|myō|yaku|mu|mu|myō|jin][無|無|明|亦|無|無|明|尽] \
 #eng[no ignorance and also no ending of ignorance,]
 
-#zh[nai|shi|mu|rō|shi|yaku|mu|rō|shi|jin][乃|至|無|老|死|亦|無|老|死|尽]
+#zh[nai|shi|mu|rō|shi|yaku|mu|rō|shi|jin][乃|至|無|老|死|亦|無|老|死|尽] \
 #eng[and so on to no old age and death and also no ending of old age and death;]
 
-#zh[mu|ku|shū|metsu|dō][無|苦|集|滅|道]
+#zh[mu|ku|shū|metsu|dō][無|苦|集|滅|道] \
 #eng[no suffering, cause of suffering, cessation, path;]
 
-#zh[mu|chi|yaku|mu|toku|i|mu|sho|toku|ko][無|智|亦|無|得|以|無|所|得|故]
+#zh[mu|chi|yaku|mu|toku|i|mu|sho|toku|ko][無|智|亦|無|得|以|無|所|得|故] \
 #eng[no wisdom and no attainment.]
 
-#zh[bo|dai|sat|ta|e|han|nya|ha|ra|mit|ta|ko][菩|提|薩|埵|依|般|若|波|羅|蜜|多|故]
+#zh[bo|dai|sat|ta|e|han|nya|ha|ra|mit|ta|ko][菩|提|薩|埵|依|般|若|波|羅|蜜|多|故] \
 #eng[Since there is nothing to attain, the Bodhisattva lives by Prajna Paramita,]
 
-#zh[shin|mu|kei|ge|mu|kei|ge|ko|mu|u|ku|fu][心|無|罣|礙|無|罣|礙|故|無|有|恐|怖]
+#zh[shin|mu|kei|ge|mu|kei|ge|ko|mu|u|ku|fu][心|無|罣|礙|無|罣|礙|故|無|有|恐|怖] \
 #eng[with no hindrance in the mind; no hindrance and therefore no fear;]
 
-#zh[on|ri|is|sai|ten|dō|mu|sō|ku|gyō|ne|han][遠|離|一|切|顛|倒|夢|想|究|竟|涅|槃]
+#zh[on|ri|is|sai|ten|dō|mu|sō|ku|gyō|ne|han][遠|離|一|切|顛|倒|夢|想|究|竟|涅|槃] \
 #eng[far beyond delusive thinking, right here is Nirvana.]
 
-#zh[san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故]
+#zh[san|ze|sho|butsu|e|han|nya|ha|ra|mit|ta|ko][三|世|諸|仏|依|般|若|波|羅|蜜|多|故] \
 #eng[All Buddhas of past, present and future live by Prajna Paramita,]
 
-#zh[a|no|ku|ta|ra|san|myaku|san|bo|dai][得|阿|耨|多|羅|三|藐|三|菩|提]
+#zh[a|no|ku|ta|ra|san|myaku|san|bo|dai][得|阿|耨|多|羅|三|藐|三|菩|提] \
 #eng[attaining Anuttara-samyak-sambodhi.]
 
-#zh[ko|chi|han|nya|ha|ra|mit|ta][故|知|般|若|波|羅|蜜|多]
+#zh[ko|chi|han|nya|ha|ra|mit|ta][故|知|般|若|波|羅|蜜|多] \
 #eng[Therefore know that Prajna Paramita is the great mantra, the vivid mantra,]
 
-#zh[ze|dai|jin|shu|ze|dai|myō|shu][是|大|神|呪|是|大|明|呪]
+#zh[ze|dai|jin|shu|ze|dai|myō|shu][是|大|神|呪|是|大|明|呪] \
 #eng[the unsurpassed mantra, the supreme mantra,]
 
-#zh[ze|mu|jō|shu|ze|mu|tō|dō|shu][是|無|上|呪|是|無|等|等|呪]
+#zh[ze|mu|jō|shu|ze|mu|tō|dō|shu][是|無|上|呪|是|無|等|等|呪] \
 #eng[which completely removes all suffering.]
 
-#zh[nō|jo|is|sai|ku|shin|jitsu|fu|ko][能|除|一|切|苦|真|実|不|虚]
+#zh[nō|jo|is|sai|ku|shin|jitsu|fu|ko][能|除|一|切|苦|真|実|不|虚] \
 #eng[This is truth, not mere formality.]
 
-#zh[ko|setsu|han|nya|ha|ra|mit|ta|shu][故|説|般|若|波|羅|蜜|多|呪]
+#zh[ko|setsu|han|nya|ha|ra|mit|ta|shu][故|説|般|若|波|羅|蜜|多|呪] \
 #eng[Therefore set for the Prajna Paramita mantra,]
 
-#zh[soku|setsu|shu|watsu][即|説|呪|曰]
+#zh[soku|setsu|shu|watsu][即|説|呪|曰] \
 #eng[set forth this mantra and proclaim:]
 
-#zh[gya|tei|gya|tei|ha|ra|gya|tei|ha|ra|sō|gya|tei|bo|dhi|so|waka][羯|諦|羯|諦|波|羅|羯|諦|波|羅|僧|羯|諦|菩|薩|婆|訶]
+#zh[gya|tei|gya|tei|ha|ra|gya|tei|ha|ra|sō|gya|tei|bo|dhi|so|waka][羯|諦|羯|諦|波|羅|羯|諦|波|羅|僧|羯|諦|菩|薩|婆|訶] \
 #eng[Gate Gate Paragate Parasamgate Bodhi Swaha!]
 
 #pagebreak()
@@ -267,44 +271,44 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 #ino_note([3 times. Mokugyo throughout.])
 
-#zh[no|mo|san|man|da|mo|to|nan][南|無|三|曼|多|母|駄|喃]
+#zh[no|mo|san|man|da|mo|to|nan][南|無|三|曼|多|母|駄|喃] \
 #eng[Veneration to all enlightened ones!]
 
-#zh[o|ha|ra|chi|ko|to|sha|so|no|nan][阿|盋|囉|底|賀|哆|舍|娑|曩|喃]
+#zh[o|ha|ra|chi|ko|to|sha|so|no|nan][阿|盋|囉|底|賀|哆|舍|娑|曩|喃] \
 #eng[The incomparable bodhi-power that banishes misfortune!]
 
-#zh[to|ji|to|en|gya|gya|gya|ki|gya|ki|un|nun][怛|姪|他|唵|佉|佉|佉|呬|佉|呬|吽|吽]
+#zh[to|ji|to|en|gya|gya|gya|ki|gya|ki|un|nun][怛|姪|他|唵|佉|佉|佉|呬|佉|呬|吽|吽] \
 #eng[Om! The Buddha of reality, wisdom, nirvana!]
 
-#zh[shi|fu|ra|shi|fu|ra|ha|ra|shi|fu|ra|ha|ra|shi|fu|ra][入|嚩|囉|入|嚩|囉|盋|羅|入|嚩|羅|盋|羅|入|嚩|羅]
+#zh[shi|fu|ra|shi|fu|ra|ha|ra|shi|fu|ra|ha|ra|shi|fu|ra][入|嚩|囉|入|嚩|囉|盋|羅|入|嚩|羅|盋|羅|入|嚩|羅] \
 #eng[Light, light! Great light, great light!]
 
-#zh[chi|shu|sa|chi|shu|sa|shu|shi|ri|shu|shi|ri][底|瑟|姹|底|瑟|姹|瑟|致|哩|瑟|致|哩]
+#zh[chi|shu|sa|chi|shu|sa|shu|shi|ri|shu|shi|ri][底|瑟|姹|底|瑟|姹|瑟|致|哩|瑟|致|哩] \
 #eng[With no categories, this mysterious power saves all beings.]
 
-#zh[so|ha|ja|so|ha|ja|sen|chi|gya|shi|ri|ei][莎|婆|訶|莎|婆|訶|戰|地|伽|隸|娑|婆]
+#zh[so|ha|ja|so|ha|ja|sen|chi|gya|shi|ri|ei][莎|婆|訶|莎|婆|訶|戰|地|伽|隸|娑|婆] \
 #eng[Misfortune goes, happiness comes.]
 
-#zh[so|mo|ko][莎|婆|訶]
+#zh[so|mo|ko][莎|婆|訶] \
 #eng[Swaha!]
 
 #pagebreak()
 
 *Leader:*
-Our words ring out through space beyond the stars;
-their virtue and compassion echo back from all the many beings;
-we recite the "Great Prajna Paramita Heart Sutra"
-#text(size: 0.8em, [Or: Maka Hannya Haramita Shin Gyo])
-and the "Sho Sai Myo Kichijo Darani"
-for renewal of the Buddha-mind in fields and forests,
-homes and streets, throughout the world,
-in grateful thanks to all our many guides along the ancient way;
+Our words ring out through space beyond the stars; \
+their virtue and compassion echo back from all the many beings; \
+we recite the "Great Prajna Paramita Heart Sutra" \
+#text(size: 0.8em, [Or: Maka Hannya Haramita Shin Gyo]) \
+and the "Sho Sai Myo Kichijo Darani" \
+for renewal of the Buddha-mind in fields and forests, \
+homes and streets, throughout the world, \
+in grateful thanks to all our many guides along the ancient way; \
 
 #v(1em)
 
 *Assembly:*
-● All Buddhas throughout space and time; ○
-all Bodhisattvas, Mahasattvas; ○
+● All Buddhas throughout space and time; ○ \
+all Bodhisattvas, Mahasattvas; ○ \
 the great Prajna Paramita ○.
 
 #pagebreak()
@@ -360,15 +364,15 @@ Buddha nature pervades the whole universe, existing right here now. With our rec
 
 *Leader:*
 
-All founding teachers, past, present, future, Dai Busso.
-Let true Dharma continue, Sangha relations become complete;
+All founding teachers, past, present, future, Dai Busso. \
+Let true Dharma continue, Sangha relations become complete; \
 
 #v(1em)
 
 *Assembly:*
 
-● All Buddhas throughout space and time; ○
-All Bodhisattvas, Mahasattvas; ○
+● All Buddhas throughout space and time; ○ \
+All Bodhisattvas, Mahasattvas; ○ \
 The great Prajna Paramita ○
 
 #pagebreak()
@@ -418,8 +422,8 @@ Everywhere is the Pure Land in its beauty.
 We see fully the Tathagata's radiant light
 right where we are.
 May we retain this mind
-and extend it throughout the world ○
-so that we and all beings ○
+and extend it throughout the world ○ \
+so that we and all beings ○ \
 become mature in Buddha's wisdom. ○
 
 #pagebreak()
@@ -429,33 +433,33 @@ _in gassho_
 
 #ino_note([Mokugyo throughout])
 
-#zh[kan|ze|on][觀|世|音]
+#zh[kan|ze|on][觀|世|音] \
 #eng[Kannon!]
-#zh[na|mu|butsu][南|無|佛]
+#zh[na|mu|butsu][南|無|佛] \
 #eng[Veneration to the Buddha!]
 
-#zh[yo|butsu|u|in][與|佛|有|因]
+#zh[yo|butsu|u|in][與|佛|有|因] \
 #eng[With Buddha's cause,]
 
-#zh[yo|butsu|u|en][與|佛|有|緣]
+#zh[yo|butsu|u|en][與|佛|有|緣] \
 #eng[With Buddha's effect;]
 
-#zh[bup|po|so|en][佛|法|相|緣]
+#zh[bup|po|so|en][佛|法|相|緣] \
 #eng[Affinity with Buddha, Dharma, Sangha]
 
-#zh[jo|raku|ga|jo][常|樂|我|淨]
+#zh[jo|raku|ga|jo][常|樂|我|淨] \
 #eng[Eternity, bliss, self, purity;]
 
-#zh[cho|nen|kan|ze|on][朝|念|觀|世|音]
+#zh[cho|nen|kan|ze|on][朝|念|觀|世|音] \
 #eng[Mornings my thoughts are Kannon,]
 
-#zh[bo|nen|kan|ze|on][暮|念|觀|世|音]
+#zh[bo|nen|kan|ze|on][暮|念|觀|世|音] \
 #eng[Evenings my thoughts are Kannon,]
 
-#zh[nen|nen|ju|shin|ki][念|念|從|心|起]
+#zh[nen|nen|ju|shin|ki][念|念|從|心|起] \
 #eng[Thought after thought arises in the mind,]
 
-#zh[nen|nen|fu|ri|shin][念|念|不|離|心]
+#zh[nen|nen|fu|ri|shin][念|念|不|離|心] \
 #eng[Thoughts are not separate from the mind.]
 
 #pagebreak()
@@ -487,10 +491,10 @@ _in gassho_
 
 #ino_note([If you remain in your place during Teisho, use the Daikeisu (big bell). If you move your seat for Teisho, take the inkin with you and use that.])
 
-The dharma, incomparably profound and minutely subtle, ●³
-Is rarely encountered, even in hundreds of thousands of millions of ages;
-We now can see it, hear it, accept and hold it;
-May we ●completely realize the true ●meaning
+The dharma, incomparably profound and minutely subtle, ●³ \
+Is rarely encountered, even in hundreds of thousands of millions of ages; \
+We now can see it, hear it, accept and hold it; \
+May we ●completely realize the true ●meaning \
 Of the Tathagata ●¹² ○³
 
 
@@ -501,57 +505,57 @@ _in gassho_
 
 == ○ ○ ○ ● Hakuin Zenji: Song of Zazen ○
 
-All beings by nature are Buddha,
-As ice by nature is water.
-Apart from water there is no ice;
+All beings by nature are Buddha, \
+As ice by nature is water. \
+Apart from water there is no ice; \
 Apart from beings, no Buddha.
 
-How sad that people ignore the near
-And search for truth afar:
-Like someone in the midst of water
-Crying out in thirst;
-Like a child of a wealthy home
+How sad that people ignore the near \
+And search for truth afar: \
+Like someone in the midst of water \
+Crying out in thirst; \
+Like a child of a wealthy home \
 Wandering among the poor.
 
-Lost on dark paths of ignorance,
-We wander through the Six Worlds;
-From dark path to dark path
+Lost on dark paths of ignorance, \
+We wander through the Six Worlds; \
+From dark path to dark path \
 When shall we be freed from birth and death?
 
-Oh, the zazen of the Mahayana!
-To this the highest praise!
-Devotion, repentance, training,
-The many Paramitas
+Oh, the zazen of the Mahayana! \
+To this the highest praise! \
+Devotion, repentance, training, \
+The many Paramitas \
 All have their source in zazen.
 
-Those who try zazen even once
-Wipe away beginningless crimes.
-Where are all the dark paths then?
+Those who try zazen even once \
+Wipe away beginningless crimes. \
+Where are all the dark paths then? \
 The Pure Land itself is near
 
-Those who hear this truth even once
-And listen with a grateful heart,
-Treasuring it, revering it,
+Those who hear this truth even once \
+And listen with a grateful heart, \
+Treasuring it, revering it, \
 Gain blessings without end.
 
-Much more, those who turn about
-And bear witness to self-nature,
-Self nature that is no-nature,
+Much more, those who turn about \
+And bear witness to self-nature, \
+Self nature that is no-nature, \
 Go far beyond mere doctrine.
 
-Here effect and cause are the same;
+Here effect and cause are the same; \
 The Way is neither two nor three.
 
-With form that is no-form,
-Going and coming we are never astray;
-With thought that is no-thought,
+With form that is no-form, \
+Going and coming we are never astray; \
+With thought that is no-thought, \
 Singing and dancing are the voice of the Law.
 
-Boundless and free is the sky of Samadhi!
-Bright the full moon of wisdom!
-Truly, is anything missing now?
-Nirvana is right here, before our eyes; ○
-This very place is the Lotus Land; ○
+Boundless and free is the sky of Samadhi! \
+Bright the full moon of wisdom! \
+Truly, is anything missing now? \
+Nirvana is right here, before our eyes; ○ \
+This very place is the Lotus Land; ○ \
 This very body, the Buddha. ○
 
 // This raw block injects the <script> tag into the final HTML file.
