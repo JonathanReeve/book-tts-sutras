@@ -34,30 +34,13 @@ All content for the sutra book is now located in `src/sutra_book.typ`. This file
 
 To facilitate the unique requirements of the sutra book, several custom Typst macros have been defined:
 
-*   **`#ino("symbol")`**: Used for percussion annotations. This macro takes a single string ("O", "C", "IO", "IC", "X", or "V") and renders it as the corresponding Unicode symbol (e.g., "O" becomes ▢, "IO" becomes △), styled with a bold, red, and superscript font.
-    *   _Mappings_:
-        *   `"O"`: ▢ (Open Circle)
-        *   `"C"`: ▣ (Filled Square)
-        *   `"IO"`: △ (Stroked Triangle)
-        *   `"IC"`: ▲ (Filled Triangle)
-        *   `"X"`: × (Multiplication Sign, representing a fish for mokugyo)
-        *   `"V"`: V (for specific vocal cues)
-    *   _Example:_ `#ino("IO") #ino("IC")`
 
-*   **`#note("...")`**: Used for adding brief notes or comments. This macro formats the text as a small, gray paragraph, prefixed with "Note:".
+*   **`#ino_note("...")`**: Used for adding brief notes or comments. This macro formats the text as a small, gray paragraph, prefixed with "Note:".
     *   _Example:_ `#note("All O are ten seconds long.")`
 
-*   **`#ruby-line((chinese, romaji), ...)`**: This macro is designed to take a sequence of content pairs and individual content blocks, rendering Chinese characters with their Romaji annotations using HTML `<ruby>` tags. It simplifies the input for trilingual lines.
-    *   _Example:_ `#ruby-line(("衆生", "Shu jo"), ("無邊", "mu hen"), ino("IO"))`
+*   **`#zh[romaji, kanji]`**: This macro is designed to take a sequence of content pairs and individual content blocks, rendering Chinese characters with their Romaji annotations using HTML `<ruby>` tags. 
+    *   _Example:_ `#zh[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度]`
 
-*   **`#trilingual(chinese-content, english-content)`**: This macro lays out a single line of trilingual text, separating the processed Chinese/Romaji content from its English translation. It automatically wraps the content in `div` elements with classes (`lang-zh` for Chinese/Romaji, `lang-en` for English) for JavaScript-driven toggling.
-    *   _Example:_
-        ```typst
-        #trilingual(
-          ruby-line(("衆生", "Shu jo"), ("無邊", "mu hen")),
-          [All beings beyond number, I vow to free.]
-        )
-        ```
 *   **`#classed-block(class, content)`**: A helper macro used internally by `#trilingual` to wrap content in a `<div>` element with a specified HTML class. This is essential for the JavaScript interactivity.
 
 ## Building the Project
