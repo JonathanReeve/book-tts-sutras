@@ -466,83 +466,25 @@ This very body, the Buddha. ○
 
 == ○ ● Dai-o Kokushi: On Zen ○
 
-There is a reality even prior to heaven and earth;
-Indeed, it has no form, much less a name;
-Eyes fail to see it; it has no voice for ears to detect.
-To call it Mind or Buddha violates its nature
-For it then becomes like a visionary flower in the air.
+There is a reality even prior to heaven and earth; \
+Indeed, it has no form, much less a name; \
+Eyes fail to see it; it has no voice for ears to detect. \
+To call it Mind or Buddha violates its nature \
+For it then becomes like a visionary flower in the air. \
 
-It is not Mind, nor Buddha;
-Absolutely quiet and yet illuminating in a mysterious way,
-It allows itself to be perceived only by the clear-eyed.
-It is Dharma, truly beyond form and sound;
-It is Dao, having nothing to do with words. 
+It is not Mind, nor Buddha; \
+Absolutely quiet and yet illuminating in a mysterious way, \
+It allows itself to be perceived only by the clear-eyed. \
+It is Dharma, truly beyond form and sound; \
+It is Dao, having nothing to do with words. \
 
-Wishing to entice the blind,
-The Buddha has playfully let words escape his golden mouth;
-Heaven and earth are ever since filled with entangling briars.
-O my good worthy friends gathered here,
-If you desire to listen to the thunderous voice of the Dharma,
-Exhaust your words, ○ empty your thoughts, ○
+Wishing to entice the blind, \
+The Buddha has playfully let words escape his golden mouth; \
+Heaven and earth are ever since filled with entangling briars. \
+O my good worthy friends gathered here, \
+If you desire to listen to the thunderous voice of the Dharma, \
+Exhaust your words, ○ empty your thoughts, ○ \
 For then you may come to recognize this ○
-
-== ○ ● Song of Enlightenment ○
-
-There is the leisurely one,
-walking the Dao, beyond philosophy,
-not avoiding fantasy, not seeking truth.
-The real nature of ignorance is the Buddha-nature itself;
-the empty delusory body is the very body of the Dharma.
-
-When the Dharma body awakens completely,
-there is nothing at all.
-The source of our self-nature
-is the Buddha of innocent truth.
-Mental and physical reactions come and go
-like clouds in the empty sky;
-greed, hatred and ignorance appear and disappear
-like bubbles on the surface of the sea.
-
-When we realize actuality,
-there is no distinction between mind and thing
-and the path to hell instantly vanishes.
-If this is a lie to fool the world,
-my tongue may be cut out forever.
-
-Once we awaken to the Tathagata-Zen,
-the six noble deeds and the ten thousand good actions
-are already complete within us.
-In our dream we see the six levels of illusion clearly;
-After we awaken the whole universe is empty.
-
-No bad fortune, no good fortune, no loss, no gain;
-never seek such things in eternal serenity.
-For years the dusty mirror has gone uncleaned,
-now let us polish it completely, once and for all.
-
-Who has no-thought? Who is not-born?
-If we are truly not-born, we are not un-born either.
-Ask a robot if this is not so.
-How can we realize ourselves
-by virtuous deeds or by seeking the Buddha?
-
-Release your hold on earth, water, fire, wind;
-drink and eat as you wish in eternal serenity.
-All things are transient and completely empty;
-this is the great enlightenment of the Tathagata.
-
-Transience, emptiness and enlightenment—
-these are the ultimate truths of Buddhism;
-eping and teaching them is true Sangha devotion.
-If you don't agree, please ask me about it.
-Cut out directly the root of it all:
-this is the very point of the Buddha-seal.
-I can't respond to any concern about leaves and branches.
-
-People do not recognize the Mani-jewel.
-Living intimately within the Tathāgata-garbha,
-it operates our sight, hearing, smell, taste, sensation, awareness;
-and all of these  
 
 == ○ ● Song of Enlightenment ○
 
@@ -681,6 +623,56 @@ in a profound valley beneath high cliffs,
 I sit under the old pine trees.
 Zazen in my rustic cottage
 is peaceful, lonely and truly comfortable.
+
+When you truly awaken,
+you have no formal merit.
+In the multiplicity of the relative world,
+you cannot find such freedom.
+Self-centered merit brings the joy of heaven itself,
+but is like shooting an arrow at the sky;
+when the force is exhausted, it falls to the earth,
+and then everything goes wrong.
+
+Why should this be better than the true way of the absolute,
+directly penetrating the ground of Tathagata?
+Just take hold of the source
+and never mind the branches.
+It is like a treasure-moon
+enclosed in a beautiful emerald.
+Now I understand this Mani-jewel
+and my gain is the gain of everyone endlessly.
+
+The moon shines on the river,
+the wind blows through the pines.
+Whose providence is this long beautiful evening?
+The Buddha-nature jewel of morality
+is impressed on the ground of my mind,
+and my robe is the dew, the fog, the cloud and the mist.
+
+A bowl once calmed dragons
+and a staff separated fighting tigers;
+the rings on this staff jingle musically.
+The form of these expressions is not to be taken lightly;
+the treasure-staff of the Tathagata
+has left traces for us to follow.
+
+The awakened one does not seek truth—
+does not cut off delusion.
+Truth and delusion are both vacant and without form,
+but this no-form is neither empty nor not empty;
+it is the truly real form of the Tathagata.
+
+The mind-mirror is clear, so there are no obstacles.
+Its brilliance illuminates the universe
+to the depths and in every grain of sand.
+Multitudinous things of the cosmos
+are all reflected in the mind,
+and this full clarity is beyond inner and outer.
+
+
+
+
+
 
 // This raw block injects the <script> tag into the final HTML file.
 #if "output" in sys.inputs and sys.inputs.output == "html" [
