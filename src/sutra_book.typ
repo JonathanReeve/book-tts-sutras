@@ -1,6 +1,6 @@
 
 // Import our custom logic
-#import "lib.typ" 
+#import "src/lib.typ" 
 
 = Three Treasures Sangha Sutra Book
 
