@@ -1,6 +1,6 @@
 
 // Import our custom logic
-#import "@local/lib" 
+#import "lib.typ" 
 
 = Three Treasures Sangha Sutra Book
 
@@ -544,7 +544,143 @@ Living intimately within the Tathāgata-garbha,
 it operates our sight, hearing, smell, taste, sensation, awareness;
 and all of these  
 
-... TODO 
+== ○ ● Song of Enlightenment ○
+
+There is the leisurely one,
+walking the Dao, beyond philosophy,
+not avoiding fantasy, not seeking truth.
+The real nature of ignorance is the Buddha-nature itself;
+the empty delusory body is the very body of the Dharma.
+
+When the Dharma body awakens completely,
+there is nothing at all.
+The source of our self-nature
+is the Buddha of innocent truth.
+Mental and physical reactions come and go
+like clouds in the empty sky;
+greed, hatred and ignorance appear and disappear
+like bubbles on the surface of the sea.
+
+When we realize actuality,
+there is no distinction between mind and thing
+and the path to hell instantly vanishes.
+If this is a lie to fool the world,
+my tongue may be cut out forever.
+
+Once we awaken to the Tathagata-Zen,
+the six noble deeds and the ten thousand good actions
+are already complete within us.
+In our dream we see the six levels of illusion clearly;
+After we awaken the whole universe is empty.
+
+No bad fortune, no good fortune, no loss, no gain;
+never seek such things in eternal serenity.
+For years the dusty mirror has gone uncleaned,
+now let us polish it completely, once and for all.
+
+Who has no-thought? Who is not-born?
+If we are truly not-born, we are not un-born either.
+Ask a robot if this is not so.
+How can we realize ourselves
+by virtuous deeds or by seeking the Buddha?
+
+Release your hold on earth, water, fire, wind;
+drink and eat as you wish in eternal serenity.
+All things are transient and completely empty;
+this is the great enlightenment of the Tathagata.
+
+Transience, emptiness and enlightenment—
+these are the ultimate truths of Buddhism;
+eping and teaching them is true Sangha devotion.
+If you don't agree, please ask me about it.
+Cut out directly the root of it all:
+this is the very point of the Buddha-seal.
+I can't respond to any concern about leaves and branches.
+
+People do not recognize the Mani-jewel.
+Living intimately within the Tathāgata-garbha,
+it operates our sight, hearing, smell, taste, sensation, awareness;
+and all of these are empty, yet not empty.
+
+The rays shining from this perfect Mani-jewel
+have the form of no form at all.
+Clarify the five eyes and develop the five powers;
+this is not intellectual work—just realize, just know.
+It is not difficult to see images in a mirror,
+but who can take hold of the moon in the water?
+
+Always working alone, always walking alone,
+the enlightened one walks the free way of Nirvana
+with melody that is old and clear in spirit
+and naturally elegant in style,
+but with body that is tough and bony,
+passing unnoticed in the world.
+
+We know that Shakya's sons and daughters
+are poor in body, but not in the Dao.
+In their poverty, they always wear ragged clothing,
+but they have the jewel of no price treasured within.
+
+THe jewel of no price can never be used up
+though they spend it freely to help people they meet.
+Dharmakaya, Sambhogakaya, Nirmanakaya,
+and the four kinds of wisdom
+are all contained within.
+The eight kinds of emancipation and the six universal powers
+are all impressed on the ground of their mind.
+
+The best student goes directly to the ultimate;
+the others are very learned but their faith is uncertain.
+Remove the dirty garments from your own mind;
+why should you show off your outward striving?
+
+Some may slander, some may abuse;
+they try to set fire to the heavens with a torch
+and end by merely tiring themselves out.
+I hear their scandal as though it were ambrosial truth;
+immediately everything melts
+and I enter the place beyond thought and words
+
+When I consider the virtue of abusive words,
+I find the scandal-monger is my good teacher.
+If we do not become angry at gossip,
+we have no need for powerful endurance and compassion.
+
+To be mature in Zen is to be mature in expression,
+and full-moon brilliance of dhyana and prajna
+does not stagnate in emptiness.
+Not only can I take hold of complete enlightenment by myself,
+but all Buddha-bodies, like sands of the Ganges,
+can become awakened in exactly the same way.
+
+The incomparable lion-roar of the doctrine
+shatters the brains of the one hundred kinds of animals.
+Even the king of elephants will run away, forgetting his pride;
+only the heavenly dragon listens calmly, with pure delight.
+
+I wandered over rivers and seas, crossing mountains and streams,
+visiting teachers, asking about the Way in personal interviews;
+since I recognized the Sixth Founding Teacher at Ts'ao Ch'i, 
+I know what is beyond the relativity of birth and death. 
+
+Walking is Zen, sitting is Zen;
+speaking or silent, active or quiet, the essence is at peace.
+Even facing the sword of death, our mind is unmoved;
+even drinking poison, our mind is quiet.
+
+Our teacher, Shakyamuni, met Dipankara Buddha
+and for many eons he trained as Kshanti, the ascetic.
+Many births, many deaths;
+I am serene in this cycle—there is no end to it.
+
+Since I abruptly realized the unborn,
+I have had no reason for joy or sorrow
+at any honor or disgrace.
+I have entered the deep mountains to silence and beauty;
+in a profound valley beneath high cliffs,
+I sit under the old pine trees.
+Zazen in my rustic cottage
+is peaceful, lonely and truly comfortable.
 
 // This raw block injects the <script> tag into the final HTML file.
 #if "output" in sys.inputs and sys.inputs.output == "html" [

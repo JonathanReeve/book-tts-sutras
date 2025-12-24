@@ -30,8 +30,14 @@ The development environment is managed using [Nix](https://nixos.org/), ensuring
 
 ## Contents
 
-references: Reference material: this sutra book in older formats; other sutra books
-src: The main typst sources
+ - src/: The main typst sources
+   - sutra_book.typ: The main sutra book contents 
+   - lib.typ: Our custom functions
+   - ruby.typ: Logic for ruby annotations
+ - references/: Reference material: 
+   - sutras.md: this sutra book in older formats
+   - Ino Book 2023.pdf: the source material for the ino edition 
+ - public/: where the build artifacts end up
 
 
 ## Outputs 
