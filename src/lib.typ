@@ -1,6 +1,6 @@
 // Functions we will import for use in the sutra book
 
-#import "src/ruby.typ": get-ruby
+#import "ruby.typ": get-ruby
 
 #if sys.inputs.at("show-ino-notation", default: "true") == "false" {
   show regex("([△▲○●×])([¹²³]*)"): ""
