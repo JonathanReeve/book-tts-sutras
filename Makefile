@@ -12,7 +12,7 @@ all: html ino-pdf print-pdf
 html: $(HTML_OUT)
 
 $(HTML_OUT): $(SRC)
-	typst compile --root . $(SRC) $(HTML_OUT) --features html
+	typst compile --root . $(SRC) $(HTML_OUT) --features html --input show-ino-notation=false
 
 ino-pdf: $(INO_PDF_OUT)
 

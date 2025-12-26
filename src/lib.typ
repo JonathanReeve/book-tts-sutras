@@ -1,8 +1,6 @@
 // Functions we will import for use in the sutra book
 
-#import "ruby.typ": get_ruby
-
-#if sys.inputs.at("show-ino-notation", default: "true") == "false" {
+#if sys.inputs.at("show-ino-notation", default: "false") == "false" {
   show regex("([△▲○●×])([¹²³]*)"): ""
 }
 
@@ -26,43 +24,6 @@
   classed-span("lang-en", content)
 }
 
-#let ruby = get_ruby(
-  size: 0.5em,
-  dy: 0pt,
-  pos: top,
-  alignment: "center",
-  delimiter: "|",
-)
-
-// 3. Chinese Wrapper
-// Sets lang to "zh" (crucial for correct CJK font selection)
-#let zh(left_str, right_str) = {
-  let left = text(left_str)
-  let right = text(right_str)
-  if left.text.split("|").len() != right.text.split("|").len() {
-    panic("Ruby text has imbalanced sides. Left: " + str(left.text.split("|").len()) + ", Right: " + str(right.text.split("|").len()))
-  }
-  let content = text(lang: "zh", ruby(left, right))
-  classed-span("lang-zh", content)
-}
-
-
-#let ino_note(text_content) = {
-  set text(fill: red) // Just print text in red
-  text_content
-}
-
-#let ino(content) = {
-  if sys.inputs.at("show-ino-notation", default: "true") == "true" {
-    content
-  } else {
-    []
-  }
-}
-
-
-
-
 // 1. Define the 'above' function (from previous step)
 #let above(word, top) = box(grid(
   columns: 1,
@@ -71,6 +32,35 @@
   text(size: 0.6em, top),
   word
 ))
+
+#let ino_note(text_content) = {
+  set text(fill: red) // Just print text in red
+  text_content
+}
+
+#let zh(left, right) = {
+  let left_array = left.text.split("|")
+  let right_array = right.text.split("|")
+
+  if left_array.len() != right_array.len() {
+    panic("Ruby text has imbalanced sides. Left: " + str(left_array.len()) + ", Right: " + str(right_array.len()))
+  }
+
+  let ruby_content = {
+    let sum_body = () // Initialize as an empty array
+    for i in range(left_array.len()) {
+      sum_body += ( // Use the + operator to append
+        above(
+          text(right_array.at(i)),
+          text(size: 0.5em, left_array.at(i))
+        ),
+      )
+    }
+    sum_body.join()
+  }
+
+  text(lang: "zh", ruby_content)
+}
 
 
 #if "output" in sys.inputs and sys.inputs.output == "html" [
