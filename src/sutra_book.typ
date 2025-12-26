@@ -1,6 +1,6 @@
 
 // Import our custom logic
-#import "lib.typ" 
+#import "lib.typ": zh, eng, ino_note  
 
 = Three Treasures Sangha Sutra Book
 

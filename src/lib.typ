@@ -1,6 +1,6 @@
 // Functions we will import for use in the sutra book
 
-#import "ruby.typ": get-ruby
+#import "ruby.typ": get_ruby
 
 #if sys.inputs.at("show-ino-notation", default: "true") == "false" {
   show regex("([△▲○●×])([¹²³]*)"): ""
@@ -26,13 +26,12 @@
   classed-span("lang-en", content)
 }
 
-#let ruby = get-ruby(
+#let ruby = get_ruby(
   size: 0.5em,
   dy: 0pt,
   pos: top,
   alignment: "center",
   delimiter: "|",
-  auto-spacing: true,
 )
 
 // 3. Chinese Wrapper
