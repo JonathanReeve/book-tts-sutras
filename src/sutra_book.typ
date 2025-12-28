@@ -2,7 +2,7 @@
 // Import our custom logic
 #import "lib.typ": *
 
-#let show-ino = sys.inputs.at("show-ino-notation", default: false)
+#let show-ino = sys.inputs.at("show-ino-notation", default: "false") == "true"
 
 #show if not show-ino { regex("([△▲○●×])([¹²³]*)") }: ""
 
