@@ -1,10 +1,6 @@
 // Functions we will import for use in the sutra book
 
-#if sys.inputs.at("show-ino-notation", default: "false") == "false" {
-  show regex("([△▲○●×])([¹²³]*)"): ""
-}
-
-// sutra_book.typ
+#set text(font: "Noto Sans CJK JP")
 
 // A helper macro to wrap any content in a classed <div> for JS to find.
 // 1. A robust helper for inline spans

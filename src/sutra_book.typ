@@ -1,6 +1,10 @@
 
 // Import our custom logic
-#import "lib.typ": zh, eng, ino_note  
+#import "lib.typ": *
+
+#let show-ino = sys.inputs.at("show-ino-notation", default: false)
+
+#show if not show-ino { regex("([△▲○●×])([¹²³]*)") }: ""
 
 = Three Treasures Sangha Sutra Book
 
