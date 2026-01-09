@@ -48,7 +48,7 @@
       sum_body += ( // Use the + operator to append
         above(
           text(right_array.at(i)),
-          text(size: 0.5em, left_array.at(i))
+          text(size: 1em, left_array.at(i))
         ),
       )
     }

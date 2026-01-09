@@ -2,9 +2,8 @@
 // Import our custom logic
 #import "lib.typ": *
 
-#let show-ino = sys.inputs.at("show-ino-notation", default: "false") == "true"
-
-#show if not show-ino { regex("([△▲○●×])([¹²³]*)") }: ""
+// Include our styles
+#include "style.typ"
 
 = Three Treasures Sangha Sutra Book
 
@@ -291,47 +290,47 @@ The great Prajna Paramita ○
 
 *Leader:*
 
-I am only a simple disciple, ○
-but I offer these respectful words:
+I am only a simple disciple, ○ \ 
+but I offer these respectful words: \
 
 #v(1em)
 
 *Assembly:*
 
-When I regard the true nature of the many dharmas,
-I find them all to be sacred forms
-of the Tathagata's never-failing essence.
-Each particle of matter, each moment,
-is no other than the Tathagata's inexpressible radiance.
-With this realization, our virtuous ancestors,
-with compassionate minds and hearts,
-gave tender care to beasts and birds.
+When I regard the true nature of the many dharmas, \
+I find them all to be sacred forms \
+of the Tathagata's never-failing essence. \
+Each particle of matter, each moment, \
+is no other than the Tathagata's inexpressible radiance. \
+With this realization, our virtuous ancestors, \
+with compassionate minds and hearts, \
+gave tender care to beasts and birds. \
 
-Among us, in our own daily lives,
-who is not reverently grateful for the protections of life:
-food, drink, and clothing!
-Though they are inanimate things,
-they are nonetheless the warm flesh and blood,
-the merciful incarnations of Buddha.
+Among us, in our own daily lives, \
+who is not reverently grateful for the protections of life: \
+food, drink, and clothing! \
+Though they are inanimate things, \
+they are nonetheless the warm flesh and blood, \
+the merciful incarnations of Buddha. \
 
-All the more, we can be especially sympathetic
-and affectionate with foolish people,
-particularly with someone who becomes a sworn enemy
-and persecutes us with abusive language.
-That very abuse conveys the Buddha's boundless loving-kindness.
-It is a compassionate device to liberate us entirely
-from the mean-spirited delusions that we have built up
-with our wrongful conduct from the beginningless past.
-With our response to such abuse
-we completely relinquish ourselves
-and the most profound and pure faith arises.
+All the more, we can be especially sympathetic \
+and affectionate with foolish people, \
+particularly with someone who becomes a sworn enemy \
+and persecutes us with abusive language. \
+That very abuse conveys the Buddha's boundless loving-kindness. \
+It is a compassionate device to liberate us entirely \
+from the mean-spirited delusions that we have built up \
+with our wrongful conduct from the beginningless past. \
+With our response to such abuse \
+we completely relinquish ourselves \
+and the most profound and pure faith arises. \
 
-At the peak of each thought a lotus flower opens,
-and on each flower there is revealed a Buddha.
-Everywhere is the Pure Land in its beauty.
-We see fully the Tathagata's radiant light
-right where we are.
-May we retain this mind
+At the peak of each thought a lotus flower opens, \
+and on each flower there is revealed a Buddha. \
+Everywhere is the Pure Land in its beauty. \
+We see fully the Tathagata's radiant light \
+right where we are. \
+May we retain this mind \
 and extend it throughout the world ○ \
 so that we and all beings ○ \
 become mature in Buddha's wisdom. ○
@@ -567,7 +566,7 @@ are poor in body, but not in the Dao. \
 In their poverty, they always wear ragged clothing, \
 but they have the jewel of no price treasured within.
 
-THe jewel of no price can never be used up \
+The jewel of no price can never be used up \
 though they spend it freely to help people they meet. \
 Dharmakaya, Sambhogakaya, Nirmanakaya, \
 and the four kinds of wisdom \
@@ -606,7 +605,9 @@ only the heavenly dragon listens calmly, with pure delight.
 
 I wandered over rivers and seas, crossing mountains and streams, \
 visiting teachers, asking about the Way in personal interviews; \
-since I recognized the Sixth Founding Teacher at Ts'ao Ch'i, \
+since I recognized the Sixth Founding Teacher at Caoqi, \
+#footnote[Or Ts'ao Ch'i, (曹溪), the place in southern China where Huineng taught.]
+
 I know what is beyond the relativity of birth and death. 
 
 Walking is Zen, sitting is Zen; \
@@ -678,9 +679,5 @@ and this full clarity is beyond inner and outer.
 
 
 
-// This raw block injects the <script> tag into the final HTML file.
-#if "output" in sys.inputs and sys.inputs.output == "html" [
-  #html.elem("script", attrs: (src: "interactivity.js"))
-]
 
 
