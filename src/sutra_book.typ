@@ -675,10 +675,312 @@ Multitudinous things of the cosmos \
 are all reflected in the mind, \
 and this full clarity is beyond inner and outer.
 
+To live in nothingness is to ignore cause and effect; \
+this chaos leads only to disaster.
+The one who clings to vacancy, rejecting the world of things, \
+escapes from drowning but leaps into the fire.
+
+Holding truth and rejecting delusion—
+these are but skillful lies.
+Students who do zazen by such lies
+love thievery in their own children.
+
+They miss the Dharma-treasure;
+they lose accumulated power;
+and this disaster follows directly upon dualistic thinking.
+So Zen is the complete realization of mind,
+the complete cutting off of delusion,
+the power of wise vision penetrating directly to the unborn.
+
+Students of vigorous will hold the sword of wisdom;
+the prajna edge is a diamond flame.
+It not only cuts off useless knowledge,
+but also exterminates delusions.
+
+They roar with Dharma-thunder;
+they strike the Dharma-drum;
+they spread clouds of love, and pour ambrosial rain.
+Their giant footsteps nourish limitless being;
+Shravaka, Pratyeka, Bodhisattva#footnote[These are the three vehicles of early Mahayana. Shravaka are voice-hearers or disciples; Pratyeka are independently awakened.]—all are enlightened;
+five kinds of human nature—all are emancipated. 
+
+High in the Himalayas, only fei-ni#footnote[肥膩, a grass which is supposed to give cows delicious milk. See #link("https://www.wisdomlib.org/definition/fei-ni")[the definition on Wisdom Library.]] grass grows.
+Here cows produce pure and delicious milk,
+and this food I continually enjoy. 
+One complete nature passes to all natures;
+one universal Dharma encloses all Dharmas.
+
+One moon is reflected in many waters;
+all the water-moons are from the one moon.
+The Dharma-body of all Buddhas has entered my own nature,
+and my nature becomes one with the Tathagata.
+One level completely contains all levels;
+it is not matter, mind, nor activity. 
+In an instant eight-thousand teachings are fulfilled;
+in a twinkling the evil of eons is destroyed.
+
+All categories are no category;
+what relation have these to my insight?
+Beyond praise, beyond blame
+like space itself it has no bounds.
+
+Right here it is eternally full and serene,
+if you search elsewhere, you cannot see it.
+You cannot grasp it, you cannot reject it;
+in the midst of not gaining,
+in that condition you gain it.
+
+It speaks in silence,
+in speech you hear its silence.
+The great way has opened and there are no obstacles. 
+If someone asks, "what is your sect
+and how do you understand it?"
+I reply, "the power of tremendous prajna."
+
+People say it is positive;
+people say it is negative;
+but they do not know.
+A smooth road, a rough road—
+even heaven cannot imagine.
+I have continued my zazen for many eons;
+I do not say this to confuse you.
+
+I raise the Dharma-banner and set fourth our teaching;
+it is the clear doctrine of the Buddha
+which I found with my teacher, Hui Neng.
+#footnote[The sixth patriarch. See #link("https://en.wikipedia.org/wiki/Huineng")[this Wikipedia page.]]
+Mahakasyapa
+#footnote[A disciple of Shakyamuni Buddha, and the First Indian Patriarch #link("https://en.wikipedia.org/wiki/Mah%C4%81k%C4%81%C5%9Byapa")[his Wikipedia page].] became the Buddha successor,
+received the lamp and passed it on.
+Twenty-eight generations of teachers in India,
+then over seas and rivers to our land
+Bodhidharma came as our own first founder,
+and his robe, as we all know, pass through six teachers here.
+And how many generations to come may gain the path,
+no one knows.
+
+The truth is not set forth;
+the false is basically vacant.
+Put both existence and non-existence aside;
+then even non-vacancy is vacant.
+The twenty kinds of vacancy have no basis,
+and the oneness of the Tathagata-being
+is naturally sameness.
+
+Mind is the base, phenomena are dust;
+yet both are like a flaw in the mirror.
+When the flaw is brushed aside,
+the light begins to shine.
+When both mind and phenomena are forgotten,
+then we become naturally genuine.
+
+Ah, the degenerate materialistic world!
+People are unhappy; they find self-control difficult.
+In the centuries since Shakyamuni, false views are deep,
+demons are strong, the Dharma is weak, disturbances are many.
+
+People hear the Buddha's doctrine of immediacy,
+and if they accept it, the demons will be crushed
+as easily as a roofing tile.
+But they cannot accept. What a pity!
+
+Your mind is the source of action;
+your body is the agent of calamity;
+no pity nor blame to anyone else.
+If you don't seek an invitation to hell,
+never slander the Tathagata's true teaching. 
+
+In the sandalwood forest, there is no other tree.
+Only the lion lives in such deep luxurant woods,
+wandering freely in a state of peace.
+Other animals and birds stay far away.
+
+Just baby lions follow the parent,
+and three-year-olds already roar loudly.
+How can the jackal pursue the king of the Dharma
+even with a hundred-thousand demonic arts?
+
+The Buddha's doctrine of directness
+is not a matter for human emotion.
+If you doubt this or feel uncertain,
+then you must discuss it with me.
+This is not the free rein of a mountain monk's ego.
+I fear your training may lead to wrong views
+of permanent soul or complete extinction.
+
+Being is not being; non-being is not non-being;
+miss this rule by a hair,
+and you are off by a thousand miles.
+Understanding it, the dragon-child abruptly attains Buddhahood;
+misunderstanding it, the greatest scholar falls into hell.
+
+From my youth I piled studies upon studies,
+in sutras and shastras I searched and researched,
+classifying terms and form, oblivious to fatigue.
+I entered the sea to count the sands in vain
+and then the Tathagata scolded me kindly
+as I read "What profit in counting your neighbor's treasure?"
+My work had been scattered and entirely useless,
+for years I was dust blown by the wind.
+
+If the seed-nature is wrong, misunderstandings arise,
+and the Buddha's doctrine of immediacy cannot be attained.
+Shravaka and Pratyeka students may study earnestly
+but they lack aspiration.
+Others may be very clever,
+but they lack prajna.
+
+Stupid ones, childish ones,
+they suppose there is something in an empty fist.
+They mistake the pointing finder for the moon.
+They are idle dreamers lost in form and sensation.
+
+Not supposing something is the Tathagata,
+this is truly called Guanyin, the Bodhisattva who sees freely.
+When awakened we find karmic hindrances fundamentally empty
+but when not awakened, we must repay all our debts.
+
+The hungry are served a king's repast;
+and they cannot eat.
+The sick meet the king of doctors;
+why don't they recover?
+The practice of Zen in this greedy world—
+this is the power of wise vision.
+The lotus lives in the midst of the fire;
+it is never destroyed.
+
+Pradhanashura broke the gravest precepts;
+but he went on to realize the unborn.
+The Buddhahood he attained in that moment
+lives with us now in our time.
+
+The incomparable lion roar of the doctrine!
+How sad that people are stubbornly ignorant,
+just knowing that crime blocks enlightenment,
+not seeing the secret of the Tathagata teaching.
+
+Two monks were guilty of murder and carnality.
+Their leader, Upali, had the light of a glow-worm;
+he just added to their guilt.
+Vimalakirti cleared their doubts at once
+as sunshine melts the frost and snow.
+
+The remarkable power of emancipation
+works wonders innumerable as the sands of the Ganges.
+To this we offer clothing, food, bedding, medicine.
+Ten thousand pieces of gold are not sufficient;
+they you break your body
+and your bones become powder,
+this is not enough for repayment.
+One vivid word surpasses millions of years of practice.
+
+The King of the Dharma deserves our highest respect.
+Tathagatas, innumerable as sands of the Ganges,
+all prove this fact by their attainment.
+Now I know what the Mani-jewel is:
+those who believe this will gain it accordingly.
+
+When we see truly, there is nothing at all.
+THere is no person; there is no Buddha.
+Innumerable things of the universe
+are just bubbles on the sea.
+Wise sages are all like flashes of lightning.
+
+However the burning iron ring revolves about my head,
+with bright completeness of dhyana and prajna,
+I never lose my equanimity .
+If the sun becomes cold, and the moon hot,
+evil cannot shatter the truth.
+The carriage of the elephant moves like a mountain,
+how can the mantis block the road?
+
+The great elephant does not loiter on the rabbit's path.
+Great enlightenment is not concerned with details.
+Don't belittle the sky by looking through a pipe.
+If you still don't understand, I will settle it for you.
 
 
+== ○ ● The Coincidence of Opposites ○
 
+The mind of the great sage of India
+was intimately conveyed from west to east.
+Though people may be sharp-witted or dull,
+there's no north and south in the Way.
+The deep spring sparkles in the pure light,
+its branches streaming through the darkness.
+Grasping at phenomena is the source of delusion;
+uniting with the absolute falls short of awakening.
+All of the senses, all the things sensed,
+they interact without interaction.
+Interacting, they permeate one another,
+yet each remains in its own place.
+By nature, forms differ in shape and appearance.
+By nature, sounds bring pleasure or pain.
+In darkness, the fine and mediocre accord;
+brightness makes clear and murky distinct.
+Each element comes back to its own nature
+just as a child finds its own mother.
+Fire is hot, the wind blows, water is wet and earth solid,
+eyes see forms, ears hear sounds, noses smell,
+tongues tell salty from sour—so it is with everything everywhere.
+The root puts forth each separate shoot.
+Both root and shoot go back to the fundamental fact.
+Exalted and lowly is just a matter of words.
+In the very midst of light, there is darkness;
+don't meet another in darkness.
+In the very midst of darkness, there is light;
+don't observe another in the light.
+Light and darkness complement each other
+like stepping forward and stepping back.
+Each of the myriad things has its particular virtue
+inevitably expressed in its use and station.
+Phenomena accord with the fundamental as a lid fits a box;
+the fundamental meets phenomena like arrows in mid-air.
+Hearing these words, understand the fundamental;
+don't cook up principles from your own ideas.
+If you overlook the Way right before your eyes,
+how will you know the path beneath your feet?
+Advancing has nothing to do with near and far,
+yet delusion creates obstacles high and wide.
+Students of the mystery, ○ I humbly urge you,
+don't waste ○ a moment, night or day! ○
 
+== ○ ● Song of the Grass-Roof Hermitage ○
 
+I built a grass hut where there's nothing of value.
+After eating, I relax and enjoy a nap.
+When it was completed, fresh weeds appeared.
+Now it's been lived in—covered by weeds.
 
+The person in the hut lives here calmly,
+not stuck to inside, outside, or in between.
+Places worldly people live, s/he doesn't live.
+Realms worldly people love, s/he doesn't love.
+Though the hut is small, it includes the entire world.
+In ten square feet, an old one illumines forms and their nature.
+A Great Vehicle bodhisattva trusts without doubt.
+The middling or lowly can't help wondering:
+Will this hut perish or not?
+Perishable or not, the original master is present,
+not dwelling south or north, east or west.
 
+Firmly based on steadiness, it can't be surpassed.
+A shining window below the green pines—
+jade palaces or vermilion towers can't compare with it.
+Just sitting with head covered all things are at rest.
+Thus, this mountain monk doesn't understand at all.
+Living here s/he no longer works to get free.
+Who would proudly arrange seats, trying to entice guests?
+
+Turn around the light to shine within, then just return.
+THe vast inconceivable source can't be faced or turned away from.
+Meet the ancestral teachers, be familiar with their instruction,
+bind grasses to build a hut, and don't give up.
+Let go of hundreds of years and relax completely.
+Open your hands and walk, innocent.
+Thousands of words, myriad interpretations,
+are only to free you from obstructions. ○
+If you want to know the undying person in the nut, ○
+don't separate from this skin bag here and now. ○
+
+== ○ ● Verse of the Faith-Mind ○
