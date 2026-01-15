@@ -2,8 +2,9 @@
 // Import our custom logic
 #import "lib.typ": *
 
-// Include our styles
-#include "style.typ"
+// Import and apply our styles
+#import "style.typ": project
+#show: project
 
 = Three Treasures Sangha Sutra Book
 
