@@ -166,7 +166,7 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 #eng[This is truth, not mere formality.]
 
 #zh[ko|setsu|han|nya|ha|ra|mit|ta|shu][故|説|般|若|波|羅|蜜|多|呪] \
-#eng[Therefore set for the Prajna Paramita mantra,]
+#eng[Therefore set forth the Prajna Paramita mantra,]
 
 #zh[soku|setsu|shu|watsu][即|説|呪|曰] \
 #eng[set forth this mantra and proclaim:]
@@ -287,16 +287,16 @@ The great Prajna Paramita ○
 
 #pagebreak()
 
-= ○ ● Torei Zenji: Bodhisattva's Vow
+= ○ ● Tōrei Zenji: Bodhisattva's Vow
 
-*Leader:*
+*Leader:* \
 
 I am only a simple disciple, ○ \ 
 but I offer these respectful words: \
 
 #v(1em)
 
-*Assembly:*
+*Assembly:* \ 
 
 When I regard the true nature of the many dharmas, \
 I find them all to be sacred forms \
@@ -404,9 +404,8 @@ _in gassho_
 The dharma, incomparably profound and minutely subtle, ●³ \
 Is rarely encountered, even in hundreds of thousands of millions of ages; \
 We now can see it, hear it, accept and hold it; \
-May we ●completely realize the true ●meaning \
-Of the Tathagata ●¹² ○³
-
+May we ● completely realize the true ● meaning \
+Of the Tathagata ●¹² ○³ \ 
 
 #pagebreak()
 
@@ -466,7 +465,25 @@ Bright the full moon of wisdom! \
 Truly, is anything missing now? \
 Nirvana is right here, before our eyes; ○ \
 This very place is the Lotus Land; ○ \
-This very body, the Buddha. ○
+This very body, the Buddha. ○ \ 
+
+== Dedication
+_in gassho_ 
+
+*Ino:* \
+
+The sky of Samadhi and the moonlight of wisdom are the temple of our practice; our friends and family members guide us as we walk the ancient path; we dedicate the virtues of reciting Hakuin Zenji's Song of Zazen to:
+
+- Linji Yixuan Dai Busso [ leen-gee ee-shwen ] 
+- Hakuin Ekaku, Dai Busso 
+
+and to the guardians of the Dharma and the protectors of our sacred hall.
+
+*Assembly:* \
+
+● All Buddhas throughout space and time, ○
+All Bodhisattvas, Mahasattvas, ○
+The great Prajna Paramita. ○
 
 == ○ ● Dai-o Kokushi: On Zen ○
 
@@ -980,7 +997,191 @@ Let go of hundreds of years and relax completely.
 Open your hands and walk, innocent.
 Thousands of words, myriad interpretations,
 are only to free you from obstructions. ○
-If you want to know the undying person in the nut, ○
+If you want to know the undying person in the hut, ○
 don't separate from this skin bag here and now. ○
 
 == ○ ● Verse of the Faith-Mind ○
+
+The supreme way is not difficult
+if only you do not choose.
+When there is neither love nor hate,
+all is open and clear.
+
+If there is the slightest distinction,
+it is the distance between heaven and earth.
+If you wish to see it revealed,
+let go of preference and aversion.
+The conflict between like and dislike
+is a disease of the mind.
+When this deep truth is not understood,
+you try to still your thoughts in vain.
+
+The way is perfect, like vast space,
+with nothing lacking and nothing in excess.
+It is only because you accept and reject
+that its Suchness is lost.
+Neither chase after outer appearances
+nor stay in the awareness of the void:
+simply be serene in the One
+and confusion will disappear by itself.
+When you stop activity to return to stillness,
+the stopping itself is just more activity. 
+Remaining in duality,
+how will you ever know the One?
+Unless you penetrate the One,
+you cannot function in either realm.
+To reject existence is to lose existence;
+to follow the void is to go against the void.
+
+The more words and thoughts,
+the less they fit the reality.
+Cut off words, cut off thoughts,
+and there is no place it does not penetrate.
+Return to the root and you gain the truth,
+follow appearances and you lose the essence.
+Even an instant of interior illumination
+goes beyond the first void;
+changes in this relative void
+are due entirely to delusion.
+
+No need to search for the truth:
+just let go of all your opinions,
+not abiding in dualistic views,
+careful not to pursue them.
+For if there is a bit of right and wrong,
+the mind is lost in confusion.
+
+There are two because there is one,
+but do not then cling to the one.
+When the one mind does not arise,
+the ten thousand things have no blame.
+When there is no blame, there is no thing;
+when it does not arise, there is no mind.
+Subject vanishes along with object;
+object vanished along with subject.
+Object is object because there is subject;
+subject is subject because there is object.
+If you want to know both levels—
+they are originally one void.
+The one void is the same in both
+and they equally contain all things. 
+When you do not distinguish between fine and coarse,
+how can there be any bias? 
+
+The Great Way is in essence broad,
+neither easy nor difficult.
+TO hold narrow views causes apprehension;
+the more you hurry, the longer it takes.
+IF you cling to such views,
+the right measure is lost,
+and you are sure to go astray.
+Let go of them and everything is natural;
+in essence there is neither going nor staying.
+Just act according to your nature,
+and you will accord ○ with the Way,
+walking it leisurely, ○ free from care. ○ 
+
+Discursive thought turns away from the truth;
+a dull, murky mind won't do either.
+Feeling dislike, the spirit is troubled;
+what use is there in being for or against things?
+If you want to take the one vehicle,
+have no aversion to the world of the senses.
+Indeed, not hating the sense ○ world
+is identical ○ with true enlightenment.
+
+The wise have no goals,
+the ignorant shackle themselves:
+for although among things there are no differences,
+they vainly form attachments.
+Using the mind to seek the mind—
+isn't that a great mistake?
+Rest and unrest arise in delusion,
+enlightenment knows neither like nor dislike.
+All dualistic views come
+from your own mistaken deductions.
+
+They are dreams, fantasies, spots before your eyes;
+why do you try to grasp them?
+Gain and loss, right and wrong—
+let go of them once and for all!
+
+If the eyes never sleep,
+dreams naturally cease;
+if the mind does not distinguish,
+everything is One Suchness.
+The essence of One Suchness is a mystery:
+unmoving, absolute, karmic relations forgotten.
+When you see all things equally,
+they return to their natural state:
+causation disappears and comparisons cannot be made.
+
+Stop moving and there is no movement;
+put rest in motion and there is no rest.
+Since the two do not exist,
+how can there be one?
+In the absolute there are no rules;
+the mind that accords with it becomes impartial,
+ceasing to plan and strive.
+When doubts and suspicion are cleared away
+true faith is easily attained.
+
+All things are transitory;
+there is no need to remember them.
+Void, clear, self-illuminating—
+the mind does not make efforts.
+This is the place of no-thinking,
+difficult to fathom with intellect or feeling.
+
+In the dharma world of Suchness,
+there is no other, there is no self.
+When you are asked to express it immediately,
+you can only say, "Not two!"
+If not-two, then everything is the same;
+there is nothing that is not included.
+THe wise of the ten directions
+have all entered this truth;
+it is beyond expansion and contraction;
+one moment of awareness is ten thousand years.
+
+Neither being nor non-being,
+the entire universe is before your eyes.
+The infinitely small is the same as the large;
+boundaries have vanished.
+The infinitely large is the same as the small;
+divisions cannot be seen.
+Being is nothing but non-being;
+non-being is nothing but being.
+When it is not yet like this for you,
+by no means remain in that state.
+One is all, all is one.
+If you realize it thus,
+why worry about not finishing?
+
+The faith-mind is not-two;
+not-two is the faith-mind.
+Words fail to express ○ it.
+It is not of the ○ past, future, or present. ○
+
+
+== ○ ● Discourse on Love ○
+
+Those who want to attain peace should practice being upright, humble, and capable of using loving speech. THey will know how to live simply and happily, with senses calmed, without being covetous and carried away by the emotions of the majority. Let them not do anything that will be disapproved of by the wise ones.
+
+(And this is what they contemplate):
+
+"May everyone be happy and safe, and may their hearts be filled with joy.
+
+"May all living beings live in security and in peace: being who are frail or strong, tall or short, big or small, visible or not visible, near or far away, already born or yet to be born. May all of them dwell in perfect tranquility.
+
+"Let no one do harm to anyone. Let no one put the life of anyone in danger. Let no one, out of anger or ill will, wish anyone any harm.
+
+"Just as parents love and protect their children at the risk of their own lives, we should cultivate boundless love to offer to all living being in the entire cosmos. We should let our boundless love pervade the whole universe, above, below, and across.
+
+"Our love will know no obstacles, our heart will be absolutely free from hatred and enmity. Whether standing or walking, sitting or lying, as long as we are awake, we should maintain this mindfulness of love in our own hearts. This is the noblest way of living."
+
+"Free from wrong views, greed, and sensual desires, living in beauty and ○ realizing perfect understanding, those who practice boundless ○ love will certainly transcend birth and death. ○
+
+== ○ ● Discourse on Happiness ○
+
+
