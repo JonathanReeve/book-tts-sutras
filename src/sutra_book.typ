@@ -1185,3 +1185,55 @@ Those who want to attain peace should practice being upright, humble, and capabl
 == ○ ● Discourse on Happiness ○
 
 
+
+#pagebreak()
+
+= Glossary and Notes
+
+/ The Ancient Seven Buddhas: The lineage of Buddhas preceding the historical Shakyamuni, traditionally listed as Vipashyin, Shikhin, Vishvabhu, Krakucchanda, Kanakamuni, Kashyapa, and finally Shakyamuni. They represent the timeless nature of the Dharma, showing that the path to awakening is discovered and re-discovered throughout cosmic time.
+
+/ Shakyamuni Buddha: The historical founder of Buddhism. Born as Siddhartha Gautama in the Shakya clan, he attained supreme enlightenment under the Bodhi tree and taught the Four Noble Truths and the Eightfold Path. His realization of emptiness and compassion forms the core of the Buddhist tradition.
+
+/ Mahaprajapati Gautami: The Buddha’s aunt and foster mother who became the first Buddhist nun (bhikkhuni). She led the establishment of the female monastic Sangha, demonstrating that women could achieve the highest stages of realization. Her persistence in seeking ordination opened the path for countless women to practice and realize the Dharma.
+
+/ Vimalakirti: A legendary lay contemporary of the Buddha who exemplified the ideal of the "lay bodhisattva." He is the central figure of the Vimalakirti Sutra, where he demonstrates a realization equal to or exceeding that of the Buddha’s monastic disciples, often using sharp wit and "non-duality" to teach the emptiness of all phenomena.
+
+/ Patacara: An early female disciple of the Buddha who achieved Arhatship after a series of devastating personal losses. She became a renowned teacher and expert in the Vinaya (monastic discipline), providing guidance and refuge for many women who had suffered similar tragedies.
+
+/ Bhadda Kapilani: A leading female disciple of the Buddha and the former wife of Mahakashyapa. She was renowned among the nuns for her ability to remember her past lives and was a prominent teacher in her own right, often praised for her deep wisdom and commitment to the practice.
+
+/ Bodhidarma: The first Zen patriarch in China, credited with bringing the dhyana (Zen) tradition from India to China. He is famous for his nine years of "wall-gazing" at Shaolin Monastery and his teaching of "pointing directly to the human mind, seeing one’s nature and becoming Buddha." (Often spelled Bodhidharma).
+
+/ Shitou Xiqian: A key figure in the development of early Chinese Chan. He is the author of the /Sandokai/ (The Identity of Relative and Absolute) and the /Song of the Grass-Roof Hermitage/, both of which are central to the Soto Zen liturgy. His teachings emphasize the non-duality of the absolute and the relative.
+
+/ Mazu Daoji: A major figure in the "Golden Age" of Chinese Chan and a Dharma heir of Nanyue Huairang. Famous for his teaching that "This Mind is Buddha" and his robust, often radical methods of bringing students to awakening, he helped establish the Linji lineage’s direct approach.
+
+/ Dongshan Liangjie: The founder of the Caodong (Soto) school in China. A disciple of Yunyan Tansheng, he is famous for formulating the "Five Ranks" (Go-i), which describe the stages of realization and the relationship between the absolute (sho) and the relative (hen).
+
+/ Pang Yun Jushi (Layman Pang): A celebrated lay Zen master who achieved realization while studying under both Mazu Daoji and Shitou Xiqian. He and his family are famous for living a simple, enlightened life, famously saying, "My daily activities are not unusual, I’m just naturally in harmony with them. Drawing water and carrying firewood—how miraculous!"
+
+/ Pang Lingzhao: The daughter of Layman Pang and a highly realized practitioner. She is often depicted as sharper than her father in Zen encounters and famously passed away in meditation just before he did, "stealing" his planned departure and demonstrating her complete freedom in life and death.
+
+/ Liu Tiemo (Iron Grindstone Liu): A formidable female Zen master and disciple of Guishan Lingyou. She earned her nickname "Iron Grindstone" for her sharp wit and ability to crush the ego of any monk who challenged her in Dharma combat. Her presence in the lineage highlights the strength and independence of female practitioners in the Chan tradition.
+
+/ Jishou Daojen: A female Zen practitioner and Dharma successor of Yuanwu Keqin at Zhaojue Monastery. She is often mentioned in the records of Dahui Zonggao, who was her Dharma brother. She achieved awakening through the phrase "It is not mind, it is not Buddha, it is not a thing," and is formally recognized as a realized teacher in the /Jiatai Pudeng Lu/.
+
+/ Dahui Zonggao: A prominent master of the Linji school who popularized the use of koans (kanhua Zen) as a direct means to bypass the intellectual mind and achieve sudden enlightenment. He was a prolific teacher with many lay and female disciples, including Miao Dao and Miao Zong.
+
+/ Miao Dao: A highly respected female Zen master and disciple of Dahui Zonggao. She received formal Dharma transmission from Dahui and led her own community, teaching both men and women. Her realization was so profound that even leading male masters of her time sought her instruction.
+
+/ Miao Zong: A female Zen master and disciple of Dahui Zonggao. Formerly a laywoman of high status, she became a nun and achieved deep realization. She famously engaged in sharp Dharma combat with the leading masters of her time, proving that gender is no barrier to the highest truth.
+
+/ Dogen Kigen: The founder of the Soto school in Japan. He emphasized the practice of "shikan-taza" (just sitting) and the identity of practice and enlightenment. His masterwork, the /Shobogenzo/, is one of the most profound philosophical texts in the Zen tradition.
+
+/ Keizan Jokin: The "Second Founder" of the Soto school in Japan. A successor to Dogen, he expanded the school's influence by making it more accessible to the common people and founded Soji-ji, one of the two head temples of the Soto school.
+
+/ Daiun Sogaku (Harada): A modern Zen master who integrated the Soto and Rinzai traditions, emphasizing both zazen and koan practice. He founded the Harada-Yasutani line, which had a major influence on the development of Zen in the West.
+
+/ Hakuun Ryoko (Yasutani): Founder of the Sanbo Kyodan (Three Treasures Association), he worked to make Zen accessible to laypeople and Westerners. His teachings, preserved in /The Three Pillars of Zen/, were fundamental to the spread of Zen beyond Japan.
+
+/ Koun Zenshin (Yamada): Successor to Yasutani Roshi and leader of the Sanbo Kyodan. He was a pivotal figure in the transmission of Zen to the West, serving as a teacher to many influential Western Zen practitioners, including Robert Aitken.
+
+/ Single-Mind Aitken (Robert Aitken): A co-founder of the Diamond Sangha and a pioneering figure in Western Zen. Known for his integration of social justice and Buddhist practice, he was a key translator and teacher who helped establish Zen in Hawaii and throughout the world.
+
+/ Dawn-Cloud Aitken (Anne Aitken): A co-founder of the Diamond Sangha along with her husband Robert Aitken. She was a quiet but profound presence in the development of Western Zen, providing the organizational and spiritual foundation that allowed the Sangha to flourish.
