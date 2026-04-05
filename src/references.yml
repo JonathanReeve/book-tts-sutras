@@ -1,0 +1,30 @@
+foster1996roaring:
+  type: book
+  title: "The Roaring Stream: A New Zen Reader"
+  author: ["Nelson Foster", "Jack Shoemaker"]
+  date: 1996
+
+leighton1987cultivating:
+  type: book
+  title: "Cultivating the Empty Field: the Silent Illumination of Zen Master Hongzhi"
+  author: "Taigen Dan Leighton"
+  date: 1987
+
+hanh1991plum:
+  type: book
+  title: "Plum Village Chanting Book"
+  author: "Thich Nhat Hanh"
+  date: 1991
+
+richmond1985moon:
+  type: book
+  title: "Moon in a Dewdrop: Writings of Zen Master Dogen"
+  author: ["Lew Richmond", "Kazuaki Tanahashi"]
+  date: 1985
+
+aitken1991song:
+  type: book
+  title: "The Song of Enlightenment"
+  author: "Robert Aitken"
+  date: 1991
+  publisher: "Honolulu Diamond Sangha"

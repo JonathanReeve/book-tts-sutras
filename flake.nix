@@ -36,8 +36,10 @@
         typstSource = "sutra_book.typ";
 
         fontPaths = [
-          # Add paths to fonts here
           "${pkgs.roboto}/share/fonts/truetype"
+          "${pkgs.noto-fonts-cjk-sans}/share/fonts/opentype"
+          "${pkgs.noto-fonts-cjk-serif}/share/fonts/opentype"
+          "${pkgs.libertinus}/share/fonts/opentype"
         ];
 
         virtualPaths = [
