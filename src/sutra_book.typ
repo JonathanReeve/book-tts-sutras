@@ -21,16 +21,16 @@
 
 === Four Infinite Vows
 
-#zh[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度]
+#zh[shu|jo|mu|hen|sei|gan|do][衆|生|無|邊|誓|願|度] \ 
 #eng[All beings beyond number, I vow to free △³]
 
-#zh[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷]
+#zh[bon|no|mu|jin|sei|gan|dan][煩|惱|無|盡|誓|願|斷] \ 
 #eng[Blind passions without cease, I vow to see through.]
 
-#zh[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學]
+#zh[ho|mon|mu|ryo|sei|gan|gaku][法|門|無|量|誓|願|學] \ 
 #eng[Dharma gates beyond measure, I vow to realize △³].
 
-#zh[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成]
+#zh[butsu|do|mu|jo|sei|gan|jo][佛|道|無|上|誓|願|成] \ 
 #eng[△ Buddha ways without △³ end, I vow to embody. △³]
 
 #pagebreak()
@@ -213,6 +213,9 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 #pagebreak()
 
+== Zenkai Dedication
+_In gassho_
+
 *Leader:*
 Our words ring out through space beyond the stars; \
 their virtue and compassion echo back from all the many beings; \
@@ -232,8 +235,8 @@ the great Prajñā pāramitā ○.
 
 #pagebreak()
 
-= Sesshin Dedication
-_in gassho_
+== Sesshin Dedication
+_In gassho_
 
 *Leader:*
 Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajñā pāramitā Heart Sutra" (Maka Hannya Haramita Shingyō) and the "Sho Sai Myo Kichijo Dharani," let us unite with:
@@ -352,34 +355,32 @@ _in gassho_
 
 #ino_note([Mokugyo throughout])
 
-#zh[kan|ze|on][觀|世|音] \
-#eng[Kannon!]
-#zh[na|mu|butsu][南|無|佛] \
-#eng[Veneration to the Buddha!]
+#zh[kan|ze|on|na|mu|butsu][觀|世|音|南|無|佛]
+#eng[Kanzeon! I bow before the Buddha;]
 
 #zh[yo|butsu|u|in][與|佛|有|因] \
-#eng[With Buddha's cause,]
+#eng[With the Buddha I have my source,]
 
 #zh[yo|butsu|u|en][與|佛|有|緣] \
-#eng[With Buddha's effect;]
+#eng[With the Buddha I have affinity—]
 
 #zh[bup|po|so|en][佛|法|相|緣] \
 #eng[Affinity with Buddha, Dharma, Sangha]
 
 #zh[jo|raku|ga|jo][常|樂|我|淨] \
-#eng[Eternity, bliss, self, purity;]
+#eng[Constancy, ease, assurance, purity.]
 
 #zh[cho|nen|kan|ze|on][朝|念|觀|世|音] \
-#eng[Mornings my thoughts are Kannon,]
+#eng[Mornings my thoughts are Kanzeon,]
 
 #zh[bo|nen|kan|ze|on][暮|念|觀|世|音] \
-#eng[Evenings my thoughts are Kannon,]
+#eng[Evenings my thoughts are Kanzeon,]
 
 #zh[nen|nen|ju|shin|ki][念|念|從|心|起] \
-#eng[Thought after thought arises in the mind,]
+#eng[Rapidly thoughts arise in the mind,]
 
 #zh[nen|nen|fu|ri|shin][念|念|不|離|心] \
-#eng[Thoughts are not separate from the mind.]
+#eng[Thought after thought is not separate from mind.]
 
 #pagebreak()
 
@@ -494,6 +495,8 @@ and to the guardians of the Dharma and the protectors of our sacred hall.
 All Bodhisattvas, Mahasattvas, ○
 The great Prajñā pāramitā. ○
 
+#pagebreak()
+
 == ○ ● Dai-o Kokushi: On Zen ○
 
 There is a reality even prior to heaven and earth; \
@@ -515,6 +518,8 @@ O my good worthy friends gathered here, \
 If you desire to listen to the thunderous voice of the Dharma, \
 Exhaust your words, ○ empty your thoughts, ○ \
 For then you may come to recognize this ○
+
+#pagebreak()
 
 == ○ ● Song of Enlightenment ○
 
@@ -633,7 +638,6 @@ only the heavenly dragon listens calmly, with pure delight. \
 I wandered over rivers and seas, crossing mountains and streams, \
 visiting teachers, asking about the Way in personal interviews; \
 since I recognized the Sixth Founding Teacher at Caoqi, \
-#footnote[Or Ts'ao Ch'i, (曹溪), the place in southern China where Huineng taught.]
 
 I know what is beyond the relativity of birth and death. \
 
@@ -955,7 +959,7 @@ don't meet another in darkness. \
 In the very midst of darkness, there is light; \
 don't observe another in the light. \
 Light and darkness complement each other \
-like stepping forward and stepping back. \
+like the foot before and the food behind in walking, \
 Each of the myriad things has its particular virtue \
 inevitably expressed in its use and station. \
 Phenomena accord with the fundamental as a lid fits a box; \
@@ -981,7 +985,7 @@ not stuck to inside, outside, or in between. \
 Places worldly people live, s/he doesn't live. \
 Realms worldly people love, s/he doesn't love. \
 Though the hut is small, it includes the entire world. \
-In ten square feet, an old one illumines forms and their nature. \
+In ten feet square, an old one illumines forms and their nature. \
 A Great Vehicle bodhisattva trusts without doubt. \
 The middling or lowly can't help wondering: \
 Will this hut perish or not? \

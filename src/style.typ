@@ -13,8 +13,8 @@
 
   // Narrow paper size for verse
   #set page(
-    width: 125mm,
-    height: 200mm,
+    width: 148mm, // A5 
+    height: 210mm,
     margin: (inside: 20mm, outside: 15mm, top: 20mm, bottom: 20mm),
   )
 
@@ -23,7 +23,6 @@
     leading: 0.7em,
     spacing: 1.2em,
     justify: false, // Poetry shouldn't be justified
-    hanging-indent: 1em, // Help with verse wrapping
   )
 
   // Heading styles for a "beautiful" look

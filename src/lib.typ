@@ -47,8 +47,8 @@
 // Helper for ruby annotations
 #let above(word, top) = {
   // Triple the sizes as requested
-  let zh_size = 3.0em
-  let ro_size = 1.8em
+  let zh_size = 1.2em
+  let ro_size = 1em
 
   if sys.inputs.at("target", default: "pdf") == "html" {
     html.elem("ruby", [
