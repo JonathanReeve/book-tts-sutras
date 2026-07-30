@@ -83,6 +83,7 @@
         packages = [
           watch-script
           pkgs.poppler-utils
+          pkgs.gnumake
         ];
       };
     });
