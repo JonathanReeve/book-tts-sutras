@@ -1,14 +1,13 @@
-name: Build & Publish
+name: Build & Deploy
 
 on:
   push:
     branches: [ main, master ]
-    tags: [ 'v*' ]
   pull_request:
     branches: [ main, master ]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -26,26 +25,17 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@v16
 
-      - name: Setup Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@v8
-
       - name: Build with Make via Nix
         run: nix develop --command make
         env:
           NIX_PATH: nixpkgs=channel:nixos-unstable
 
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: sutra-book-build
-          path: public/
-
       - name: Setup Pages
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && github.event_name == 'push'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages Artifact
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public/
@@ -54,12 +44,3 @@ jobs:
         if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && github.event_name == 'push'
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: |
-            public/sutra_book.html
-            public/sutra_book_ino.pdf
-            public/sutra_book_print.pdf
