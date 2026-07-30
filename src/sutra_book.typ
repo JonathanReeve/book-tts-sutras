@@ -497,6 +497,16 @@ The great Prajñā pāramitā. ○
 
 #pagebreak()
 
+= Readings from Dogen
+
+== Zazen Universally Recommended 
+
+== Actualizing the Fundamental Point
+
+== The Four Virtues of a Bodhisattva 
+
+= General Readings
+
 == ○ ● Dai-o Kokushi: On Zen ○
 
 There is a reality even prior to heaven and earth; \
@@ -1196,6 +1206,19 @@ Those who want to attain peace should practice being upright, humble, and capabl
 == ○ ● Discourse on Happiness ○
 
 
+= Diamond Sangha Jukai and Renewal Cereony  
+
+== Purification 
+
+See page X
+
+== Ti-Sarana
+
+See page X
+
+== Ceremony
+
+The Great Precepts of all the 
 
 #pagebreak()
 
