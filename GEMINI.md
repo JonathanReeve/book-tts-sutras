@@ -27,6 +27,16 @@
   - [x] In the HTML version, automated hyperlinks to the glossary.
   - [x] Toggle-able via the sidebar.
 
+## New Tasks
+- [x] Add github action based on nix which runs make and has all the requisite tools installed
+- [ ] Fix bibliography. On page 47 of "Ino Book 2023.pdf" there is a list of sources. Make sure each text with a source has a related bibliographic entry. 
+- [ ] Fix ruby text display: the ruby annotations above chinese characters don't have enough whitespace around them to be readable as syllables. Find a way to give these enough space and also make the chinese character spacing consistent. How does latex do it? Find a way to make it beautiful. 
+- [ ] Add in missing sections from PDF
+- [ ] Add title page
+- [ ] Make some things into includes. The Jukai ceremony includes Ti-Sarana and Purification, for example. Rather than just copy-paste let's write a function that includes it elsewhere. 
+- [ ] Make yourself a skill for good design and typography, based on https://github.com/nutlope/hallmark and other design skillsets, but geared for Typst. Then apply this skill to revising the book. 
+- [ ] Proofread everything
+
 ## Completed Tasks
 - [x] Bibliography and Hayagriva setup.
 - [x] Glossary with automated linking and state management (to avoid linking within the glossary itself).
