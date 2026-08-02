@@ -44,11 +44,101 @@
   }
 }
 
+// Helper for centered stage directions
+#let in-gassho() = align(center, text(style: "italic", size: 0.95em)[in gassho])
+
+// Reusable liturgical inclusions
+#let purification() = [
+== ○ ○ ○ ● Purification ○
+#in-gassho()
+
+All the evil karma ever created by me since of old, ○³ \
+on account of my beginningless greed, hatred, and ignorance, \
+born of my conduct, speech and thought, \
+I ○³ now confess ○³ openly and  fully. ●¹² ○³
+]
+
+#let ti-sarana() = [
+== ○ ○ ○ ● Ti-Sarana
+#in-gassho()
+
+Buddham saranam gacchami; \
+dhammam saranam gacchami; \
+sangham saranam gacchami. \
+
+#v(1em)
+
+I take refuge in the Buddha; \
+I take refuge in the Dharma; \
+I take refuge in the Sangha. \
+
+#v(1em)
+
+Buddham saranam gacchami; \
+dhammam saranam gacchami; \
+sangham saranam gacchami. ○
+]
+
+#let sesshin-dedication() = [
+== Sesshin Dedication
+#in-gassho()
+
+*Leader:*
+Buddha nature pervades the whole universe, existing right here now. With our reciting of "The Great Prajñā pāramitā Heart Sutra" (Maka Hannya Haramita Shingyō) and the "Sho Sai Myo Kichijo Dharani," let us unite with:
+
+#v(0.4em)
+
+*Assembly:*
+
+#set text(size: 10.5pt)
+#grid(
+  columns: (auto, 1fr),
+  column-gutter: 1.2em,
+  row-gutter: 0.28em,
+  [● The Ancient Seven Buddhas, Dai Bussō], [],
+  [● Śākyamuni Buddha, Dai Bussō], [],
+  [● Mahaprajapati Gautami, Dai Bussō], text(style: "italic", size: 0.88em)[maha prajApati go'tami],
+  [● Vimalakirti, Dai Bussō], text(style: "italic", size: 0.88em)[vi'mala kIrti],
+  [● Patacara, Dai Bussō], text(style: "italic", size: 0.88em)[p'ta chAra],
+  [● Bhadda Kapilani, Dai Bussō], text(style: "italic", size: 0.88em)[b'da k'pi-la-ni],
+  [● Bodhidharma, Dai Bussō], [],
+  [● Shitou Xiqian, Dai Bussō], text(style: "italic", size: 0.88em)[shure'-toe she-chwen],
+  [● Mazu Daoji, Dai Bussō], text(style: "italic", size: 0.88em)[ma'-zoo dao'-ee],
+  [● Dongshan Liangjie, Dai Bussō], text(style: "italic", size: 0.88em)[dong-shan liang-jay],
+  [● Pang Yun Jushi, Dai Bussō], text(style: "italic", size: 0.88em)[pong yun jew-sure],
+  [● Pang Lingzhao, Dai Bussō], text(style: "italic", size: 0.88em)[pong ling-jao],
+  [● Liu Tiemo, Dai Bussō], text(style: "italic", size: 0.88em)[leo tyeh'-mo],
+  [● Jishou Daojen, Dai Bussō], text(style: "italic", size: 0.88em)[jee-show dow-ren],
+  [● Dahui Zonggao, Dai Bussō], text(style: "italic", size: 0.88em)[da-whey zong-gao],
+  [● Miao Dao, Dai Bussō], text(style: "italic", size: 0.88em)[meow dow],
+  [● Miao Zong, Dai Bussō], text(style: "italic", size: 0.88em)[meow zong],
+  [● Dōgen Kigen, Dai Bussō], [],
+  [● Keizan Jokin, Dai Bussō], [],
+  [● Daiun Sogaku, Dai Bussō], [],
+  [● Hakuun Ryoko, Dai Bussō], [],
+  [● Koun Zenshin, Dai Bussō], [],
+  [● Single-Mind Aitken, Dai Bussō], [],
+  [● Dawn-Cloud Aitken, Dai Bussō], []
+)
+
+#v(0.4em)
+
+*Leader:*
+All founding teachers, past, present, future, Dai Bussō. \
+Let true Dharma continue, Sangha relations become complete; \
+
+#v(0.4em)
+
+*Assembly:*
+● All Buddhas throughout space and time; ○ \
+All Bodhisattvas, Mahasattvas; ○ \
+The great Prajñā pāramitā ○
+]
+
 // Helper for ruby annotations
 #let above(word, top) = {
-  // Triple the sizes as requested
-  let zh_size = 1.2em
-  let ro_size = 1em
+  let zh_size = 1.3em
+  let ro_size = 0.72em
 
   if sys.inputs.at("target", default: "pdf") == "html" {
     html.elem("ruby", [
@@ -56,13 +146,16 @@
       #html.elem("rt", classed-span("lang-ro", text(size: ro_size, top)))
     ])
   } else {
-    box(grid(
-      columns: 1,
-      gutter: 12pt, // Increased gutter for larger text
-      align: center,
-      text(size: ro_size, top),
-      text(size: zh_size, word)
-    ))
+    box(
+      inset: (x: 0.18em, y: 0pt),
+      grid(
+        columns: 1,
+        gutter: 4pt,
+        align: center + horizon,
+        text(size: ro_size, top),
+        text(size: zh_size, word)
+      )
+    )
   }
 }
 

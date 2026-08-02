@@ -6,31 +6,31 @@
   // Set fonts and basic text properties
   #set text(
     font: ("Libertinus Serif", "Noto Serif", "Noto Sans CJK JP"),
-    size: 12.5pt,
+    size: 12pt,
     ligatures: true,
     kerning: true,
   )
 
-  // Narrow paper size for verse
+  // Bibliography style: Chicago Manual of Style
+  #set bibliography(style: "chicago-author-date")
+
+  // Paper size: A5
   #set page(
-    width: 148mm, // A5 
-    height: 210mm,
+    paper: "a5",
     margin: (inside: 20mm, outside: 15mm, top: 20mm, bottom: 20mm),
   )
 
   // Typography settings
   #set par(
-    leading: 0.7em,
-    spacing: 1.2em,
+    leading: 0.65em,
+    spacing: 1.1em,
     justify: false, // Poetry shouldn't be justified
   )
 
-  // Heading styles for a "beautiful" look
-  #show heading: set block(above: 2em, below: 1.2em)
-  
+  // Heading styles for elegant book design
   #show heading.where(level: 1): it => {
     pagebreak(weak: true)
-    v(2em)
+    v(1.5em)
     set align(center)
     set text(size: 1.6em, weight: "regular", font: "Libertinus Serif Display")
     it.body
@@ -39,14 +39,14 @@
 
   #show heading.where(level: 2): it => {
     set align(center)
-    set text(size: 1.3em, weight: "bold")
-    it
+    set text(size: 1.25em, weight: "bold")
+    block(above: 1.4em, below: 0.8em, it.body)
   }
 
   #show heading.where(level: 3): it => {
     set align(center)
-    set text(size: 1.1em, weight: "regular", style: "italic")
-    it
+    set text(size: 1.05em, weight: "regular", style: "italic")
+    block(above: 1em, below: 0.6em, it.body)
   }
 
   // Don't show ino percussion annotation if not desired
