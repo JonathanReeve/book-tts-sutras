@@ -2,29 +2,54 @@ foster1996roaring:
   type: book
   title: "The Roaring Stream: A New Zen Reader"
   author: ["Nelson Foster", "Jack Shoemaker"]
+  publisher: "Ecco Press"
+  location: "New York"
   date: 1996
 
 leighton1987cultivating:
   type: book
-  title: "Cultivating the Empty Field: the Silent Illumination of Zen Master Hongzhi"
+  title: "Cultivating the Empty Field: The Silent Illumination of Zen Master Hongzhi"
   author: "Taigen Dan Leighton"
+  publisher: "North Point Press"
+  location: "San Francisco"
   date: 1987
 
 hanh1991plum:
   type: book
   title: "Plum Village Chanting Book"
   author: "Thich Nhat Hanh"
+  publisher: "Parallax Press"
+  location: "Berkeley"
   date: 1991
 
 richmond1985moon:
   type: book
   title: "Moon in a Dewdrop: Writings of Zen Master Dogen"
   author: ["Lew Richmond", "Kazuaki Tanahashi"]
+  publisher: "North Point Press"
+  location: "San Francisco"
   date: 1985
 
 aitken1991song:
   type: book
   title: "The Song of Enlightenment"
   author: "Robert Aitken"
-  date: 1991
   publisher: "Honolulu Diamond Sangha"
+  location: "Honolulu"
+  date: 1991
+
+jaffe1996flowers:
+  type: book
+  title: "Flowers Fall: A Commentary on Dogen's Genjokoan"
+  author: "Paul Jaffe"
+  publisher: "Shambhala Publications"
+  location: "Boston"
+  date: 1996
+
+bielefeldt1988dogens:
+  type: book
+  title: "Dōgen's Manuals of Zen Meditation"
+  author: "Carl Bielefeldt"
+  publisher: "University of California Press"
+  location: "Berkeley"
+  date: 1988
