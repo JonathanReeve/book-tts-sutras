@@ -21,6 +21,7 @@ This sutra book needs to be:
     - Ex: Dogen -> Dōgen and for all other long vowels in Japanese
   - Use standard devanagari transliteration (IAST) for Sanskrit
     - Ex: Prajna Paramita -> Prajñā pāramitā and other Sanskrit conventions
+2. Use Chicago Manual of Style (author-date / notes style) throughout for all citations, footnotes, and bibliographic references.
 
 ## Technologies 
 
