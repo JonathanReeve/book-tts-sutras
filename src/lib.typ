@@ -1,8 +1,6 @@
 
 // Functions we will import for use in the sutra book
 
-#set text(font: "Noto Sans CJK JP")
-
 #let in-glossary = state("in-glossary", false)
 
 // A helper macro to wrap any content in a classed <span> for JS to find.
@@ -97,10 +95,10 @@ Buddha nature pervades the whole universe, existing right here now. With our rec
   row-gutter: 0.28em,
   [● The Ancient Seven Buddhas, Dai Bussō], [],
   [● Śākyamuni Buddha, Dai Bussō], [],
-  [● Mahaprajapati Gautami, Dai Bussō], text(style: "italic", size: 0.88em)[maha prajApati go'tami],
-  [● Vimalakirti, Dai Bussō], text(style: "italic", size: 0.88em)[vi'mala kIrti],
-  [● Patacara, Dai Bussō], text(style: "italic", size: 0.88em)[p'ta chAra],
-  [● Bhadda Kapilani, Dai Bussō], text(style: "italic", size: 0.88em)[b'da k'pi-la-ni],
+  [● Mahaprajapati Gautami, Dai Bussō], text(style: "italic", size: 0.88em)[maha prajāpati go'tami],
+  [● Vimalakirti, Dai Bussō], text(style: "italic", size: 0.88em)[vi'mala kīrti],
+  [● Patacara, Dai Bussō], text(style: "italic", size: 0.88em)[p'ta chāra],
+  [● Bhadda Kapilani, Dai Bussō], text(style: "italic", size: 0.88em)[b'da kapilāni],
   [● Bodhidharma, Dai Bussō], [],
   [● Shitou Xiqian, Dai Bussō], text(style: "italic", size: 0.88em)[shure'-toe she-chwen],
   [● Mazu Daoji, Dai Bussō], text(style: "italic", size: 0.88em)[ma'-zoo dao'-ee],
@@ -152,12 +150,13 @@ The great Prajñā pāramitā ○
         columns: 1,
         gutter: 4pt,
         align: center + horizon,
-        text(size: ro_size, top),
-        text(size: zh_size, word)
+        text(font: ("EB Garamond 12", "Libertinus Serif"), size: ro_size, top),
+        text(font: ("Noto Serif CJK JP", "Noto Serif CJK SC"), weight: "regular", size: zh_size, word)
       )
     )
   }
 }
+
 
 #let ino_note(text_content) = {
   let show-ino-input = sys.inputs.at("show-ino-notation", default: "false") == "true"

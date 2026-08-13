@@ -360,7 +360,7 @@ _in gassho_
 
 == ○ ○ ○ ● Hakuin Zenji: Song of Zazen ○
 
-All#footnote[Translation and copyright by Lew Richmond and Kazuaki Tanahashi. See @richmond1985moon. Adapted by Three Treasures Sangha, 2005.] beings by nature are Buddha, \
+All#footnote[Translation and copyright by Lew Richmond and Kazuaki Tanahashi. See #cite(<richmond1985moon>, form: "prose"). Adapted by Three Treasures Sangha, 2005.] beings by nature are Buddha, \
 As ice by nature is water. \
 Apart from water there is no ice; \
 Apart from beings, no Buddha.
@@ -437,7 +437,7 @@ The great Prajñā pāramitā. ○
 
 == Zazen Universally Recommended
 
-Fundamentally#footnote[Version by Robert Aitken, based on the translation by Carl Bielefeldt. See @bielefeldt1988dogens.] speaking, the basis of the Way is perfectly pervasive. How could it be contingent on practice and verification? The vehicle of the Ancestors is naturally unrestricted. Why should we expend sustained effort? Surely the whole being is far beyond defilement; who could believe in a method to polish it? It is never apart from this very place; what is the use of a pilgrimage to practice it? And yet, with just a hair's breadth of distinction, the gap is like that between heaven and earth. Once the slightest like or dislike arises, all is confused and the mind is lost. You should know that repeated migrations through eons of time depend on a single moment's reflection; losing your way in this world of defilement derives from your failure to stop deliberation. If you wish to transcend the extreme beyond, just directly accede to the Way.
+Fundamentally#footnote[Version by Robert Aitken, based on the translation by Carl Bielefeldt. See #cite(<bielefeldt1988dogens>, form: "prose").] speaking, the basis of the Way is perfectly pervasive. How could it be contingent on practice and verification? The vehicle of the Ancestors is naturally unrestricted. Why should we expend sustained effort? Surely the whole being is far beyond defilement; who could believe in a method to polish it? It is never apart from this very place; what is the use of a pilgrimage to practice it? And yet, with just a hair's breadth of distinction, the gap is like that between heaven and earth. Once the slightest like or dislike arises, all is confused and the mind is lost. You should know that repeated migrations through eons of time depend on a single moment's reflection; losing your way in this world of defilement derives from your failure to stop deliberation. If you wish to transcend the extreme beyond, just directly accede to the Way.
 
 Though you might be proud of your understanding and replete with insight, having gotten hold of the wisdom that knows at a glance, though you may have attained the Way and clarified the Mind, giving rise to the spirit that assaults the heavens, you may still be loitering near the entrance, lacking something of the vital path of liberation. Even in the case of the Buddha, innately wise though he was, we see traces of his six years of sitting erect, and in the case of Bodhidharma, though he succeeded to the Mind seal, we still hear of his famous nine years facing the wall. When even the ancient sages practiced like this, how could people today dispense with pursuing the Way? Therefore, stop your intellectual exercise of investigating words and chasing after talk; study the reverse way, turn the light and shine it back. Body and mind will drop away of themselves, and your original face will appear. If you want such an experience, exert yourselves urgently.
 
@@ -463,7 +463,7 @@ Eminent students of the Dharma, you are long accustomed to groping for the eleph
 
 == Actualizing the Fundamental Point
 
-When#footnote[Translation and copyright by Paul Jaffe. See @jaffe1996flowers.] all dharmas are the Buddha-dharma, there are delusion and enlightenment, practice, birth, death, buddhas, and sentient beings. When the myriad dharmas all are without self, there is no delusion, no enlightenment, no buddhas, no sentient beings, no birth, and no death. Since originally the Buddha way goes beyond abundance and scarcity, there are birth and death, delusion and enlightenment, sentient beings and buddhas.
+When#footnote[Translation and copyright by Paul Jaffe. See #cite(<jaffe1996flowers>, form: "prose").] all dharmas are the Buddha-dharma, there are delusion and enlightenment, practice, birth, death, buddhas, and sentient beings. When the myriad dharmas all are without self, there is no delusion, no enlightenment, no buddhas, no sentient beings, no birth, and no death. Since originally the Buddha way goes beyond abundance and scarcity, there are birth and death, delusion and enlightenment, sentient beings and buddhas.
 
 Yet, though it is like this, simply, flowers fall amid our longing and weeds spring up amid our antipathy. Carrying the self forward to confirm [the existence of] the myriad dharmas is delusion. The myriad dharmas advancing and confirming [the existence of] the self is realization. Those who have great realization about delusion are buddhas. Those who are greatly deluded within realization are sentient beings. Further, there are people who attain realization upon realization and people who are deluded within delusion.
 
@@ -495,7 +495,7 @@ The true experience of the Buddha-dharma and its living way of correct transmiss
 
 == The Four Virtues of a Bodhisattva
 
-The#footnote[Translation and copyright by Lew Richmond and Kazuaki Tanahashi. See @richmond1985moon. Adapted by Three Treasures Sangha, 2005.] bodhisattva's four methods of guidance are giving, kind speech, beneficial action, and cooperation.
+The#footnote[Translation and copyright by Lew Richmond and Kazuaki Tanahashi. See #cite(<richmond1985moon>, form: "prose"). Adapted by Three Treasures Sangha, 2005.] bodhisattva's four methods of guidance are giving, kind speech, beneficial action, and cooperation.
 
 "Giving" means non-greed. Non-greed means not to crave. Not to crave means not to curry favor. Even if you govern the Four Continents, you should always convey the correct teaching with non-greed. It is to give away unneeded belongings to someone you don't know, to offer flowers blooming on a distant mountain to the Tathagata, or, again, to offer treasures you had in your former life to sentient beings. Whether it is of teaching or of material, in each case we are originally endowed with the virtue that accompanies giving. The question is not whether the gift is cheap or small, because its merit is still authentic.
 
@@ -557,7 +557,7 @@ For then you may come to recognize this ○
 
 == ○ ● Song of Enlightenment ○
 
-There#footnote[Attributed to Yǒngjiā Xuānjué (d. 713). Translation and revisions by Robert Aitken. See @aitken1991song.] is the leisurely one, \
+There#footnote[Attributed to Yǒngjiā Xuānjué (d. 713). Translation and revisions by Robert Aitken. See #cite(<aitken1991song>, form: "prose").] is the leisurely one, \
 walking the Dao, beyond philosophy, \
 not avoiding fantasy, not seeking truth. \
 The real nature of ignorance is the Buddha-nature itself; \
@@ -964,7 +964,7 @@ If you still don't understand, I will settle it for you. \
 
 == ○ ● The Coincidence of Opposites ○
 
-The#footnote[Attributed to Shītou Xīqiān (700–790). Translation and copyright by Nelson Foster and Jack Shoemaker. See @foster1996roaring.] mind of the great sage of India \
+The#footnote[Attributed to Shītou Xīqiān (700–790). Translation and copyright by Nelson Foster and Jack Shoemaker. See #cite(<foster1996roaring>, form: "prose").] mind of the great sage of India \
 was intimately conveyed from west to east. \
 Though people may be sharp-witted or dull, \
 there's no north and south in the Way. \
@@ -1009,7 +1009,7 @@ don't waste ○ a moment, night or day! ○ \
 
 == ○ ● Song of the Grass-Roof Hermitage ○
 
-I#footnote[Attributed to Shītou Xīqiān (700–790). Translation and copyright by Taigen Dan Leighton. See @leighton1987cultivating.] built a grass hut where there's nothing of value. \
+I#footnote[Attributed to Shītou Xīqiān (700–790). Translation and copyright by Taigen Dan Leighton. See #cite(<leighton1987cultivating>, form: "prose").] built a grass hut where there's nothing of value. \
 After eating, I relax and enjoy a nap. \
 When it was completed, fresh weeds appeared. \
 Now it's been lived in—covered by weeds. \
@@ -1211,7 +1211,7 @@ It is not of the ○ past, future, or present. ○ \
 
 == ○ ● Discourse on Love ○
 
-Those#footnote[Metta Sutta (Suttanipāta 1), adapted by Thich Nhat Hanh. See @hanh1991plum.] who want to attain peace should practice being upright, humble, and capable of using loving speech. They will know how to live simply and happily, with senses calmed, without being covetous and carried away by the emotions of the majority. Let them not do anything that will be disapproved of by the wise ones.
+Those#footnote[Metta Sutta (Suttanipāta 1), adapted by Thich Nhat Hanh. See #cite(<hanh1991plum>, form: "prose").] who want to attain peace should practice being upright, humble, and capable of using loving speech. They will know how to live simply and happily, with senses calmed, without being covetous and carried away by the emotions of the majority. Let them not do anything that will be disapproved of by the wise ones.
 
 (And this is what they contemplate):
 
@@ -1229,7 +1229,7 @@ Those#footnote[Metta Sutta (Suttanipāta 1), adapted by Thich Nhat Hanh. See @ha
 
 == ○ ● Discourse on Happiness ○
 
-I#footnote[Mahāmangala Sutta (Suttanipāta 1), adapted by Thich Nhat Hanh. See @hanh1991plum.] heard these words of the Buddha one time when the Lord was living in the vicinity of Shravasti at the Anathapindika monastery in the Jeta Park. Late at night a deva appeared whose light and beauty made the whole Jeta Grove shine radiantly. After paying respects to the Buddha, the deva asked him a question in the form of a verse:
+I#footnote[Mahāmangala Sutta (Suttanipāta 1), adapted by Thich Nhat Hanh. See #cite(<hanh1991plum>, form: "prose").] heard these words of the Buddha one time when the Lord was living in the vicinity of Shravasti at the Anathapindika monastery in the Jeta Park. Late at night a deva appeared whose light and beauty made the whole Jeta Grove shine radiantly. After paying respects to the Buddha, the deva asked him a question in the form of a verse:
 
 "Many gods and men are eager to know \
 what are the greatest blessings \

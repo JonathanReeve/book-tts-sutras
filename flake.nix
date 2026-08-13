@@ -31,7 +31,7 @@
 
       typixLib = typix.lib.${system};
 
-      src = typixLib.cleanTypstSource src/.;
+      src = lib.cleanSource ./src;
       commonArgs = {
         typstSource = "sutra_book.typ";
 
@@ -40,6 +40,7 @@
           "${pkgs.noto-fonts-cjk-sans}/share/fonts/opentype"
           "${pkgs.noto-fonts-cjk-serif}/share/fonts/opentype"
           "${pkgs.libertinus}/share/fonts/opentype"
+          "${pkgs.eb-garamond}/share/fonts"
         ];
 
         virtualPaths = [

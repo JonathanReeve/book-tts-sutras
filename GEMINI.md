@@ -38,22 +38,22 @@
 - [x] Proofread everything
 
 ### Page-by-Page Typographic Review TODOs
-- [ ] **Page Numbers & Pagination**: Enable page numbering in Typst (`#set page(numbering: "1")`) and position page numbers consistently.
-- [ ] **Front Matter Page Numbering**: Suppress page numbers on the Title Page (p. 1) and use unnumbered/Roman pages for Table of Contents (pp. 2–3), starting page 1 on "Opening Recitations" (p. 4).
-- [ ] **Facing Page Binding**: Set `#set page(binding: left)` in `style.typ` so inside/outside margins flip correctly across facing pages (recto/verso).
-- [ ] **Running Headers**: Add running headers (e.g., chapter/sutra title on verso, book title on recto) to assist navigation.
-- [ ] **CJK & Serif Harmony**: Switch CJK font from `Noto Sans CJK JP` to `Noto Serif CJK JP` so Chinese characters harmonize optically with Libertinus Serif body text.
-- [ ] **CJK Character Weight**: Fix ultra-light rendering of Chinese characters by setting regular font weight for CJK text.
-- [ ] **Ruby Text Line-Wrap**: Prevent orphan Romaji ruby syllables (e.g. `ze` on top of p. 9, `bo` on top of p. 10) by keeping ruby blocks grouped within non-breaking line units.
-- [ ] **Footnote Citation Parens**: Remove redundant parens in footnote citations (e.g. `See (Author 1985)` -> `See Author 1985`).
-- [ ] **Footnote Number Spacing**: Add proper spacing between footnote markers and footnote text in the footer (fix `1Translation...`).
-- [ ] **Eliminate Low-Density Page Spills**: Fix 4-line orphan page spill on page 59 (*Mangala Sutta*) and balance short pages (p. 6, 19, 22, 65).
-- [ ] **H1 Heading Wraps**: Fix awkward line breaking in long H1 headers (e.g., `Diamond Sangha Jukai and Renewal Ceremony` on p. 60).
-- [ ] **Recto Chapter Starts**: Set major section breaks to start on odd (recto) pages (`pagebreak(to: "odd")`).
-- [ ] **Table of Contents Styling**: Format level-1 chapter titles in bold with extra spacing in the TOC.
-- [ ] **Glossary Styling**: Format glossary terms with hanging indents and distinct term/definition spacing (pp. 66–71).
-- [ ] **Bibliography Hanging Indents**: Change bibliography entries from center/block indents to standard Chicago author-date hanging indents (p. 72).
-- [ ] **Sesshin Dedication Phonetics**: Clean up capitalization in phonetic guides on page 14 (e.g., `prajApati` -> `prajāpati`).
+- [x] **Font Pairing & Body Font**: Upgrade primary body font to **EB Garamond** and display headings to **Libertinus Serif Display**, paired with **Noto Serif CJK JP**.
+- [x] **Page Numbers & Pagination**: Enable page numbering in Typst (`#set page(numbering: "1")`) and position page numbers consistently in alternating footers.
+- [x] **Front Matter Page Numbering**: Suppress page numbers on the Title Page (p. 1) and Table of Contents (pp. 2–3), starting page numbers on "Opening Recitations".
+- [x] **Facing Page Binding**: Set `#set page(binding: left)` in `style.typ` so inside/outside margins flip correctly across facing pages (recto/verso).
+- [x] **Running Headers**: Add running headers (e.g., book title on verso, recitations title on recto) with a subtle horizontal rule.
+- [x] **CJK & Serif Harmony**: Switch CJK font from `Noto Sans CJK JP` to `Noto Serif CJK JP` so Chinese characters harmonize optically with EB Garamond body text.
+- [x] **CJK Character Weight**: Set regular font weight for CJK text and ruby annotations.
+- [x] **Ruby Text Line-Wrap**: Prevent orphan Romaji ruby syllables by keeping ruby blocks grouped within non-breaking box units.
+- [x] **Footnote Citation Parens**: Remove redundant parens in footnote citations using prose citation mode `#cite(<key>, form: "prose")`.
+- [x] **Footnote Entry Spacing**: Format footnote entry spacing and leading in the footer.
+- [x] **H1 Heading Wraps**: Fix awkward line breaking in long H1 headers with balanced font sizing.
+- [x] **Recto Chapter Starts**: Set major section breaks to start on odd (recto) pages (`pagebreak(to: "odd")`).
+- [x] **Table of Contents Styling**: Format level-1 chapter titles in bold with extra top spacing in the TOC.
+- [x] **Bibliography Hanging Indents**: Set Chicago author-date hanging indents for bibliography entries.
+- [x] **Sesshin Dedication Phonetics**: Clean up capitalization and diacritics in phonetic guides on page 14 (e.g., `prajāpati`, `kīrti`, `chāra`, `kapilāni`).
+
 
 
 ## Completed Tasks
