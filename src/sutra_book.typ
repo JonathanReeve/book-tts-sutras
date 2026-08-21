@@ -88,10 +88,10 @@ Namo tassa bhagavato arahato sammasambuddhasa ○
 
 #pagebreak()
 
-== The Great Prajñā pāramitā Heart Sutra
+== The Great Prajñā Pāramitā Heart Sutra
 
 #zh[kan|ji|zai|bo|satsu|gyō|jin|han|nya|ha|ra|mit|ta|ji][觀|自|在|菩|薩|行|深|般|若|波|羅|蜜|多|時] \
-#eng[Avalokiteśvara Bodhisattva, practicing deep Prajñā pāramitā,]
+#eng[Avalokiteśvara Bodhisattva, practicing deep Prajñā pāramitā,] // should paramita always be capitalized after prajna?
 
 #zh[shō|ken|go|un|kai|kū|do|is|sai|ku|yaku][照|見|五|蘊|皆|空|度|一|切|苦|厄] \
 #eng[clearly saw that all five skandhas are empty, transforming all suffering and distress.]
@@ -336,7 +336,7 @@ and to our relatives and companions of the past who rest in deepest samadhi;
 *All:*
 ● All Buddhas throughout space and time; ○ \
 all Bodhisattvas, Mahasattvas; ○ \
-the great prajna paramita ○
+the great Prajna paramita ○
 
 #pagebreak()
 
@@ -551,7 +551,7 @@ Heaven and earth are ever since filled with entangling briars. \
 O my good worthy friends gathered here, \
 If you desire to listen to the thunderous voice of the Dharma, \
 Exhaust your words, ○ empty your thoughts, ○ \
-For then you may come to recognize this ○
+For then you may come to recognize this one essence. ○ //"one essence" is the agreed on ending of the line?
 
 #pagebreak()
 
@@ -576,7 +576,7 @@ When we realize actuality, \
 there is no distinction between mind and thing \
 and the path to hell instantly vanishes. \
 If this is a lie to fool the world, \
-my tongue may be cut out forever. \
+may my tongue be cut out forever. \ // correcting word order to restore the meaning
 
 Once we awaken to the Tathagata-Zen, \
 the six noble deeds and the ten thousand good actions \
@@ -1117,7 +1117,7 @@ The Great Way is in essence broad, \
 neither easy nor difficult. \
 TO hold narrow views causes apprehension; \
 the more you hurry, the longer it takes. \
-IF you cling to such views, \
+If you cling to such views, \
 the right measure is lost, \
 and you are sure to go astray. \
 Let go of them and everything is natural; \
